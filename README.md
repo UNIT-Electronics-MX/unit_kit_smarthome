@@ -14,7 +14,7 @@ Example: JUN R3 -->
 
 ## Introduction
 
-This is a modular development board based on a popular microcontroller, designed for rapid prototyping and educational use. It features flexible power options, modern connectivity, and user-friendly interfaces. An integrated LED matrix allows for simple visual feedback and display.
+This is a kit based on a modular microcontroller made by UNIT Electronics.  
 
 <div align="center">
   <img src="hardware/resources/unit_top_v_1_0_0_icp10111_barometric_pressure_sensor.png" width="450px" alt="Development Board">
