@@ -1,0 +1,238 @@
+html {
+    font-family: Arial, Helvetica, sans-serif; 
+    display: inline-block; 
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.8rem; 
+    color: white;
+  }
+  
+  p { 
+    font-size: 1.4rem;
+  }
+
+  .topnav {
+    background-color: #e7881c;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 15px;
+    flex-wrap: wrap; 
+  }
+
+  .topnav h1 {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+    flex: 1;
+    min-width: 200px; 
+  }
+  
+  .logo-link {
+    margin-left: 25px;
+  }
+
+  .logo-link img {
+    display: block;
+    width: 60px;
+    height: auto;
+    border: 5px solid white; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+  }
+
+  /* Mensaje de estado */
+.status-message {
+    font-size: 1.2rem;
+    color: #1282A2;
+    margin-top: 10px;
+  }
+
+  body {  
+    margin: 0;
+  }
+  
+  .content { 
+    padding: 5%;
+  }
+  
+  .card-grid { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-gap: 2rem; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .card { 
+    background-color: white; 
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+  }
+  
+  .card-title { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #034078
+  }
+  
+  input[type=submit] {
+    border: none;
+    color: #FEFCFB;
+    background-color: #e47d1e;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    }
+  
+  input[type=submit]:hover {
+    background-color: #e4b85a;
+  }
+  
+  input[type=text], input[type=number], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 18px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  label {
+    font-size: 1.2rem; 
+  }
+  .value{
+    font-size: 1.2rem;
+    color: #1282A2;  
+  }
+  .state {
+    font-size: 1.2rem;
+    color: #1282A2;
+  }
+  button {
+    border: none;
+    color: #FEFCFB;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+  }
+  .button-on {
+    background-color: #1282A2;
+  }
+  .button-on:hover {
+    background-color: #d6ad25;
+  }
+
+
+form p {
+    margin-bottom: 20px; 
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px; 
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.wifi-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+      
+.wifi-card {
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#scanBtn {
+    background-color: #1282A2;
+    width: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+    padding: 15px 25px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scanBtn:hover {
+    background-color: #0e6a8a;
+}
+
+
+#ssid, #pass {
+    box-sizing: border-box;
+    width: calc(100% - 16px); /* Ajuste adicional si es necesario */
+    margin: 8px 0; /* Reducir márgenes verticales */
+    padding: 12px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.status-message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .wifi-card {
+        padding: 15px;
+    }
+    
+    #scanBtn {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 250px; /* Máximo ancho para no estirarse demasiado */
+        margin: 0 auto 20px auto; /* Centrado horizontalmente */
+        padding: 12px; /* Padding uniforme (evitar asimetría) */
+        text-align: center; /* Asegura que el texto esté centrado */
+        display: block; /* Importante para que funcione margin: auto */
+        white-space: nowrap; /* Evita saltos de línea */
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+    }
+
+    #scanBtn:hover {
+    background-color: #0e6a8a;
+}
+    
+    .topnav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .logo-link {
+        margin: 0 0 15px 0;
+    }
+    
+    .topnav h1 {
+        min-width: 100%;
+    }
+    
+    form p {
+        margin-bottom: 15px;
+    }
+}

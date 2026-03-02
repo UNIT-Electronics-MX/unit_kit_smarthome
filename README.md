@@ -1,5 +1,6 @@
 
-# DevLab: [Protocol/Interface] [Chip/Model] [Brief Description][Module/Sensor/Shield/Adapter]
+# UNIT Smart Home
+
 <!-- Exception:
 
 The PULSAR development board line does not use the DevLab: prefix.
@@ -11,14 +12,20 @@ Examples: PULSAR C6, PULSAR H2, PULSAR RP2350
 The JUN R3 board also does not use DevLab:
 
 Example: JUN R3 -->
-
-## Introduction
-
-This is a kit based on a modular microcontroller made by UNIT Electronics.  
+<div align="center">
+  <img src="hardware/resources/unit_icon.png" width="450px" alt="https://uelectronics.com/">
+  <p><em>uelectronics.com</em></p>
+</div>
 
 <div align="center">
-  <img src="hardware/resources/unit_top_v_1_0_0_icp10111_barometric_pressure_sensor.png" width="450px" alt="Development Board">
-  <p><em>Development Board</em></p>
+## Introduction
+
+The SmartHome Kit by UNIT Electronics is an educational platform designed to teach programming and electronics through the construction of a fully functional smart home. It features multiple sensors and actuators controlled by our proprietary development board, built around two widely adopted microcontrollers: the ESP32 and the RP2040.
+ 
+
+<div align="center">
+  <img src="hardware/resources/unit_smarthome_isomet_v_1_1_0.png" width="450px" alt="UNIT Smart Home">
+  <p><em>UNIT Smart Home</em></p>
 </div>
 
 <div align="center">
@@ -26,7 +33,7 @@ This is a kit based on a modular microcontroller made by UNIT Electronics.
 ### Quick Setup
 
 [<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](#)
-[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](#)
+[<img src="https://img.shields.io/badge/User's guide-green?style=for-the-badge" alt="User's guide">](#)
 [<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](#)
 [<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](#)
 
@@ -38,17 +45,16 @@ This is a kit based on a modular microcontroller made by UNIT Electronics.
 
 | Feature           | Description                                         |
 |-------------------|-----------------------------------------------------|
-| Microcontroller   | 8-bit MCU                                           |
-| Memory            | Flash, SRAM, EEPROM                                 |
+| Type              | Smart Home                                          |
+| Model             | UNIT SmartHome v1.1.0                               |
+| Brand             | UNIT Electronics                                    |
+| Development board | UNIT DualONE                                        |
 | Clock Speed       | 16 MHz                                              |
-| Power Supply      | USB-C (5V)                                          |
-| Interfaces        | UART, I2C, SPI, PWM, ADC, GPIO                      |
-| LED Matrix        | 5x5 RGB LED Matrix                                  |
-| Connectivity      | USB-C for programming and power                     |
-| Form Factor       | UNO-compatible                                      |
-| Development IDEs  | Arduino IDE, PlatformIO                             |
-| Onboard Features  | Integrated LED matrix, programmable LED, reset button|
-| Expansion Port    | I2C connector for sensors and modules               |
+| Power Supply      | Jack 12V                                            |
+| Connectivity      | USB-C for programming and power, Jack for power, Qwiic, WiFi for control (App)                                                    |
+|Assembled Dimensions| 16 x 15 x 19 [cm]                                  |
+|Packaging Dimensions| 27 x 17 x 15 [cm]                                  |
+| Development IDEs  | Arduino IDE, PlatformIO, Thonny, Visual Studio Code Vs|
 
 </div>
 
