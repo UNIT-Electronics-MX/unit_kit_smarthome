@@ -1,0 +1,64 @@
+# 3D Models
+
+This directory contains 3D models for the UNIT Smart Home project.
+
+## Available Models
+
+### UE0001 - Smart Home Structure
+
+<div align="center">
+  <a href="UE0001.stl">
+    <img src="https://img.shields.io/badge/View%203D%20Model-STL-blue?style=for-the-badge" alt="View 3D Model">
+  </a>
+</div>
+
+**Files:**
+- [`UE0001.stl`](UE0001.stl) (25 MB) - STL format for 3D printing and viewing on GitHub
+- [`UE0001.step`](UE0001.step) (41 MB) - STEP format for CAD software editing
+
+**Format Information:**
+- **STL**: Ready for 3D printing, viewable directly on GitHub with interactive 3D viewer
+- **STEP**: Editable CAD format for FreeCAD, Fusion 360, SolidWorks, etc.
+
+## Viewing 3D Models
+
+### On GitHub
+Click on any `.stl` file to view it with GitHub's built-in 3D viewer. You can:
+- Rotate the model by clicking and dragging
+- Zoom in/out with mouse wheel
+- Pan by holding Shift + click and drag
+- Toggle wireframe/surface view
+
+### Local Viewing
+- **STL files**: Open with FreeCAD, Blender, MeshLab, or any 3D slicer software
+- **STEP files**: Open with FreeCAD, Fusion 360, SolidWorks, or other CAD software
+
+## 3D Printing
+
+The STL files are ready for 3D printing. Recommended settings:
+- Layer height: 0.2mm
+- Infill: 20%
+- Support: As needed depending on model orientation
+
+## Editing Models
+
+To modify the models:
+1. Open the `.step` file in your preferred CAD software
+2. Make your modifications
+3. Export as STEP (for archiving) and STL (for GitHub visualization)
+
+## Converting Between Formats
+
+If you need to convert between formats, you can use the provided conversion script:
+
+```bash
+python convert_with_cadquery.py
+```
+
+Or use FreeCAD, Blender, or online converters like [CAD Exchanger](https://cadexchanger.com/convert).
+
+---
+
+<div align="center">
+  <sub>3D Models for UNIT Smart Home Kit</sub>
+</div>

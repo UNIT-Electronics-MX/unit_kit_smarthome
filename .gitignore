@@ -1,4 +1,5 @@
 venv
+.venv
 software/documentation/build
 software/documentation/docs
 software/getting_started/docs
