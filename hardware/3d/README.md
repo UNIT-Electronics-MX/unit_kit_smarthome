@@ -7,7 +7,7 @@ This directory contains 3D models for the UNIT Smart Home project.
 ### UE0001 - Smart Home Structure
 
 <div align="center">
-  <a href="UE0001_simplified.stl">
+  <a href="UE0002-DualMCU_V2.1.3.stl">
     <img src="https://img.shields.io/badge/View%203D%20Model-STL-blue?style=for-the-badge" alt="View 3D Model">
   </a>
 </div>

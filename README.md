@@ -119,6 +119,23 @@ Explore the complete 3D model of the UNIT Smart Home structure. GitHub's built-i
 - [High-res STL](hardware/3d/UE0001.stl) (25 MB) - For 3D printing
 - [STEP](hardware/3d/UE0001.step) (41 MB) - For CAD editing
 
+**Convert STEP to STL:**
+
+If you need to generate custom STL files from the STEP source:
+
+```bash
+# Install required package (first time only)
+pip install cadquery
+
+# Generate simplified STL (for quick preview)
+python hardware/3d/convert_step_to_stl.py hardware/3d/UE0001.step output_simplified.stl 0.5
+
+# Generate high-resolution STL (for 3D printing)
+python hardware/3d/convert_step_to_stl.py hardware/3d/UE0001.step output_hires.stl 0.01
+```
+
+See [3D Models documentation](hardware/3d/) for more details.
+
 ## Resources
 
 - [User's guide](#)
