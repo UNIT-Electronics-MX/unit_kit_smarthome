@@ -7,14 +7,17 @@ This directory contains 3D models for the UNIT Smart Home project.
 ### UE0001 - Smart Home Structure
 
 <div align="center">
-  <a href="UE0001.stl">
+  <a href="UE0001_simplified.stl">
     <img src="https://img.shields.io/badge/View%203D%20Model-STL-blue?style=for-the-badge" alt="View 3D Model">
   </a>
 </div>
 
 **Files:**
-- [`UE0001.stl`](UE0001.stl) (25 MB) - STL format for 3D printing and viewing on GitHub
+- [`UE0001_simplified.stl`](UE0001_simplified.stl) (11 MB) - Simplified STL for viewing on GitHub
+- [`UE0001.stl`](UE0001.stl) (25 MB) - High-res STL for 3D printing
 - [`UE0001.step`](UE0001.step) (41 MB) - STEP format for CAD software editing
+
+> **Note:** Use the simplified version for quick previewing on GitHub. Download the high-resolution STL for 3D printing.
 
 **Format Information:**
 - **STL**: Ready for 3D printing, viewable directly on GitHub with interactive 3D viewer
