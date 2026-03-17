@@ -52,13 +52,27 @@ To modify the models:
 
 ## Converting Between Formats
 
-If you need to convert between formats, you can use the provided conversion script:
+To convert STEP files to STL, use the provided conversion script:
 
 ```bash
-python convert_with_cadquery.py
+# Install required package (first time only)
+pip install cadquery
+
+# Convert with default quality
+python convert_step_to_stl.py input.step output.stl
+
+# Convert simplified (smaller file for GitHub)
+python convert_step_to_stl.py input.step output_simplified.stl 0.5
+
+# Convert high detail (for 3D printing)
+python convert_step_to_stl.py input.step output_hires.stl 0.01
 ```
 
-Or use FreeCAD, Blender, or online converters like [CAD Exchanger](https://cadexchanger.com/convert).
+**Parameters:**
+- Lower tolerance (0.01) = more detail, larger file
+- Higher tolerance (0.5) = simplified, smaller file
+
+Alternative tools: FreeCAD, Blender, or [CAD Exchanger](https://cadexchanger.com/convert)
 
 ---
 
