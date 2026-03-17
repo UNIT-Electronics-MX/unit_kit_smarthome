@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNIT Wi-Fi Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <h1>UNIT Smart Home ESP32 Wi-Fi Manager</h1>
+        <a href="https://www.uelectronics.com" target="_blank" class="logo-link">
+          <img src="LogoUnit128x128.png" alt="Logo">
+        </a>
+    </div>
+    
+    <div class="content">
+        <div class="wifi-container">
+            <div class="wifi-card">
+                <button id="scanBtn" class="button-on" onclick="scanNetworks()">Buscar Red</button>
+                
+                <form id="wifiForm">
+                    <div class="form-group">
+                        <label for="ssid">Nombre de Red:</label>
+                        <select id="ssid" name="ssid" required>
+                            <option value="">-- Seleccione una red --</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" id="pass" name="pass" placeholder="Contraseña WiFi">
+                    </div>
+                    
+                    <input type="submit" value="Guardar">
+                </form>
+                
+                <div id="statusMessage" class="status-message"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function scanNetworks() {
+            document.getElementById('statusMessage').textContent = "Escaneando redes...";
+            
+            fetch('/scan')
+                .then(response => response.json())
+                .then(networks => {
+                    const ssidSelect = document.getElementById('ssid');
+                    // Limpiar opciones excepto la primera
+                    while (ssidSelect.options.length > 1) {
+                        ssidSelect.remove(1);
+                    }
+                    
+                    if (networks.length === 0) {
+                        document.getElementById('statusMessage').textContent = "No se encontraron redes WiFi";
+                        return;
+                    }
+                    
+                    // Agregar redes encontradas
+                    networks.forEach(network => {
+                        const option = document.createElement('option');
+                        option.value = network.ssid; // Aquí solo enviamos el SSID
+                        // Mostramos SSID + señal en la interfaz pero el value es solo SSID
+                        option.text = network.ssid;
+                        //option.text = network.ssid + (network.rssi ? ` (Señal: ${Math.round(network.rssi)} dBm)` : '');
+                        ssidSelect.appendChild(option);
+                    });
+                    
+                    document.getElementById('statusMessage').textContent = `Se encontraron ${networks.length} redes`;
+                })
+                .catch(error => {
+                    console.error('Error al escanear redes:', error);
+                    document.getElementById('statusMessage').textContent = "Error al escanear redes";
+                });
+        }
+        
+        // Escanear al cargar la página
+        window.onload = scanNetworks;
+        
+        // Manejar el envío del formulario
+        document.getElementById('wifiForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            document.getElementById('statusMessage').textContent = "Guardando configuración...";
+            
+            fetch('/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('statusMessage').textContent = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('statusMessage').textContent = "Error al guardar configuración";
+            });
+        });
+    </script>
+</body>
+</html>
