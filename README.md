@@ -103,11 +103,28 @@ The SmartHome Kit by UNIT Electronics is an educational platform designed to tea
 |MDF parts                  |-    |<img src="hardware/img/mdf_parts.png" width="40px"> |
 </div>
 
+## 3D Model
+
+<div align="center">
+  <a href="hardware/3d/UE0001_simplified.stl">
+    <img src="https://img.shields.io/badge/View%203D%20Model-Interactive-blue?style=for-the-badge&logo=github" alt="View 3D Model">
+  </a>
+  <p><em>Click to view the interactive 3D model on GitHub</em></p>
+</div>
+
+Explore the complete 3D model of the UNIT Smart Home structure. GitHub's built-in 3D viewer allows you to rotate, zoom, and inspect the model directly in your browser.
+
+**Available formats:**
+- [Simplified STL](hardware/3d/UE0001_simplified.stl) (11 MB) - Quick preview
+- [High-res STL](hardware/3d/UE0001.stl) (25 MB) - For 3D printing
+- [STEP](hardware/3d/UE0001.step) (41 MB) - For CAD editing
+
 ## Resources
 
 - [User's guide](#)
 - [Pinout Diagram](#)
 - [DualMCU ONE](#)
+- [3D Models](hardware/3d/)
 
 ## 📝 License
 
