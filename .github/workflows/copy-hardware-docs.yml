@@ -63,29 +63,24 @@ jobs:
         chmod +x .github/scripts/build_docs.sh
         .github/scripts/build_docs.sh
 
-    - name: Configure GitHub Pages
-      if: github.event_name != 'pull_request'
-      uses: actions/configure-pages@v5
-
-    - name: Upload GitHub Pages artifact
-      if: github.event_name != 'pull_request'
-      uses: actions/upload-pages-artifact@v4
-      with:
-        path: docs
-
     - name: Commit and push changes
       if: github.event_name != 'pull_request' && github.run_attempt == 1
-      continue-on-error: true
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add docs/
+        git add -A docs/
         if ! git diff --cached --quiet; then
           git commit -m "Auto-update hardware documentation"
           git push
         else
           echo "No changes to commit"
         fi
+
+    - name: Upload GitHub Pages artifact
+      if: github.event_name != 'pull_request'
+      uses: actions/upload-pages-artifact@v4
+      with:
+        path: docs
 
   deploy-pages:
       if: github.event_name != 'pull_request'
@@ -100,6 +95,9 @@ jobs:
         url: ${{ steps.deployment.outputs.page_url }}
 
       steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
