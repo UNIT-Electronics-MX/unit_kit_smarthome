@@ -1,107 +1,99 @@
 ## Descripción
 
-El Kit SmartHome de UNIT Electronics es una plataforma didáctica diseñada para el aprendizaje  
-práctica de electrónica y programación mediante la construcción de una casa inteligente  
-funcional.
+El Kit SmartHome de UNIT Electronics es una plataforma didáctica para aprender electrónica y programación de forma práctica mediante la construcción de una casa inteligente funcional.
 
 ![Kit SmartHome ensamblado](assets/manual/image-002.png){width=3.0in}
 
 ### Aplicaciones
 
-El usuario ensamblará piezas mecánicas, integrará electrónica modular, hará uso del control  
-PWM, el protocolo de comunicación I2C y realizará lectura de sensores tanto digitales como  
-analógicos, todo con apoyo de una aplicación móvil.
+Durante el proyecto ensamblarás piezas mecánicas, integrarás electrónica modular, utilizarás control PWM y el protocolo de comunicación I2C, y leerás sensores digitales y analógicos, todo con el apoyo de una aplicación móvil.
 
 ### Características del hardware
 
-El kit integra múltiples sensores y actuadores, controlados por la tarjeta de desarrollo UNIT  
-DualMCU ONE, que incorpora los microcontroladores:
+El kit integra múltiples sensores y actuadores controlados por la tarjeta de desarrollo UNIT DualMCU ONE, que incorpora dos microcontroladores:
 
 ESP32  
 RP2040
 
-La UNIT DualMCU ONE permite trabajar con:
+La UNIT DualMCU ONE es compatible con los siguientes entornos de programación:
 
 Arduino IDE  
 MicroPython  
 CircuitPython  
 Raspberry Pi C/C++ SDK
 
-Materiales:
+#### Materiales
 
 MDF  
 Acrílico  
-PLA (Impresiones 3D)
+PLA (piezas impresas en 3D)
 
 <!-- Página 3 del PDF original -->
 
-Fuente de alimentación:
+#### Fuente de alimentación
 
-Eliminador 12V 2A mediante Jack.
+Eliminador de 12 V, 2 A con conector jack.
 
-Sensores:
+#### Sensores
 
 Sensor de flama KY-026  
 Sensor de lluvia FC-37  
 Sensor de temperatura y humedad AHT10  
-Sensor fotorresistor KY-018  
+Fotorresistor KY-018  
 Neopixel  
-RFID RC522 (con tarjeta y llavero)  
-IR HX1838  
+Lector RFID RC522 (con tarjeta y llavero)  
+Receptor infrarrojo HX1838  
 Botón capacitivo TTP223B  
 Encoder KY-040  
 Sensor de movimiento PIR HC-SR505
 
-Actuadores:
+#### Actuadores
 
 Servomotor SG90  
 Buzzer pasivo KY-006  
-Display Oled 0.96” SSD1306  
+Pantalla OLED 0.96” SSD1306  
 Motor DC (con hélice)
 
-Módulos y electrónica:
+#### Módulos y electrónica
 
 Tarjeta de desarrollo UNIT DualMCU ONE ESP32 + RP2040  
 Hub I2C QW/ST  
 Puente H MX1508  
-PCA9685  
+Controlador PWM PCA9685  
 Sensor Shield V5  
-Eliminador 12V 2A Jack
+Eliminador de 12 V, 2 A con conector jack
 
-Cables:
+#### Cables
 
 Qwiic a Qwiic  
 Qwiic a Dupont (M-H)  
-Dupont - Dupont (H-H)  
-Dupont - Dupont (H-M)  
-Dupont - Dupont (H-H Fijo 2 vías)
+Dupont a Dupont (H-H)  
+Dupont a Dupont (H-M)  
+Dupont a Dupont (H-H fijo de 2 vías)
 
 <!-- Página 4 del PDF original -->
 
-Dupont - Dupont (H-H Fijo 3 vías)
+Dupont a Dupont (H-H fijo de 3 vías)
 
-Tornillería:
+#### Tornillería
 
-M2x8  
-M2.5x8  
-M3x6  
-M3x8  
-M3x10  
-Separador de latón  
+Tornillos M2x8  
+Tornillos M2.5x8  
+Tornillos M3x6  
+Tornillos M3x8  
+Tornillos M3x10  
+Separadores de latón  
 Tuercas M2  
 Tuercas M2.5  
 Tuercas M3
 
-Herramientas recomendadas para el ensamble:
+#### Herramientas recomendadas para el ensamble (no incluidas)
 
 Desarmador plano  
 Desarmador de cruz  
-Pinzas de punta delgada o pinzas SMD (te serán útil al momento de cablear)  
+Pinzas de punta delgada o pinzas SMD (útiles para realizar el cableado)  
 Cautín
-
-Herramientas no incluidas
 
 <!-- Página 5 del PDF original -->
 
 ![Manual de usuario, página 5, imagen 3](assets/manual/image-003.png){width=3.3in}
-

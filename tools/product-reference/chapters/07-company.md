@@ -6,4 +6,4 @@
 | Sitio web | [uelectronics.com](https://uelectronics.com/) |
 | Plataforma | UNIT DevLab / Kit SmartHome |
 
-Para asistencia y actualizaciones de software, consulte el repositorio del producto en el capítulo 8.
+Para obtener asistencia y actualizaciones de software, consulta el repositorio del producto indicado en el capítulo 8.

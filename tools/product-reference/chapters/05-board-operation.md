@@ -3,19 +3,16 @@
 ### 5.1 Ensamble
 
 
-Objetivo:
+#### Objetivo
 
 
 <!-- Página 10 del PDF original -->
 
-Guiar al usuario en el ensamble de los componentes del Kit SmartHome, asegurando la correcta  
-instalación de la estructura como de la electrónica, así como conexiones de cables a los  
-módulos.
+Guiarte en el ensamble de los componentes del Kit SmartHome para instalar correctamente tanto la estructura como la electrónica y dejar conectados los cables de cada módulo.
 
-Resultado esperado:
+#### Resultado esperado
 
-Estructura de la casa ensamblada con la electrónica atornillada y cableado preparado para su  
-conexión con la shield.
+Estructura de la casa ensamblada, con la electrónica atornillada y el cableado listo para conectarse a la Shield.
 
 ![Manual de usuario, página 10, imagen 43](assets/manual/image-043.png){width=2.0in}
 
@@ -25,9 +22,9 @@ conexión con la shield.
 
 Vista frontal
 
-Vista lateral Derecha
+Vista lateral derecha
 
-Vista lateral Izquierda
+Vista lateral izquierda
 
 ![Manual de usuario, página 10, imagen 48](assets/manual/image-048.png){width=2.0in}
 
@@ -37,22 +34,21 @@ Vista lateral Izquierda
 
 Vista superior
 
-Vista Isométrica
+Vista isométrica
 
 Vista posterior
 
-Resultado final esperado terminada la sección Ensamble.
+Resultado esperado al terminar la sección de ensamble.
 
-Desarrollo:
+#### Desarrollo
 
-Recomendaciones:
+#### Recomendaciones
 
-Ubica todas las piezas del apartado previo al ensamble  
-Reúne las herramientas mencionadas en la introducción  
-Retira los cortes de MDF de su marco conforme se utilicen, con la intención de tener un  
-ensamble más organizado  
-Coloca la pila de botón CR2025 al control infrarrojo  
-Suelda los pines de los módulos previo a su ensamble
+Localiza todas las piezas indicadas en la lista de materiales.  
+Reúne las herramientas mencionadas en la introducción.  
+Retira los cortes de MDF de su marco conforme los vayas utilizando; así el ensamble será más ordenado.  
+Coloca la pila de botón CR2025 en el control infrarrojo.  
+Suelda los pines de los módulos antes de ensamblarlos.
 
 <!-- Página 11 del PDF original -->
 
@@ -60,47 +56,43 @@ Suelda los pines de los módulos previo a su ensamble
 
 ![Manual de usuario, página 11, imagen 50](assets/manual/image-050.png){width=2.0in}
 
-Pines en cara superior (1  
-módulo)
+Pines en la cara superior (1 módulo)
 
-Pines en cara posterior (2  
-módulos)
+Pines en la cara posterior (2 módulos)
 
-Pines módulos Neopixel
+Pines de los módulos Neopixel
 
 ![Manual de usuario, página 11, imagen 51](assets/manual/image-051.png){width=2.0in}
 
-Pines soldados Puente H
+Pines soldados del puente H
 
 ![Manual de usuario, página 11, imagen 52](assets/manual/image-052.png){width=2.0in}
 
-Pines soldados AHT10
+Pines soldados del AHT10
 
 ![Manual de usuario, página 11, imagen 53](assets/manual/image-053.png){width=2.0in}
 
-Pines soldados RC522
+Pines soldados del RC522
 
 <!-- Página 12 del PDF original -->
 
-Procedimiento de ensamble:
+#### Procedimiento de ensamble
 
-Ubicación de componentes de la sección  
-Ensamble de módulos  
-Cableado del módulo
+Ubicación de los componentes de la sección  
+Ensamble de los módulos  
+Cableado de los módulos
 
-Precaución: Una mala conexión puede provocar daño en los módulos
+Precaución: una conexión incorrecta puede dañar los módulos.
 
 #### Preparación
 
-Para evitar problemas de ensamble, se requiere energizar el servomotor para dejar la posición  
-inicial correcta. Sigue el siguiente diagrama y realiza las conexiones necesarias.
+Para evitar problemas durante el ensamble, primero energiza el servomotor para que quede en su posición inicial. Realiza las conexiones que se muestran en el siguiente diagrama.
 
-Nota: Es necesario montar la shield a la DualONE. En el diagrama se muestran separadas  
-para un mejor entendimiento.
+Nota: la Shield debe ir montada sobre la DualMCU ONE. En el diagrama se muestran por separado solo para facilitar su comprensión.
 
 ![Manual de usuario, página 12, imagen 54](assets/manual/image-054.png){width=3.3in}
 
-Conexi
+Conexión del servomotor para fijar su posición inicial
 
 #### Base (A)
 
@@ -116,14 +108,13 @@ Conexi
 
 ![Manual de usuario, página 13, imagen 59](assets/manual/image-059.png){width=1.1in}
 
-Brazo Servomotor
+Brazo del servomotor
 
-Regatones (4  
-pzs)
+Regatones (4 pzs)
 
 MDF - A
 
-Base Servomotor
+Base del servomotor
 
 Puerta
 
@@ -143,8 +134,7 @@ Pija M2.8
 
 M3x8 (4 pzs)
 
-Tornillo  
-Servomotor
+Tornillo del servomotor
 
 Servomotor
 
@@ -158,7 +148,7 @@ M2x8 (2 pzs)
 
 M3 (6 pzs)
 
-M2 (2pzs)
+M2 (2 pzs)
 
 ![Manual de usuario, página 13, imagen 68](assets/manual/image-068.png){width=3.3in}
 
@@ -166,9 +156,8 @@ M2 (2pzs)
 
 ![Manual de usuario, página 14, imagen 69](assets/manual/image-069.png){width=3.3in}
 
-MDF-A + 4x tornillos M3x8 + 4x tuercas M3 +  
-4x regatones  
-Repite el paso en las 4 esquinas.
+MDF-A + 4x tornillos M3x8 + 4x tuercas M3 + 4x regatones  
+Repite este paso en las 4 esquinas.
 
 ![Manual de usuario, página 14, imagen 70](assets/manual/image-070.png){width=3.3in}
 
@@ -176,9 +165,7 @@ Repite el paso en las 4 esquinas.
 
 ![Manual de usuario, página 15, imagen 71](assets/manual/image-071.png){width=3.3in}
 
-Puerta + Base servomotor + 2x tornillos M2x8 + 2x tuercas M2 +  
-tornillo y pija servomotor (estos últimos se ubican junto con el  
-servomotor)
+Puerta + base del servomotor + 2x tornillos M2x8 + 2x tuercas M2 + tornillo y pija del servomotor (estos dos últimos vienen junto con el servomotor)
 
 ![Manual de usuario, página 15, imagen 72](assets/manual/image-072.png){width=3.3in}
 
@@ -204,8 +191,7 @@ Ensamble 1.1
 
 ![Manual de usuario, página 16, imagen 79](assets/manual/image-079.png){width=1.1in}
 
-Impresión  
-anclaje J
+Impresión anclaje J
 
 M3x8 (4 pzs)
 
@@ -225,8 +211,7 @@ Acrílico inferior
 
 ![Manual de usuario, página 16, imagen 82](assets/manual/image-082.png){width=1.1in}
 
-Dupont fijo 3  
-vías
+Dupont fijo de 3 vías
 
 M2.5x8 (2 pzs)
 
@@ -234,8 +219,7 @@ M3x6 (2 pzs)
 
 M3 (6 pzs)
 
-M2.5 (2  
-pzs)
+M2.5 (2 pzs)
 
 <!-- Página 17 del PDF original -->
 
@@ -243,27 +227,23 @@ pzs)
 
 Neopixel
 
-Precaución: Cuida la polaridad de los Neopixel, una mala conexión puede quemar los  
-Neopixel.
+Precaución: cuida la polaridad de los Neopixel; una conexión invertida puede quemarlos.
 
 ![Manual de usuario, página 17, imagen 86](assets/manual/image-086.png){width=3.3in}
 
 ![Manual de usuario, página 17, imagen 87](assets/manual/image-087.png){width=3.3in}
 
-MDF-C + Acrílico Inferior + 2x tornillos M3x8 + 2x  
-tuercas M3
+MDF-C + acrílico inferior + 2x tornillos M3x8 + 2x tuercas M3
 
 <!-- Página 18 del PDF original -->
 
 ![Manual de usuario, página 18, imagen 88](assets/manual/image-088.png){width=3.3in}
 
-Impresión anclaje J + 2x tornillos M3x8 + 2x tuercas  
-M3
+Impresión anclaje J + 2x tornillos M3x8 + 2x tuercas M3
 
 ![Manual de usuario, página 18, imagen 89](assets/manual/image-089.png){width=2.0in}
 
-MDF-J + Neopixel + 2x tornillos M2.5 +  
-2x tuercas M2.5
+MDF-J + Neopixel + 2x tornillos M2.5x8 + 2x tuercas M2.5
 
 ![Manual de usuario, página 18, imagen 90](assets/manual/image-090.png){width=3.3in}
 
@@ -277,10 +257,10 @@ MDF-J + Neopixel + 2x tornillos M2.5 +
 
 ![Manual de usuario, página 19, imagen 93](assets/manual/image-093.png){width=3.3in}
 
-\+ Dupont fijo 3 vías  
+\+ Dupont fijo de 3 vías  
 Ensamble 1.2
 
-Conecta los cables por los espacios designados para agilizar el proceso
+Pasa los cables por los espacios designados para agilizar el proceso.
 
 #### Paredes (H) + Pared (I) + Base (G) + Ensamble 1.2
 
@@ -296,15 +276,13 @@ Conecta los cables por los espacios designados para agilizar el proceso
 
 ![Manual de usuario, página 20, imagen 98](assets/manual/image-098.png){width=1.1in}
 
-MDF - Llave (4  
-pzs)
+MDF - Llave (4 pzs)
 
 MDF - G
 
 MDF - I
 
-MDF - H  
-(2 pzs)
+MDF - H (2 pzs)
 
 Ensamble 1.2
 
@@ -320,8 +298,7 @@ M2x8 (4 pzs)
 
 M2 (4 pzs)
 
-Cable Qwiic a  
-Dupont
+Cable Qwiic a Dupont
 
 Pantalla OLED
 
@@ -345,7 +322,7 @@ Pantalla OLED + 4x tornillos M2x8 + 4x tuercas M2
 
 ![Manual de usuario, página 22, imagen 107](assets/manual/image-107.png){width=3.3in}
 
-\+ Cable Qwiic a dupont
+\+ Cable Qwiic a Dupont
 
 ![Manual de usuario, página 22, imagen 108](assets/manual/image-108.png){width=3.3in}
 
@@ -381,9 +358,7 @@ Buzzer
 
 MDF - D
 
-Sensor  
-de  
-flama
+Sensor de flama
 
 <!-- Página 24 del PDF original -->
 
@@ -397,56 +372,49 @@ flama
 
 ![Manual de usuario, página 24, imagen 121](assets/manual/image-121.png){width=1.1in}
 
-Dupont fijo 2  
-vías
+Dupont fijo de 2 vías
 
-Dupont fijo 3  
-vías
+Dupont fijo de 3 vías
 
 M2.5x8 (9 pzs)
 
-Dupont H-H (7  
-pzs)
+Dupont H-H (7 pzs)
 
-M2.5 (18  
-pzs)
+M2.5 (18 pzs)
 
 ![Manual de usuario, página 24, imagen 122](assets/manual/image-122.png){width=3.3in}
 
 ![Manual de usuario, página 24, imagen 123](assets/manual/image-123.png){width=3.3in}
 
-9 tornillos M2.5x8 + 18 tuercas M2.5 + Encoder + Lector RFID +  
-Buzzer + Sensor de flama
+9x tornillos M2.5x8 + 18x tuercas M2.5 + encoder + lector RFID + buzzer + sensor de flama
 
 <!-- Página 25 del PDF original -->
 
-Orden de ensamble. Tornillo, módulo, tuerca (funciona como separador y mantiene en su  
-lugar al módulo), MDF y tuerca.
+Orden de ensamble: tornillo, módulo, tuerca (funciona como separador y mantiene el módulo en su lugar), MDF y tuerca.
 
 ![Manual de usuario, página 25, imagen 124](assets/manual/image-124.png){width=3.3in}
 
-Imagen lateral MDF-D con módulos ensamblados
+Vista lateral del MDF-D con los módulos ensamblados
 
 <!-- Página 26 del PDF original -->
 
 ![Manual de usuario, página 26, imagen 125](assets/manual/image-125.png){width=3.3in}
 
-Coloca los cables correspondientes a los módulos + 3x Dupont fijo 3  
-vías + Dupont fijo 2 vías + 7x cables dupont H-H
+Conecta los cables de cada módulo: 3x Dupont fijo de 3 vías + 1x Dupont fijo de 2 vías + 7x cables Dupont H-H
 
-Encoder: Dupont fijo 3 vías + Dupont fijo 2 vías  
-Buzzer: Dupont fijo 3 vías  
-Flama: Dupont fijo 3 vías  
-RFID: 7 cables dupont H-H
+Encoder: Dupont fijo de 3 vías + Dupont fijo de 2 vías  
+Buzzer: Dupont fijo de 3 vías  
+Sensor de flama: Dupont fijo de 3 vías  
+RFID: 7 cables Dupont H-H
 
 <!-- Página 27 del PDF original -->
 
 ![Manual de usuario, página 27, imagen 126](assets/manual/image-126.png){width=3.3in}
 
-Ensamble MDF - D con módulos y cables, organizados.  
+MDF-D con los módulos y cables organizados  
 Ensamble 1.4
 
-#### Pared (D)
+#### Pared (E)
 
 ![Manual de usuario, página 27, imagen 127](assets/manual/image-127.png){width=1.1in}
 
@@ -464,11 +432,9 @@ PIR
 
 MDF - E
 
-Botón  
-Capacitivo
+Botón capacitivo
 
-Soporte  
-PIR
+Soporte PIR
 
 ![Manual de usuario, página 27, imagen 132](assets/manual/image-132.png){width=0.65in}
 
@@ -480,15 +446,13 @@ PIR
 
 ![Manual de usuario, página 27, imagen 136](assets/manual/image-136.png){width=1.1in}
 
-Dupont fijo 3  
-vías
+Dupont fijo de 3 vías
 
 M2x8 (4 pzs)
 
 M3 (2 pzs)
 
-Dupont H-H (3  
-pzs)
+Dupont H-H (3 pzs)
 
 M2 (8 pzs)
 
@@ -500,25 +464,25 @@ MDF-E
 
 ![Manual de usuario, página 28, imagen 138](assets/manual/image-138.png){width=3.3in}
 
-2x tornillos M3x8 + 2x tuercas M3 + Soporte PIR + PIR
+2x tornillos M3x8 + 2x tuercas M3 + soporte PIR + PIR
 
 <!-- Página 29 del PDF original -->
 
 ![Manual de usuario, página 29, imagen 139](assets/manual/image-139.png){width=3.3in}
 
-4x tornillos M2x8 + 8x tuercas M2 + Botón capacitivo
+4x tornillos M2x8 + 8x tuercas M2 + botón capacitivo
 
-Recuerda el orden correcto. Tornillo, módulo, tuerca, MDF, tuerca.
+Recuerda el orden correcto: tornillo, módulo, tuerca, MDF y tuerca.
 
 ![Manual de usuario, página 29, imagen 140](assets/manual/image-140.png){width=3.3in}
 
-3x Dupont H-H + Dupont fijo 3 vías  
+3x Dupont H-H + Dupont fijo de 3 vías  
 Ensamble 1.5
 
 <!-- Página 30 del PDF original -->
 
 PIR: 3x Dupont H-H  
-Botón Capacitivo: Dupont Fijo 3 vías
+Botón capacitivo: Dupont fijo de 3 vías
 
 #### Techo (F)
 
@@ -532,14 +496,11 @@ Botón Capacitivo: Dupont Fijo 3 vías
 
 ![Manual de usuario, página 30, imagen 143](assets/manual/image-143.png){width=0.65in}
 
-Sensor de  
-lluvia (2)
+Sensor de lluvia (2)
 
-Sensor de  
-lluvia (1)
+Sensor de lluvia (1)
 
-Fotorres  
-istor
+Fotorresistor
 
 Puente H
 
@@ -575,19 +536,17 @@ Sensor IR
 
 ![Manual de usuario, página 30, imagen 155](assets/manual/image-155.png){width=1.1in}
 
-Dupont fijo 3  
-vías (2 pzs)
+Dupont fijo de 3 vías (2 pzs)
 
 M2x8 (2 pzs)
 
-Dupont H-H (5  
-pzs)
+Dupont H-H (5 pzs)
 
 M2.5 (6 pzs)
 
 M2 (4 pzs)
 
-2 de los 5 cables Dupont H-H vienen embolsados con el sensor de lluvia.
+Dos de los cinco cables Dupont H-H vienen en la bolsa del sensor de lluvia.
 
 ![Manual de usuario, página 30, imagen 156](assets/manual/image-156.png){width=3.3in}
 
@@ -597,7 +556,7 @@ MDF-F
 
 ![Manual de usuario, página 31, imagen 157](assets/manual/image-157.png){width=3.3in}
 
-Sensor de lluvia (1) + 4x tornillos M3x8 + 4x tuerca M3
+Sensor de lluvia (1) + 4x tornillos M3x8 + 4x tuercas M3
 
 ![Manual de usuario, página 31, imagen 158](assets/manual/image-158.png){width=3.3in}
 
@@ -622,7 +581,7 @@ Puente H + tornillo M2.5x8 + 2x tuercas M2.5
 ![Manual de usuario, página 33, imagen 162](assets/manual/image-162.png){width=3.3in}
 
 \+ 2x Dupont H-H  
-Conecta las dos partes del sensor de lluvia
+Conecta las dos partes del sensor de lluvia.
 
 ![Manual de usuario, página 33, imagen 163](assets/manual/image-163.png){width=3.3in}
 
@@ -632,7 +591,7 @@ Conecta las dos partes del sensor de lluvia
 
 ![Manual de usuario, página 34, imagen 164](assets/manual/image-164.png){width=3.3in}
 
-2x Cables dupont fijo de 3 vías (Conectar Sensor IR y Fotorresitor)
+2x cables Dupont fijos de 3 vías (para el sensor IR y el fotorresistor)
 
 ![Manual de usuario, página 34, imagen 165](assets/manual/image-165.png){width=3.3in}
 
@@ -658,14 +617,13 @@ Ensamble 1.6
 
 PCA9685
 
-Hub I2C  
-QW/ST
+Hub I2C QW/ST
 
 Pared Q
 
-DualONE
+DualMCU ONE
 
-Sensor shield
+Sensor Shield
 
 ![Manual de usuario, página 35, imagen 174](assets/manual/image-174.png){width=1.1in}
 
@@ -679,8 +637,7 @@ Sensor shield
 
 M3x10 (2 pzs)
 
-Separador de  
-latón (4 pzs)
+Separador de latón (4 pzs)
 
 M3x6 (4 pzs)
 
@@ -696,14 +653,11 @@ M3 (8 pzs)
 
 ![Manual de usuario, página 35, imagen 180](assets/manual/image-180.png){width=1.1in}
 
-Cable Qwiic -  
-Qwiic
+Cable Qwiic - Qwiic
 
-Cable Dupont  
-M-H (2 pzs)
+Cable Dupont M-H (2 pzs)
 
-Cable Qwicc -  
-Dupont
+Cable Qwiic - Dupont
 
 M2.5 (8 pzs)
 
@@ -715,8 +669,7 @@ MDF-Q
 
 ![Manual de usuario, página 36, imagen 182](assets/manual/image-182.png){width=3.3in}
 
-Dual ONE + 4x Separadores de latón + 3x tornillos M3x6 + 4x  
-tuercas M3
+DualMCU ONE + 4x separadores de latón + 3x tornillos M3x6 + 4x tuercas M3
 
 ![Manual de usuario, página 36, imagen 183](assets/manual/image-183.png){width=3.3in}
 
@@ -732,12 +685,11 @@ PCA9685 + 4x tornillos M2.5x8 + 8x tuercas M2.5
 
 \+ Cable Qwiic - Qwiic
 
-Precaución: Conecta el cable Qwiic - Qwiic de la tarjeta de desarrollo DualONE al Hub I2C  
-previo a colocar el Sensor shield.
+Precaución: conecta el cable Qwiic - Qwiic entre la DualMCU ONE y el Hub I2C antes de colocar la Sensor Shield.
 
 ![Manual de usuario, página 37, imagen 186](assets/manual/image-186.png){width=3.3in}
 
-\+ Sensor shield  
+\+ Sensor Shield  
 Ensamble 1.7
 
 <!-- Página 38 del PDF original -->
@@ -768,7 +720,7 @@ Ensamble 1.5
 
 Ensamble 1.4
 
-Haremos uso de las secciones previamente ensambladas
+En este paso se unen las secciones ensambladas previamente.
 
 ![Manual de usuario, página 38, imagen 193](assets/manual/image-193.png){width=3.3in}
 
@@ -776,7 +728,7 @@ Ensamble 1.7
 
 ![Manual de usuario, página 38, imagen 194](assets/manual/image-194.png){width=3.3in}
 
-Ensamble 1.7 + Ensamble 4
+Ensamble 1.7 + Ensamble 1.4
 
 <!-- Página 39 del PDF original -->
 
@@ -792,7 +744,7 @@ Ensamble 1.7 + Ensamble 4
 
 \+ Ensamble 1.1
 
-Este paso requiere de fuerza en el ensamble, debido a que el Ensamble 1.1 entra a presión
+Este paso requiere aplicar algo de fuerza, ya que el Ensamble 1.1 entra a presión.
 
 <!-- Página 40 del PDF original -->
 
@@ -801,7 +753,7 @@ Este paso requiere de fuerza en el ensamble, debido a que el Ensamble 1.1 entra 
 \+ Ensamble 1.6  
 Resultado: Ensamble 1.8
 
-De ser necesario, al realizar las conexiones, podrás retirar el Ensamble 1.6
+Si lo necesitas, puedes retirar el Ensamble 1.6 mientras realizas las conexiones.
 
 #### Ensamble piso superior
 
@@ -835,11 +787,9 @@ MDF - M
 
 ![Manual de usuario, página 40, imagen 207](assets/manual/image-207.png){width=1.1in}
 
-Soporte Motor  
-DC
+Soporte del motor DC
 
-Acrílico  
-Superior
+Acrílico superior
 
 Motor DC
 
@@ -865,10 +815,7 @@ M3 (4 pzs)
 
 M2.5 (7 pzs)
 
-Sensor  
-Temperatur  
-a y  
-Humedad
+Sensor de temperatura y humedad
 
 ![Manual de usuario, página 40, imagen 214](assets/manual/image-214.png){width=1.1in}
 
@@ -878,44 +825,37 @@ Humedad
 
 ![Manual de usuario, página 40, imagen 215](assets/manual/image-215.png){width=1.1in}
 
-Dupont fijo 2  
-vías
+Dupont fijo de 2 vías
 
-Dupont fijo 3  
-vías
+Dupont fijo de 3 vías
 
 Dupont H-H (3)
 
-Cable Qwiic -  
-Qwiic
+Cable Qwiic - Qwiic
 
 <!-- Página 41 del PDF original -->
 
-Modelo de la Hélice puede cambiar.
+El modelo de la hélice puede variar.
 
 ![Manual de usuario, página 41, imagen 218](assets/manual/image-218.png){width=3.3in}
 
-MDF-O + Acrílico Superior + 2x tornillos M3x8 + 2x tuercas M3
+MDF-O + acrílico superior + 2x tornillos M3x8 + 2x tuercas M3
 
 ![Manual de usuario, página 41, imagen 219](assets/manual/image-219.png){width=3.3in}
 
-MDF-M + Sensor Temperatura y Humedad + tornillo  
-M2.5x8 + tuerca M2.5
+MDF-M + sensor de temperatura y humedad + tornillo M2.5x8 + tuerca M2.5
 
 <!-- Página 42 del PDF original -->
 
 ![Manual de usuario, página 42, imagen 220](assets/manual/image-220.png){width=2.0in}
 
-\+ Cable Qwiic-Dupont
+\+ Cable Qwiic - Dupont
 
 ![Manual de usuario, página 42, imagen 221](assets/manual/image-221.png){width=3.3in}
 
-MDF-P + 2x Neopixel + 4x tornillos M2.5 + 6x tuercas M2.5
+MDF-P + 2x Neopixel + 4x tornillos M2.5x8 + 6x tuercas M2.5
 
-Precaución: El Neopixel que apunta al exterior (donde está marcada la letra P) requiere 4  
-tuercas. Se recomienda ajustar los tornillos con cautela, en especial la tornillería del  
-Neopixel interior (el que se encuentra apuntando en sentido contrario a la cara con la letra  
-P) para evitar que el Neopixel se encuentre torcido.
+Precaución: el Neopixel que apunta hacia el exterior (la cara marcada con la letra P) requiere 4 tuercas. Aprieta los tornillos con cuidado, en especial los del Neopixel interior (el que apunta en sentido contrario a la cara con la letra P), para que no quede torcido.
 
 <!-- Página 43 del PDF original -->
 
@@ -925,26 +865,23 @@ Ensamble P
 
 ![Manual de usuario, página 43, imagen 223](assets/manual/image-223.png){width=3.3in}
 
-\+ Cable dupont fijo 3 vías
+\+ Cable Dupont fijo de 3 vías
 
 ![Manual de usuario, página 43, imagen 224](assets/manual/image-224.png){width=3.3in}
 
-\+ Cable dupont H-H
+\+ Cable Dupont H-H
 
 <!-- Página 44 del PDF original -->
 
 ![Manual de usuario, página 44, imagen 225](assets/manual/image-225.png){width=3.3in}
 
-MDF-N + 2x tornillos M3x8 + 2x tuercas M3 + Motor DC + Hélice +  
-Soporte Motor DC
+MDF-N + 2x tornillos M3x8 + 2x tuercas M3 + motor DC + hélice + soporte del motor DC
 
 ![Manual de usuario, página 44, imagen 226](assets/manual/image-226.png){width=3.3in}
 
-Referencia montaje motor
+Referencia para el montaje del motor
 
-Precaución: Verifique la correcta instalación de la pared N, la cara con la letra N es la cara  
-donde se coloca el motor. Asegúrate de colocar las conexiones del motor DC de tal forma  
-que no se dañen con el MDF.
+Precaución: verifica la orientación de la pared N; el motor se coloca en la cara marcada con la letra N. Acomoda los cables del motor DC de forma que el MDF no los dañe.
 
 <!-- Página 45 del PDF original -->
 
@@ -954,7 +891,7 @@ Ensamble N
 
 ![Manual de usuario, página 45, imagen 228](assets/manual/image-228.png){width=3.3in}
 
-Ensamble paredes piso superior
+Ensamble de las paredes del piso superior
 
 ![Manual de usuario, página 45, imagen 229](assets/manual/image-229.png){width=3.3in}
 
@@ -964,7 +901,7 @@ Paredes ensambladas
 
 ![Manual de usuario, página 46, imagen 230](assets/manual/image-230.png){width=3.3in}
 
-Ensamble techo piso superior
+Ensamble del techo del piso superior
 
 ![Manual de usuario, página 46, imagen 231](assets/manual/image-231.png){width=3.3in}
 
@@ -975,86 +912,77 @@ Ensamble 1.9
 
 
 
-Objetivo:
+#### Objetivo
 
-Activación funcional del Kit SmartHome mediante la instalación de la aplicación móvil oficial,  
-emparejamiento con la aplicación, correcta respuesta del kit. Esta sección convierten el  
-ensamble físico en un sistema inteligente operativo.
+Poner en funcionamiento el Kit SmartHome: instalar la aplicación móvil oficial, vincularla con el kit y comprobar que este responde correctamente. En esta sección el ensamble físico se convierte en un sistema inteligente operativo.
 
-Instalacion:
+#### Instalación
 
-Una vez descargado el archivo apk seleccionar el archivo, se mostrara el siguiente mensaje
+Una vez descargado el archivo APK, selecciónalo. Se mostrará el siguiente mensaje:
 
 ![Manual de usuario, página 69, imagen 280](assets/manual/image-280.png){width=2.0in}
 
-Al seleccionar Instalar se iniciara el proceso de instalacion en el dispositivo
+Al seleccionar “Instalar”, comenzará la instalación en el dispositivo.
 
-Al no ser una aplicacion nativa de Play Store se mostrara un mensaje de proteccion, se tendra  
-que seleccionar “Instalar de todas formas“
+Como la aplicación no proviene de Play Store, se mostrará un aviso de protección. Selecciona “Instalar de todas formas”.
 
 ![Manual de usuario, página 69, imagen 281](assets/manual/image-281.png){width=2.0in}
 
-Tras la instalación se podra encontrar el icono como una aplicacion mas en el sistema
+Al terminar la instalación, el ícono aparecerá junto con las demás aplicaciones del dispositivo.
 
 ![Manual de usuario, página 69, imagen 282](assets/manual/image-282.png){width=0.65in}
 
-Resultado esperado:
+#### Resultado esperado
 
 <!-- Página 70 del PDF original -->
 
-Aplicación funcional con visualización de la información recibida por los sensores y control de  
-los actuadores. Ejecución de eventos.
+Aplicación en funcionamiento que muestra la información de los sensores, permite controlar los actuadores y ejecuta eventos.
 
-Actualmente la aplicación solo está disponible para Android, descargando el.apk desde  
-nuestras fuentes oficiales.
+Por ahora, la aplicación solo está disponible para Android y se instala con el archivo APK de nuestras fuentes oficiales.
 
 ![Manual de usuario, página 70, imagen 283](assets/manual/image-283.jpg){width=3.3in}
 
 ![Manual de usuario, página 70, imagen 284](assets/manual/image-284.jpg){width=3.3in}
 
-Aplicación: Sensores
+Aplicación: sensores
 
-Aplicación: Control actuadores
+Aplicación: control de actuadores
 
 Vista de la aplicación
 
 ### 5.3 Carga de firmware
 
-El firmware viene previamente programado en la UNIT DualONE
+La UNIT DualMCU ONE viene con el firmware precargado.
 
-De ser necesaria la instalación del firmware sigue estos pasos.
+Si necesitas volver a instalarlo, sigue estos pasos.
 
 #### ESP32
 
-Debes tener Arduino IDE instalado en tu computadora.
+Requisito: tener Arduino IDE instalado en tu computadora.
 
 <!-- Página 71 del PDF original -->
 
-1. Descarga el archivo arduino-littlefs-upload-X.X.X.vsix del último release del repositorio de
-
-GitHub.
+1. Descarga el archivo arduino-littlefs-upload-X.X.X.vsix de la versión más reciente (release) de su repositorio en GitHub.
 
 ![Manual de usuario, página 71, imagen 285](assets/manual/image-285.png){width=3.3in}
 
-Última versión del archivo en Febrero de 2026
+Versión más reciente del archivo en febrero de 2026
 
-2. Dirígete al directorio de arduino de tu computadora: C:\\Users\\&lt;username&gt;\\.arduinoIDE\\.
+2. Abre el directorio de Arduino IDE en tu computadora: C:\\Users\\&lt;username&gt;\\.arduinoIDE\\.
 
 ![Manual de usuario, página 71, imagen 286](assets/manual/image-286.png){width=3.3in}
 
-Directorio Arduino
+Directorio de Arduino IDE
 
-3. Abre la carpeta plugins y pega el archivo descargado.
+3. Abre la carpeta plugins y pega ahí el archivo descargado.
 
-De no existir la carpeta, debes crear la carpeta plugins.
+Si la carpeta plugins no existe, créala.
 
 ![Manual de usuario, página 71, imagen 287](assets/manual/image-287.png){width=5.8in}
 
 Carpeta plugins
 
-4. Reinicia y abre el Arduino IDE. Utiliza el atajo \[Ctrl\] + \[Shift\] + \[P\] y verifica que exista la
-
-instrucción Upload Little FS to Pico/ESP8266/ESP32
+4. Cierra y vuelve a abrir Arduino IDE. Presiona \[Ctrl\] + \[Shift\] + \[P\] y verifica que aparezca el comando Upload LittleFS to Pico/ESP8266/ESP32.
 
 <!-- Página 72 del PDF original -->
 
@@ -1062,113 +990,96 @@ instrucción Upload Little FS to Pico/ESP8266/ESP32
 
 Verificación de la correcta instalación del plugin
 
-5. Descarga el repositorio del proyecto en GitHub. En la ubicación:
-
-\\software\\ESP32\\Smart_Home_App_ESP_COMV4 esta ubicado el programa.ino que se  
-deberá cargar a la ESP32. Abre el archivo Smart_Home_App_ESP_COMV4
+5. Descarga el repositorio del proyecto desde GitHub. El programa (.ino) que se carga en el ESP32 se encuentra en \\software\\ESP32\\Smart_Home_App_ESP_COMV4. Abre el archivo Smart_Home_App_ESP_COMV4.
 
 ![Manual de usuario, página 72, imagen 289](assets/manual/image-289.png){width=5.8in}
 
-Directorio programa ESP32
+Directorio del programa para el ESP32
 
-6. Sube la información a la ESP32 desde el IDE de Arduino conecta la DualONE con el monitor
-
-serial cerrado y el programa a cargar abierto, se presiona \[Ctrl\] + \[Shift\] + \[P\] y se selecciona  
-‘Upload Little FS to Pico/ESP8266/ESP32‘. Aparecerá la siguiente ventana.
+6. Carga los archivos de datos en el ESP32 desde Arduino IDE: conecta la DualMCU ONE, asegúrate de que el monitor serial esté cerrado y de que el programa esté abierto, presiona \[Ctrl\] + \[Shift\] + \[P\] y selecciona “Upload LittleFS to Pico/ESP8266/ESP32”. Aparecerá la siguiente ventana.
 
 <!-- Página 73 del PDF original -->
 
 ![Manual de usuario, página 73, imagen 290](assets/manual/image-290.png){width=5.8in}
 
-Ventana: KittleFS Upload
+Ventana: LittleFS Upload
 
-Nota: Una vez aparezca el mensaje “Connecting………” puede ser necesario presionar el  
-botón de boot de la DualONE si la carga no se hace en automático.
+Nota: cuando aparezca el mensaje “Connecting………”, si la carga no inicia automáticamente, presiona el botón BOOT de la DualMCU ONE.
 
-7. Espera a que se muestre el mensaje que confirme la correcta descarga de información.
+7. Espera el mensaje que confirma que la carga de los archivos terminó correctamente.
 
 ![Manual de usuario, página 73, imagen 291](assets/manual/image-291.png){width=5.8in}
 
 Mensaje de confirmación
 
-8. Carga el archivo.ino a la ESP32.
+8. Carga el archivo .ino en el ESP32.
 
-Nota: Te sugerimos revisar la Guía de inicio rápido, así como la Wiki y datasheet del  
-producto.
+Nota: te sugerimos consultar la guía de inicio rápido, la wiki y la hoja de datos del producto.
 
 #### RP2040
 
 <!-- Página 74 del PDF original -->
 
-Debes tener Arduino IDE instalado en tu computadora.
+Requisito: tener Arduino IDE instalado en tu computadora.
 
-1. Descarga el repositorio del proyecto en GitHub. En la ubicación:
-
-software\\RP2040\\Smart_Home_RP_V1 esta ubicado el programa.ino que se deberá cargar a  
-la RP2040. Smart_Home_RP_V1
+1. Descarga el repositorio del proyecto desde GitHub. El programa (.ino) que se carga en el RP2040 se encuentra en \\software\\RP2040\\Smart_Home_RP_V1. Abre el archivo Smart_Home_RP_V1.
 
 ![Manual de usuario, página 74, imagen 292](assets/manual/image-292.png){width=5.8in}
 
-Directorio programa RP2040
+Directorio del programa para el RP2040
 
-2. Carga el archivo.ino a la RP2040
+2. Carga el archivo .ino en el RP2040.
 
-Nota: Te sugerimos revisar la Guía de inicio rápido, así como la Wiki y datasheet del  
-producto.
+Nota: te sugerimos consultar la guía de inicio rápido, la wiki y la hoja de datos del producto.
 
 ### 5.4 Instalación de la app
 
-Actualmente la aplicación solo está disponible para Android, descargando el.apk desde  
-nuestras fuentes oficiales.
+Por ahora, la aplicación solo está disponible para Android y se instala con el archivo APK de nuestras fuentes oficiales.
 
-Dirígete al repositorio de GitHub, descarga el archivo.apk de la dirección:  
+En el repositorio de GitHub, el archivo APK se encuentra en:  
 \\unit_kit_smarthome\\software\\App
 
-Descarga el archivo.apk en tu dispositivo Android, aparecerá una ventana emergente  
-preguntando por la instalación.
+Descarga el archivo APK en tu dispositivo Android. Al abrirlo, aparecerá una ventana emergente que te pedirá confirmar la instalación.
 
 ![Manual de usuario, página 74, imagen 293](assets/manual/image-293.png){width=3.3in}
 
-Ventana emergente: Validar instalación de app
+Ventana emergente: confirmar la instalación de la app
 
-Presiona el botón “Instalar”
+Presiona el botón “Instalar”.
 
 <!-- Página 75 del PDF original -->
 
 ![Manual de usuario, página 75, imagen 294](assets/manual/image-294.png){width=3.3in}
 
-Ventana emergente: Instalación de app
+Ventana emergente: instalación de la app
 
-Google Play Proyect analizará la seguridad de la app. Presiona “Analizar app”
+Google Play Protect analizará la seguridad de la app. Presiona “Analizar app”.
 
 ![Manual de usuario, página 75, imagen 295](assets/manual/image-295.png){width=3.3in}
 
-Ventana emergente: Revisión App (Google Play  
-Protect)
+Ventana emergente: revisión de la app (Google Play Protect)
 
-Terminado el análisis, Google Play Protect avisará que la app es segura. Presiona “Instalar”
+Al terminar el análisis, Google Play Protect indicará que la app es segura. Presiona “Instalar”.
 
 <!-- Página 76 del PDF original -->
 
 ![Manual de usuario, página 76, imagen 296](assets/manual/image-296.png){width=3.3in}
 
-Ventana emergente: Validación de seguridad  
-de la App (Google Play Protect)
+Ventana emergente: validación de seguridad de la app (Google Play Protect)
 
-Regresaremos a la ventana emergente de instalación. Espera un momento en lo que finaliza la  
-instalación.
+Volverás a la ventana de instalación. Espera un momento mientras termina el proceso.
 
 ![Manual de usuario, página 76, imagen 297](assets/manual/image-297.png){width=3.3in}
 
-Ventana emergente: Continuación de instalación
+Ventana emergente: instalación en curso
 
-Terminada la aplicación aparecerá la siguiente ventana.
+Al terminar la instalación, aparecerá la siguiente ventana.
 
 ![Manual de usuario, página 76, imagen 298](assets/manual/image-298.png){width=3.3in}
 
-Ventana emergente: Finalización de instalación
+Ventana emergente: instalación finalizada
 
-Podrás visualizar la aplicación en tu dispositivo Android.
+La aplicación ya aparecerá en tu dispositivo Android.
 
 <!-- Página 77 del PDF original -->
 
@@ -1176,17 +1087,17 @@ Podrás visualizar la aplicación en tu dispositivo Android.
 
 Aplicación SmartHome instalada
 
-Al abrir la app, podrás dar clic al ícono de Ayuda para revisar las funciones de la aplicación.
+Al abrir la app, toca el ícono de Ayuda para conocer sus funciones.
 
 <!-- Página 78 del PDF original -->
 
 ![Manual de usuario, página 78, imagen 300](assets/manual/image-300.png){width=3.3in}
 
-Botón ayuda
+Botón de ayuda
 
 ### 5.5 Primera conexión
 
 ### 5.6 Uso de la app, lectura de sensores y actuadores
 
-### 5.7 Modo Offline
+### 5.7 Modo sin conexión (offline)
 

@@ -1,24 +1,20 @@
 ## 4. Conectores y conexiones
 
 
-Objetivo:
+### Objetivo
 
-Realizar la integración electrónica completa del kit, conectando los módulos previamente  
-ensamblados a la Shield, Hub I2C, PCA9685, Puente H y UNIT DualMCU ONE, considerando  
-conexiones de comunicación, alimentación, así como su polaridad.
+Completar la integración electrónica del kit conectando los módulos ya ensamblados a la Sensor Shield, al Hub I2C, al PCA9685, al puente H y a la UNIT DualMCU ONE, cuidando las conexiones de comunicación y de alimentación, así como su polaridad.
 
-Resultado esperado:
+### Resultado esperado
 
 
 <!-- Página 47 del PDF original -->
 
-Al finalizar esta sección el usuario deberá tener los sensores conectados al Shield, actuadores  
-conectados a PCA9685 y Puente H según corresponda, Bus I2C correctamente enlazado,  
-alimentación sin cortocircuitos.
+Al finalizar esta sección tendrás los sensores conectados a la Sensor Shield, los actuadores conectados al PCA9685 o al puente H según corresponda, el bus I2C correctamente enlazado y la alimentación libre de cortocircuitos.
 
 ![Manual de usuario, página 47, imagen 232](assets/manual/image-232.png){width=3.3in}
 
-Ilustración del ensamble al terminar las conexiones
+Ensamble con todas las conexiones terminadas
 
 ### 4.1 Conexiones paso a paso
 
@@ -30,7 +26,7 @@ Ilustración del ensamble al terminar las conexiones
 
 Encoder - Shield
 
-Precaución: Una mala conexión puede provocar daños en los módulos.
+Precaución: una conexión incorrecta puede dañar los módulos.
 
 <!-- Página 49 del PDF original -->
 
@@ -54,7 +50,7 @@ RFID - Shield
 
 ![Manual de usuario, página 51, imagen 240](assets/manual/image-240.png){width=3.3in}
 
-Sensor de llama - Shield
+Sensor de flama - Shield
 
 <!-- Página 52 del PDF original -->
 
@@ -100,8 +96,7 @@ Pantalla OLED - Hub I2C
 
 Pantalla OLED - Hub I2C
 
-El Hub I2C no tiene una posición designada, puedes conectar los cables en cualquiera de  
-las posiciones.
+Los puertos del Hub I2C no tienen una posición asignada; puedes conectar los cables en cualquiera de ellos.
 
 <!-- Página 56 del PDF original -->
 
@@ -113,7 +108,7 @@ Coloca el Ensamble 1.6 para continuar.
 
 ![Manual de usuario, página 56, imagen 254](assets/manual/image-254.png){width=3.3in}
 
-Ensamble 1.8 + 4x MDF-Llaves
+Ensamble 1.8 + 4x MDF-Llave
 
 ![Manual de usuario, página 56, imagen 255](assets/manual/image-255.png){width=3.3in}
 
@@ -141,23 +136,23 @@ Fotorresistor - Shield
 
 ![Manual de usuario, página 59, imagen 261](assets/manual/image-261.png){width=3.3in}
 
-Sensor Temperatura y Humedad - Hub I2C
+Sensor de temperatura y humedad - Hub I2C
 
 ![Manual de usuario, página 59, imagen 262](assets/manual/image-262.png){width=3.3in}
 
-Sensor Temperatura y Humedad - Hub I2C
+Sensor de temperatura y humedad - Hub I2C
 
 <!-- Página 60 del PDF original -->
 
 ![Manual de usuario, página 60, imagen 263](assets/manual/image-263.png){width=3.3in}
 
-Sensor Temperatura y Humedad - Hub I2C
+Sensor de temperatura y humedad - Hub I2C
 
 ![Manual de usuario, página 60, imagen 264](assets/manual/image-264.png){width=3.3in}
 
 Ensamble 1.9
 
-Coloca el Ensamble 1.9 para continuar
+Coloca el Ensamble 1.9 para continuar.
 
 <!-- Página 61 del PDF original -->
 
@@ -183,7 +178,7 @@ Motor DC - Puente H
 
 ![Manual de usuario, página 63, imagen 270](assets/manual/image-270.png){width=3.3in}
 
-(Puente H - PCA9685) + 2x cable dupont fijo 2 vías
+(Puente H - PCA9685) + 2x cable Dupont fijo de 2 vías
 
 ### 4.2 Ensamble final
 
@@ -191,7 +186,7 @@ Motor DC - Puente H
 
 ![Manual de usuario, página 64, imagen 271](assets/manual/image-271.png){width=3.3in}
 
-\+ 4x MDF - Llaves
+\+ 4x MDF-Llave
 
 ![Manual de usuario, página 64, imagen 272](assets/manual/image-272.png){width=3.3in}
 
@@ -201,11 +196,11 @@ Motor DC - Puente H
 
 ![Manual de usuario, página 65, imagen 273](assets/manual/image-273.png){width=3.3in}
 
-\+ 2x MDF-Llaves
+\+ 2x MDF-Llave
 
 ![Manual de usuario, página 65, imagen 274](assets/manual/image-274.png){width=3.3in}
 
-Ensamble Final
+Ensamble final
 
 ### 4.3 Diagramas de conexión
 
@@ -215,28 +210,25 @@ Ensamble Final
 
 ![Manual de usuario, página 66, imagen 275](assets/manual/image-275.png){width=5.8in}
 
-Diagrama Shield simplificado (1)
+Diagrama simplificado de la Shield (1)
 
 <!-- Página 67 del PDF original -->
 
 ![Manual de usuario, página 67, imagen 276](assets/manual/image-276.png){width=5.8in}
 
-Diagrama Shield simplificado (2)
+Diagrama simplificado de la Shield (2)
 
-Diagrama de las conexiones simplificadas de los sensores y actuadores conectados  
-directamente a la Shield; este diagrama muestra la fila de pines a la que se debe conectar cada  
-sensor y actuador considerando alimentación y comunicación.
+Estos diagramas resumen las conexiones de los sensores y actuadores que van directamente a la Shield. Indican la fila de pines que corresponde a cada módulo, tanto para la alimentación como para la señal de comunicación.
 
-Precaución: Previo a energizar, corrobore la correcta conexión de los componentes  
-electrónicos.
+Precaución: antes de energizar, verifica que todos los componentes electrónicos estén conectados correctamente.
 
-#### 4.3.2 Diagrama DualONE, Hub I2C y PCA9685
+#### 4.3.2 Diagrama DualMCU ONE, Hub I2C y PCA9685
 
 <!-- Página 68 del PDF original -->
 
 ![Manual de usuario, página 68, imagen 277](assets/manual/image-277.png){width=5.8in}
 
-Diagrama DualONE, Hub I2C y PCA9685
+Diagrama DualMCU ONE, Hub I2C y PCA9685
 
 #### 4.3.3 Diagrama completo
 
@@ -250,5 +242,4 @@ Diagrama completo (2)
 
 <!-- Página 69 del PDF original -->
 
-Este diagrama muestra todas las conexiones a realizar.
-
+Estos diagramas muestran todas las conexiones que debes realizar.
