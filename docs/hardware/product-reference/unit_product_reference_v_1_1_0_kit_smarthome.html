@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Pandoc">
-  <title>UNIT Kit SmartHome — Product Reference</title>
+  <title>Kit SmartHome — Product Reference</title>
     <link rel="stylesheet" href="product-reference.css">
   </head>
 <body>
@@ -15,8 +15,8 @@
     </div>
 
     <div class="cover__identity">
-      <p class="cover__eyebrow">KIT DIDÁCTICO UNIT ELECTRONICS</p>
-      <h1>UNIT Kit SmartHome</h1>
+      <p class="cover__eyebrow">KIT SMARTHOME</p>
+      <h1>Kit SmartHome</h1>
       <p class="cover__part">MPN: AR4623</p>
       <p class="cover__version">Version 1.1.0</p>
     </div>
@@ -30,8 +30,8 @@
 
     <div class="cover__summary">
       <p>
-        Casa didáctica con UNIT DualMCU ONE, sensores, actuadores,
-        comunicación I²C y control mediante aplicación Android.
+        Kit SmartHome con UNIT DualMCU ONE, sensores, actuadores,
+        comunicación I²C y aplicación móvil Android.
       </p>
       <div class="cover__tags">
         <span>ESP32 + RP2040</span>
@@ -100,19 +100,18 @@
     <li><a href="#datos-por-confirmar"
     id="toc-datos-por-confirmar">Datos por confirmar</a></li>
     </ul></li>
-    <li><a href="#atlas-de-imágenes-del-manual"
-    id="toc-atlas-de-imágenes-del-manual">10. Atlas de imágenes del
-    manual</a>
+    <li><a href="#manual-de-usuario-migrado"
+    id="toc-manual-de-usuario-migrado">Manual de usuario migrado</a>
     <ul>
-    <li><a href="#vistas-e-inventario"
-    id="toc-vistas-e-inventario">Vistas e inventario</a></li>
-    <li><a href="#ensamble-mecánico-y-electrónico"
-    id="toc-ensamble-mecánico-y-electrónico">Ensamble mecánico y
-    electrónico</a></li>
-    <li><a href="#cableado-y-diagramas"
-    id="toc-cableado-y-diagramas">Cableado y diagramas</a></li>
-    <li><a href="#firmware-y-aplicación"
-    id="toc-firmware-y-aplicación">Firmware y aplicación</a></li>
+    <li><a href="#presentación-componentes-e-inventario"
+    id="toc-presentación-componentes-e-inventario">Presentación,
+    componentes e inventario</a></li>
+    <li><a href="#ensamble" id="toc-ensamble">Ensamble</a></li>
+    <li><a href="#conexiones-y-ensamble-final"
+    id="toc-conexiones-y-ensamble-final">Conexiones y ensamble
+    final</a></li>
+    <li><a href="#puesta-en-marcha" id="toc-puesta-en-marcha">Puesta en
+    marcha</a></li>
     <li><a href="#recursos-y-dimensiones"
     id="toc-recursos-y-dimensiones">Recursos y dimensiones</a></li>
     </ul></li>
@@ -121,16 +120,13 @@
   
   <article class="product-reference-content">
     <h2 id="descripción">Descripción</h2>
-    <p>El <strong>Kit SmartHome de UNIT Electronics</strong> (AR4623) es
-    una casa didáctica para aprender ensamble, electrónica y
-    programación. La tarjeta <strong>UNIT DualMCU ONE</strong> combina
-    ESP32 y RP2040; el kit añade sensores, actuadores, comunicación I²C
-    y una aplicación móvil para Android. Esta referencia resume el
-    manual de usuario <strong>V1.1.0 del 16 de febrero de 2026</strong>.
-    Para el montaje paso a paso y la orientación de cada cable, consulte
-    el <a
-    href="assets/I2D-Manual%20de%20usuario%20-%20Kit%20SmartHome-280926-171843.pdf">manual
-    completo</a>.</p>
+    <p>El <strong>Kit SmartHome</strong> (AR4623) de UNIT Electronics
+    integra la tarjeta <strong>UNIT DualMCU ONE</strong> con ESP32 y
+    RP2040, sensores, actuadores, comunicación I²C y una aplicación
+    móvil. Este Product Reference incorpora el contenido del manual de
+    usuario <strong>V1.1.0 del 16 de febrero de 2026</strong>, incluidos
+    el texto de ensamble, las conexiones, la puesta en marcha y sus
+    figuras. La migración completa se encuentra en el capítulo 10.</p>
     <figure>
     <img src="assets/manual/image-002.png" style="width:4.3in"
     alt="Kit SmartHome ensamblado, vista isométrica" />
@@ -183,10 +179,11 @@
     </tr>
     </tbody>
     </table>
-    <p><strong>Alcance.</strong> Esta hoja es una referencia rápida del
-    kit. Las imágenes extraídas del PDF original están disponibles en la
-    <a href="manual-figures.html">galería local de figuras</a>,
-    organizada por página del manual.</p>
+    <p>Los capítulos 1 a 9 facilitan la consulta por tema. El capítulo
+    10 conserva el contenido del manual en orden de página, con el texto
+    y las ilustraciones intercalados. La <a
+    href="manual-figures.html">galería de figuras</a> permite abrir cada
+    imagen por separado.</p>
     <h2 id="contenido-del-kit">1. Contenido del kit</h2>
     <p>La lista siguiente conserva las cantidades indicadas en el manual
     V1.1.0. Antes del ensamble, clasifique las piezas y compruebe que
@@ -526,10 +523,10 @@
     <figcaption aria-hidden="true">Ensamble final de la
     casa</figcaption>
     </figure>
-    <p>El manual de 80 páginas conserva las vistas y la posición de cada
-    tornillo. Para pasos con orientación difícil, como el Neopixel de la
-    pared P y el motor en la pared N, consulte su <a
-    href="manual-figures.html">galería de figuras</a>.</p>
+    <p>El capítulo 10 incluye todas las páginas del manual migradas a
+    esta referencia, con las vistas y la posición de cada tornillo.
+    También puede abrir cada figura desde la <a
+    href="manual-figures.html">galería de imágenes</a>.</p>
     <h3 id="firmware">5.2 Firmware</h3>
     <p>La DualMCU ONE se entrega con firmware pregrabado. Si requiere
     reinstalarlo, abra en Arduino IDE los programas del repositorio:</p>
@@ -658,33 +655,37 @@
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Manual de usuario V1.1.0, PDF original</td>
+    <td>Documento fuente V1.1.0</td>
     <td><a
-    href="assets/I2D-Manual%20de%20usuario%20-%20Kit%20SmartHome-280926-171843.pdf">Descargar
-    manual PDF</a></td>
+    href="assets/I2D-Manual%20de%20usuario%20-%20Kit%20SmartHome-280926-171843.pdf">PDF
+    original</a></td>
     </tr>
     <tr class="even">
+    <td>Manual migrado dentro de esta referencia</td>
+    <td>Capítulo 10, «Manual de usuario migrado»</td>
+    </tr>
+    <tr class="odd">
     <td>Figuras del manual extraídas localmente</td>
     <td><a href="manual-figures.html">Galería de figuras</a></td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
     <td>Repositorio del producto</td>
     <td><a
     href="https://github.com/UNIT-Electronics-MX/unit_kit_smarthome">UNIT-Electronics-MX/unit_kit_smarthome</a></td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
     <td>Firmware ESP32</td>
     <td><code>software/ESP32/Smart_Home_App_ESP_COMV4/</code></td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
     <td>Firmware RP2040</td>
     <td><code>software/RP2040/Smart_Home_RP_V1/</code></td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
     <td>Aplicación Android</td>
     <td><code>software/App/smartHomeApp.apk</code></td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
     <td>Arduino IDE</td>
     <td><a href="https://docs.arduino.cc/software/ide/">Documentación
     oficial</a></td>
@@ -751,18 +752,16 @@
     numérico completo en texto; para el cableado se deben usar los
     diagramas visuales del manual.</li>
     </ul>
-    <h2 id="atlas-de-imágenes-del-manual">10. Atlas de imágenes del
-    manual</h2>
-    <p>Las 302 imágenes del manual se reproducen a continuación en el
-    orden de sus páginas originales. Las figuras principales también
-    aparecen a mayor tamaño en los capítulos anteriores. Abra la <a
-    href="manual-figures.html">galería de figuras</a> para consultar
-    cada archivo por separado.</p>
-    <p>El PDF contiene además 2 máscaras de transparencia; se conservan
-    en <code>assets/manual/</code> pero no son ilustraciones
-    independientes.</p>
-    <h3 id="vistas-e-inventario">Vistas e inventario</h3>
+    <h2 id="manual-de-usuario-migrado">Manual de usuario migrado</h2>
+    <p>Contenido del manual V1.1.0 incorporado en esta referencia. El
+    texto y las ilustraciones aparecen por página de origen; los saltos
+    de línea y las tablas se adaptaron a Markdown para consulta en la
+    web.</p>
+    <h3 id="presentación-componentes-e-inventario">Presentación,
+    componentes e inventario</h3>
     <h4 id="página-1-del-manual">Página 1 del manual</h4>
+    <p>Manual de usuario - Kit SmartHome</p>
+    <p>Manual de usuario</p>
     <figure>
     <img src="assets/manual/image-000.png" style="width:3.3in"
     alt="Manual de usuario, página 1, imagen 0" />
@@ -775,6 +774,129 @@
     <figcaption aria-hidden="true">Manual de usuario, página 1, imagen
     2</figcaption>
     </figure>
+    <p>Área: I2D</p>
+    <p>Producto: AR4623 - Kit SmartHome</p>
+    <p>Versión: 1.1.0</p>
+    <p>Fecha: 16/02/2026</p>
+    <p>Autores: Juan Luis Ballesteros, José Carlos Serrato</p>
+    <p>Tiempo estimado de lectura: 12 minutos</p>
+    <p>Tiempo estimado de ensamble: 4 horas</p>
+    <h4 id="página-2-del-manual">Página 2 del manual</h4>
+    <p>Tiempo estimado de puesta en funcionamiento: 1 hora</p>
+    <p>Control de versiones</p>
+    <table>
+    <colgroup>
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Versión</th>
+    <th>Fecha</th>
+    <th>Nombre</th>
+    <th>Cambios realizados</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>V1.1.0</td>
+    <td>16/02/2026</td>
+    <td>José Serrato</td>
+    <td>Cambio de motor, mejora de ensamble (electrónica y espacio
+    asignado) y plantillas de corte mejoradas.</td>
+    </tr>
+    <tr class="even">
+    <td>V1.0.1</td>
+    <td>—</td>
+    <td>José Serrato</td>
+    <td>Corrección de puentes en corte láser.</td>
+    </tr>
+    <tr class="odd">
+    <td>V1.0.0</td>
+    <td>—</td>
+    <td>José Serrato</td>
+    <td>Creación del proyecto, primer borrador.</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Introducción<br />
+    El Kit SmartHome de UNIT Electronics es una plataforma didáctica
+    diseñada para el aprendizaje<br />
+    práctica de electrónica y programación mediante la construcción de
+    una casa inteligente<br />
+    funcional.</p>
+    <p>El usuario ensamblará piezas mecánicas, integrará electrónica
+    modular, hará uso del control<br />
+    PWM, el protocolo de comunicación I2C y realizará lectura de
+    sensores tanto digitales como<br />
+    analógicos, todo con apoyo de una aplicación móvil.</p>
+    <p>El kit integra múltiples sensores y actuadores, controlados por
+    la tarjeta de desarrollo UNIT<br />
+    DualMCU ONE, que incorpora los microcontroladores:</p>
+    <p>ESP32<br />
+    RP2040</p>
+    <p>La UNIT DualMCU ONE permite trabajar con:</p>
+    <p>Arduino IDE<br />
+    MicroPython<br />
+    CircuitPython<br />
+    Raspberry Pi C/C++ SDK</p>
+    <p>Materiales:</p>
+    <p>MDF<br />
+    Acrílico<br />
+    PLA (Impresiones 3D)</p>
+    <h4 id="página-3-del-manual">Página 3 del manual</h4>
+    <p>Fuente de alimentación:</p>
+    <p>Eliminador 12V 2A mediante Jack.</p>
+    <p>Sensores:</p>
+    <p>Sensor de flama KY-026<br />
+    Sensor de lluvia FC-37<br />
+    Sensor de temperatura y humedad AHT10<br />
+    Sensor fotorresistor KY-018<br />
+    Neopixel<br />
+    RFID RC522 (con tarjeta y llavero)<br />
+    IR HX1838<br />
+    Botón capacitivo TTP223B<br />
+    Encoder KY-040<br />
+    Sensor de movimiento PIR HC-SR505</p>
+    <p>Actuadores:</p>
+    <p>Servomotor SG90<br />
+    Buzzer pasivo KY-006<br />
+    Display Oled 0.96” SSD1306<br />
+    Motor DC (con hélice)</p>
+    <p>Módulos y electrónica:</p>
+    <p>Tarjeta de desarrollo UNIT DualMCU ONE ESP32 + RP2040<br />
+    Hub I2C QW/ST<br />
+    Puente H MX1508<br />
+    PCA9685<br />
+    Sensor Shield V5<br />
+    Eliminador 12V 2A Jack</p>
+    <p>Cables:</p>
+    <p>Qwiic a Qwiic<br />
+    Qwiic a Dupont (M-H)<br />
+    Dupont - Dupont (H-H)<br />
+    Dupont - Dupont (H-M)<br />
+    Dupont - Dupont (H-H Fijo 2 vías)</p>
+    <h4 id="página-4-del-manual">Página 4 del manual</h4>
+    <p>Dupont - Dupont (H-H Fijo 3 vías)</p>
+    <p>Tornillería:</p>
+    <p>M2x8<br />
+    M2.5x8<br />
+    M3x6<br />
+    M3x8<br />
+    M3x10<br />
+    Separador de latón<br />
+    Tuercas M2<br />
+    Tuercas M2.5<br />
+    Tuercas M3</p>
+    <p>Herramientas recomendadas para el ensamble:</p>
+    <p>Desarmador plano<br />
+    Desarmador de cruz<br />
+    Pinzas de punta delgada o pinzas SMD (te serán útil al momento de
+    cablear)<br />
+    Cautín</p>
+    <p>Herramientas no incluidas</p>
     <h4 id="página-5-del-manual">Página 5 del manual</h4>
     <figure>
     <img src="assets/manual/image-003.png" style="width:3.3in"
@@ -782,245 +904,387 @@
     <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
     3</figcaption>
     </figure>
-    <figure>
-    <img src="assets/manual/image-004.png" style="width:0.65in"
-    alt="Manual de usuario, página 5, imagen 4" />
-    <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
-    4</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-005.png" style="width:0.65in"
-    alt="Manual de usuario, página 5, imagen 5" />
-    <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
-    5</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-006.png" style="width:0.65in"
-    alt="Manual de usuario, página 5, imagen 6" />
-    <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
-    6</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-007.png" style="width:0.65in"
-    alt="Manual de usuario, página 5, imagen 7" />
-    <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
-    7</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-008.png" style="width:0.65in"
-    alt="Manual de usuario, página 5, imagen 8" />
-    <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
-    8</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-009.png" style="width:0.65in"
-    alt="Manual de usuario, página 5, imagen 9" />
-    <figcaption aria-hidden="true">Manual de usuario, página 5, imagen
-    9</figcaption>
-    </figure>
+    <p>Lista de materiales</p>
+    <table>
+    <colgroup>
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 30%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Folio</th>
+    <th>Descripción</th>
+    <th>Imagen</th>
+    <th style="text-align: right;">Cantidad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>KSH01</td>
+    <td>M2x8 queso ranurada</td>
+    <td><img src="assets/manual/image-004.png" style="width:0.7in"
+    alt="KSH01: M2x8 queso ranurada" /></td>
+    <td style="text-align: right;">12</td>
+    </tr>
+    <tr class="even">
+    <td>KSH02</td>
+    <td>M2.5x8 queso ranurada</td>
+    <td><img src="assets/manual/image-005.png" style="width:0.7in"
+    alt="KSH02: M2.5x8 queso ranurada" /></td>
+    <td style="text-align: right;">23</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH03</td>
+    <td>M3x6 queso ranurada</td>
+    <td><img src="assets/manual/image-006.png" style="width:0.7in"
+    alt="KSH03: M3x6 queso ranurada" /></td>
+    <td style="text-align: right;">6</td>
+    </tr>
+    <tr class="even">
+    <td>KSH04</td>
+    <td>M3x8 queso ranurada</td>
+    <td><img src="assets/manual/image-007.png" style="width:0.7in"
+    alt="KSH04: M3x8 queso ranurada" /></td>
+    <td style="text-align: right;">18</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH05</td>
+    <td>M3x10 queso ranurada</td>
+    <td><img src="assets/manual/image-008.png" style="width:0.7in"
+    alt="KSH05: M3x10 queso ranurada" /></td>
+    <td style="text-align: right;">5</td>
+    </tr>
+    <tr class="even">
+    <td>KSH06</td>
+    <td>M3x5+6 separador latón</td>
+    <td><img src="assets/manual/image-009.png" style="width:0.7in"
+    alt="KSH06: M3x5+6 separador latón" /></td>
+    <td style="text-align: right;">4</td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="página-6-del-manual">Página 6 del manual</h4>
-    <figure>
-    <img src="assets/manual/image-010.png" style="width:0.65in"
-    alt="Manual de usuario, página 6, imagen 10" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    10</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-011.png" style="width:0.65in"
-    alt="Manual de usuario, página 6, imagen 11" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    11</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-012.png" style="width:0.65in"
-    alt="Manual de usuario, página 6, imagen 12" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    12</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-013.png" style="width:1.1in"
-    alt="Manual de usuario, página 6, imagen 13" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    13</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-014.png" style="width:1.1in"
-    alt="Manual de usuario, página 6, imagen 14" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    14</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-015.png" style="width:1.1in"
-    alt="Manual de usuario, página 6, imagen 15" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    15</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-016.png" style="width:1.1in"
-    alt="Manual de usuario, página 6, imagen 16" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    16</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-017.png" style="width:1.1in"
-    alt="Manual de usuario, página 6, imagen 17" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    17</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-018.png" style="width:1.1in"
-    alt="Manual de usuario, página 6, imagen 18" />
-    <figcaption aria-hidden="true">Manual de usuario, página 6, imagen
-    18</figcaption>
-    </figure>
+    <table>
+    <colgroup>
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 30%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Folio</th>
+    <th>Descripción</th>
+    <th>Imagen</th>
+    <th style="text-align: right;">Cantidad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>KSH07</td>
+    <td>M2 tuerca</td>
+    <td><img src="assets/manual/image-010.png" style="width:0.7in"
+    alt="KSH07: M2 tuerca" /></td>
+    <td style="text-align: right;">16</td>
+    </tr>
+    <tr class="even">
+    <td>KSH08</td>
+    <td>M2.5 tuerca</td>
+    <td><img src="assets/manual/image-011.png" style="width:0.7in"
+    alt="KSH08: M2.5 tuerca" /></td>
+    <td style="text-align: right;">41</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH09</td>
+    <td>M3 tuerca</td>
+    <td><img src="assets/manual/image-012.png" style="width:0.7in"
+    alt="KSH09: M3 tuerca" /></td>
+    <td style="text-align: right;">33</td>
+    </tr>
+    <tr class="even">
+    <td>KSH10</td>
+    <td>UNIT DualMCU ONE</td>
+    <td><img src="assets/manual/image-013.png" style="width:0.7in"
+    alt="KSH10: UNIT DualMCU ONE" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH11</td>
+    <td>SG90 Servomotor</td>
+    <td><img src="assets/manual/image-014.png" style="width:0.7in"
+    alt="KSH11: SG90 Servomotor" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH12</td>
+    <td>KY-006 Buzzer</td>
+    <td><img src="assets/manual/image-015.png" style="width:0.7in"
+    alt="KSH12: KY-006 Buzzer" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH13</td>
+    <td>KY-026 Sensor de flama</td>
+    <td><img src="assets/manual/image-016.png" style="width:0.7in"
+    alt="KSH13: KY-026 Sensor de flama" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH14</td>
+    <td>FC-37 Sensor de lluvia</td>
+    <td><img src="assets/manual/image-017.png" style="width:0.7in"
+    alt="KSH14: FC-37 Sensor de lluvia" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH15</td>
+    <td>AHT10 Sensor de temperatura y humedad</td>
+    <td><img src="assets/manual/image-018.png" style="width:0.7in"
+    alt="KSH15: AHT10 Sensor de temperatura y humedad" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="página-7-del-manual">Página 7 del manual</h4>
-    <figure>
-    <img src="assets/manual/image-019.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 19" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    19</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-020.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 20" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    20</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-021.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 21" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    21</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-022.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 22" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    22</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-023.png" style="width:0.65in"
-    alt="Manual de usuario, página 7, imagen 23" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    23</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-024.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 24" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    24</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-025.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 25" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    25</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-026.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 26" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    26</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-027.png" style="width:0.65in"
-    alt="Manual de usuario, página 7, imagen 27" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    27</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-028.png" style="width:1.1in"
-    alt="Manual de usuario, página 7, imagen 28" />
-    <figcaption aria-hidden="true">Manual de usuario, página 7, imagen
-    28</figcaption>
-    </figure>
+    <table>
+    <colgroup>
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 30%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Folio</th>
+    <th>Descripción</th>
+    <th>Imagen</th>
+    <th style="text-align: right;">Cantidad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>KSH16</td>
+    <td>SSD1315 Pantalla OLED</td>
+    <td><img src="assets/manual/image-019.png" style="width:0.7in"
+    alt="KSH16: SSD1315 Pantalla OLED" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH17</td>
+    <td>KY-018 Fotorresistor</td>
+    <td><img src="assets/manual/image-020.png" style="width:0.7in"
+    alt="KSH17: KY-018 Fotorresistor" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH18</td>
+    <td>WS2812 Neopixel</td>
+    <td><img src="assets/manual/image-021.png" style="width:0.7in"
+    alt="KSH18: WS2812 Neopixel" /></td>
+    <td style="text-align: right;">3</td>
+    </tr>
+    <tr class="even">
+    <td>KSH19</td>
+    <td>RC522 Sensor RFID</td>
+    <td><img src="assets/manual/image-022.png" style="width:0.7in"
+    alt="KSH19: RC522 Sensor RFID" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH20</td>
+    <td>HX1838 Sensor IR</td>
+    <td><img src="assets/manual/image-023.png" style="width:0.7in"
+    alt="KSH20: HX1838 Sensor IR" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH21</td>
+    <td>TTP223B Botón Capacitivo</td>
+    <td><img src="assets/manual/image-024.png" style="width:0.7in"
+    alt="KSH21: TTP223B Botón Capacitivo" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH22</td>
+    <td>KY-040 Encoder</td>
+    <td><img src="assets/manual/image-025.png" style="width:0.7in"
+    alt="KSH22: KY-040 Encoder" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH23</td>
+    <td>UNIT Módulo Hub I2C QW/ST</td>
+    <td><img src="assets/manual/image-026.png" style="width:0.7in"
+    alt="KSH23: UNIT Módulo Hub I2C QW/ST" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH24</td>
+    <td>HC-SR505 PIR</td>
+    <td><img src="assets/manual/image-027.png" style="width:0.7in"
+    alt="KSH24: HC-SR505 PIR" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH25</td>
+    <td>Motor DC con Hélice</td>
+    <td><img src="assets/manual/image-028.png" style="width:0.7in"
+    alt="KSH25: Motor DC con Hélice" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="página-8-del-manual">Página 8 del manual</h4>
-    <figure>
-    <img src="assets/manual/image-029.png" style="width:1.1in"
-    alt="Manual de usuario, página 8, imagen 29" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    29</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-030.png" style="width:1.1in"
-    alt="Manual de usuario, página 8, imagen 30" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    30</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-031.png" style="width:2in"
-    alt="Manual de usuario, página 8, imagen 31" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    31</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-032.png" style="width:1.1in"
-    alt="Manual de usuario, página 8, imagen 32" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    32</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-033.png" style="width:2in"
-    alt="Manual de usuario, página 8, imagen 33" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    33</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-034.png" style="width:1.1in"
-    alt="Manual de usuario, página 8, imagen 34" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    34</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-035.png" style="width:1.1in"
-    alt="Manual de usuario, página 8, imagen 35" />
-    <figcaption aria-hidden="true">Manual de usuario, página 8, imagen
-    35</figcaption>
-    </figure>
+    <table>
+    <colgroup>
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 30%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Folio</th>
+    <th>Descripción</th>
+    <th>Imagen</th>
+    <th style="text-align: right;">Cantidad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>KSH26</td>
+    <td>MX1508 Puente H</td>
+    <td><img src="assets/manual/image-029.png" style="width:0.7in"
+    alt="KSH26: MX1508 Puente H" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH27</td>
+    <td>PCA9685</td>
+    <td><img src="assets/manual/image-030.png" style="width:0.7in"
+    alt="KSH27: PCA9685" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH28</td>
+    <td>Sensor Shield V5.0 UNO R3</td>
+    <td><img src="assets/manual/image-031.png" style="width:0.7in"
+    alt="KSH28: Sensor Shield V5.0 UNO R3" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH29</td>
+    <td>Eliminador 12V 2A Jack</td>
+    <td><img src="assets/manual/image-032.png" style="width:0.7in"
+    alt="KSH29: Eliminador 12V 2A Jack" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH30</td>
+    <td>Cable Qwiic - Qwiic 10 cm</td>
+    <td><img src="assets/manual/image-033.png" style="width:0.7in"
+    alt="KSH30: Cable Qwiic - Qwiic 10 cm" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH31</td>
+    <td>Cable Qwiic - Dupont Hembra 20 cm</td>
+    <td><img src="assets/manual/image-034.png" style="width:0.7in"
+    alt="KSH31: Cable Qwiic - Dupont Hembra 20 cm" /></td>
+    <td style="text-align: right;">3</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH32</td>
+    <td>Cable Dupont H-H 20 cm</td>
+    <td><img src="assets/manual/image-035.png" style="width:0.7in"
+    alt="KSH32: Cable Dupont H-H 20 cm" /></td>
+    <td style="text-align: right;">16</td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="página-9-del-manual">Página 9 del manual</h4>
-    <figure>
-    <img src="assets/manual/image-036.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 36" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    36</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-037.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 37" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    37</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-038.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 38" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    38</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-039.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 39" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    39</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-040.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 40" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    40</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-041.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 41" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    41</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-042.png" style="width:1.1in"
-    alt="Manual de usuario, página 9, imagen 42" />
-    <figcaption aria-hidden="true">Manual de usuario, página 9, imagen
-    42</figcaption>
-    </figure>
+    <table>
+    <colgroup>
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 23%" />
+    <col style="width: 30%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Folio</th>
+    <th>Descripción</th>
+    <th>Imagen</th>
+    <th style="text-align: right;">Cantidad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>KSH33</td>
+    <td>Cable Dupont M-H 20 cm</td>
+    <td><img src="assets/manual/image-036.png" style="width:0.7in"
+    alt="KSH33: Cable Dupont M-H 20 cm" /></td>
+    <td style="text-align: right;">2</td>
+    </tr>
+    <tr class="even">
+    <td>KSH34</td>
+    <td>Cable Dupont H-H Fijo 2 vías</td>
+    <td><img src="assets/manual/image-037.png" style="width:0.7in"
+    alt="KSH34: Cable Dupont H-H Fijo 2 vías" /></td>
+    <td style="text-align: right;">3</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH35</td>
+    <td>Cable Dupont H-H Fijo 3 vías</td>
+    <td><img src="assets/manual/image-038.png" style="width:0.7in"
+    alt="KSH35: Cable Dupont H-H Fijo 3 vías" /></td>
+    <td style="text-align: right;">8</td>
+    </tr>
+    <tr class="even">
+    <td>KSH36</td>
+    <td>Tira Header Macho 40 pines</td>
+    <td><img src="assets/manual/image-039.png" style="width:0.7in"
+    alt="KSH36: Tira Header Macho 40 pines" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH37</td>
+    <td>Pila de Botón 3V</td>
+    <td><img src="assets/manual/image-040.png" style="width:0.7in"
+    alt="KSH37: Pila de Botón 3V" /></td>
+    <td style="text-align: right;">1</td>
+    </tr>
+    <tr class="even">
+    <td>KSH38</td>
+    <td>Juego de impresiones</td>
+    <td><img src="assets/manual/image-041.png" style="width:0.7in"
+    alt="KSH38: Juego de impresiones" /></td>
+    <td style="text-align: right;">1 juego</td>
+    </tr>
+    <tr class="odd">
+    <td>KSH39</td>
+    <td>Juego de cortes en MDF</td>
+    <td><img src="assets/manual/image-042.png" style="width:0.7in"
+    alt="KSH39: Juego de cortes en MDF" /></td>
+    <td style="text-align: right;">1 juego</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>1.- Ensamble</p>
+    <p>Objetivo:</p>
+    <h3 id="ensamble">Ensamble</h3>
     <h4 id="página-10-del-manual">Página 10 del manual</h4>
+    <p>Guiar al usuario en el ensamble de los componentes del Kit
+    SmartHome, asegurando la correcta<br />
+    instalación de la estructura como de la electrónica, así como
+    conexiones de cables a los<br />
+    módulos.</p>
+    <p>Resultado esperado:</p>
+    <p>Estructura de la casa ensamblada con la electrónica atornillada y
+    cableado preparado para su<br />
+    conexión con la shield.</p>
     <figure>
     <img src="assets/manual/image-043.png" style="width:2in"
     alt="Manual de usuario, página 10, imagen 43" />
@@ -1039,6 +1303,15 @@
     <figcaption aria-hidden="true">Manual de usuario, página 10, imagen
     45</figcaption>
     </figure>
+    <p>Vista frontal</p>
+    <p>Vista lateral Derecha</p>
+    <p>Vista lateral Izquierda</p>
+    <figure>
+    <img src="assets/manual/image-048.png" style="width:2in"
+    alt="Manual de usuario, página 10, imagen 48" />
+    <figcaption aria-hidden="true">Manual de usuario, página 10, imagen
+    48</figcaption>
+    </figure>
     <figure>
     <img src="assets/manual/image-046.png" style="width:2in"
     alt="Manual de usuario, página 10, imagen 46" />
@@ -1051,12 +1324,19 @@
     <figcaption aria-hidden="true">Manual de usuario, página 10, imagen
     47</figcaption>
     </figure>
-    <figure>
-    <img src="assets/manual/image-048.png" style="width:2in"
-    alt="Manual de usuario, página 10, imagen 48" />
-    <figcaption aria-hidden="true">Manual de usuario, página 10, imagen
-    48</figcaption>
-    </figure>
+    <p>Vista superior</p>
+    <p>Vista Isométrica</p>
+    <p>Vista posterior</p>
+    <p>Resultado final esperado terminada la sección Ensamble.</p>
+    <p>Desarrollo:</p>
+    <p>Recomendaciones:</p>
+    <p>Ubica todas las piezas del apartado previo al ensamble<br />
+    Reúne las herramientas mencionadas en la introducción<br />
+    Retira los cortes de MDF de su marco conforme se utilicen, con la
+    intención de tener un<br />
+    ensamble más organizado<br />
+    Coloca la pila de botón CR2025 al control infrarrojo<br />
+    Suelda los pines de los módulos previo a su ensamble</p>
     <h4 id="página-11-del-manual">Página 11 del manual</h4>
     <figure>
     <img src="assets/manual/image-049.png" style="width:1.1in"
@@ -1070,39 +1350,67 @@
     <figcaption aria-hidden="true">Manual de usuario, página 11, imagen
     50</figcaption>
     </figure>
+    <p>Pines en cara superior (1<br />
+    módulo)</p>
+    <p>Pines en cara posterior (2<br />
+    módulos)</p>
+    <p>Pines módulos Neopixel</p>
     <figure>
     <img src="assets/manual/image-051.png" style="width:2in"
     alt="Manual de usuario, página 11, imagen 51" />
     <figcaption aria-hidden="true">Manual de usuario, página 11, imagen
     51</figcaption>
     </figure>
+    <p>Pines soldados Puente H</p>
     <figure>
     <img src="assets/manual/image-052.png" style="width:2in"
     alt="Manual de usuario, página 11, imagen 52" />
     <figcaption aria-hidden="true">Manual de usuario, página 11, imagen
     52</figcaption>
     </figure>
+    <p>Pines soldados AHT10</p>
     <figure>
     <img src="assets/manual/image-053.png" style="width:2in"
     alt="Manual de usuario, página 11, imagen 53" />
     <figcaption aria-hidden="true">Manual de usuario, página 11, imagen
     53</figcaption>
     </figure>
-    <h3 id="ensamble-mecánico-y-electrónico">Ensamble mecánico y
-    electrónico</h3>
+    <p>Pines soldados RC522</p>
     <h4 id="página-12-del-manual">Página 12 del manual</h4>
+    <p>Procedimiento de ensamble:</p>
+    <p>Ubicación de componentes de la sección<br />
+    Ensamble de módulos<br />
+    Cableado del módulo</p>
+    <p>Precaución: Una mala conexión puede provocar daño en los
+    módulos</p>
+    <p>1.0 - Preparación</p>
+    <p>Para evitar problemas de ensamble, se requiere energizar el
+    servomotor para dejar la posición<br />
+    inicial correcta. Sigue el siguiente diagrama y realiza las
+    conexiones necesarias.</p>
+    <p>Nota: Es necesario montar la shield a la DualONE. En el diagrama
+    se muestran separadas<br />
+    para un mejor entendimiento.</p>
     <figure>
     <img src="assets/manual/image-054.png" style="width:3.3in"
     alt="Manual de usuario, página 12, imagen 54" />
     <figcaption aria-hidden="true">Manual de usuario, página 12, imagen
     54</figcaption>
     </figure>
+    <p>Conexi</p>
+    <p>1.1 - Base (A)</p>
     <h4 id="página-13-del-manual">Página 13 del manual</h4>
     <figure>
     <img src="assets/manual/image-055.png" style="width:2in"
     alt="Manual de usuario, página 13, imagen 55" />
     <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
     55</figcaption>
+    </figure>
+    <figure>
+    <img src="assets/manual/image-058.png" style="width:1.1in"
+    alt="Manual de usuario, página 13, imagen 58" />
+    <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
+    58</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-056.png" style="width:0.65in"
@@ -1117,28 +1425,22 @@
     57</figcaption>
     </figure>
     <figure>
-    <img src="assets/manual/image-058.png" style="width:1.1in"
-    alt="Manual de usuario, página 13, imagen 58" />
-    <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
-    58</figcaption>
-    </figure>
-    <figure>
     <img src="assets/manual/image-059.png" style="width:1.1in"
     alt="Manual de usuario, página 13, imagen 59" />
     <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
     59</figcaption>
     </figure>
+    <p>Brazo Servomotor</p>
+    <p>Regatones (4<br />
+    pzs)</p>
+    <p>MDF - A</p>
+    <p>Base Servomotor</p>
+    <p>Puerta</p>
     <figure>
     <img src="assets/manual/image-060.png" style="width:1.1in"
     alt="Manual de usuario, página 13, imagen 60" />
     <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
     60</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-061.png" style="width:1.1in"
-    alt="Manual de usuario, página 13, imagen 61" />
-    <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
-    61</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-062.png" style="width:1.1in"
@@ -1153,11 +1455,23 @@
     63</figcaption>
     </figure>
     <figure>
+    <img src="assets/manual/image-061.png" style="width:1.1in"
+    alt="Manual de usuario, página 13, imagen 61" />
+    <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
+    61</figcaption>
+    </figure>
+    <figure>
     <img src="assets/manual/image-064.png" style="width:1.1in"
     alt="Manual de usuario, página 13, imagen 64" />
     <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
     64</figcaption>
     </figure>
+    <p>M3x10 (2 pzs)</p>
+    <p>Pija M2.8</p>
+    <p>M3x8 (4 pzs)</p>
+    <p>Tornillo<br />
+    Servomotor</p>
+    <p>Servomotor</p>
     <figure>
     <img src="assets/manual/image-065.png" style="width:1.1in"
     alt="Manual de usuario, página 13, imagen 65" />
@@ -1176,6 +1490,9 @@
     <figcaption aria-hidden="true">Manual de usuario, página 13, imagen
     67</figcaption>
     </figure>
+    <p>M2x8 (2 pzs)</p>
+    <p>M3 (6 pzs)</p>
+    <p>M2 (2pzs)</p>
     <figure>
     <img src="assets/manual/image-068.png" style="width:3.3in"
     alt="Manual de usuario, página 13, imagen 68" />
@@ -1189,6 +1506,9 @@
     <figcaption aria-hidden="true">Manual de usuario, página 14, imagen
     69</figcaption>
     </figure>
+    <p>MDF-A + 4x tornillos M3x8 + 4x tuercas M3 +<br />
+    4x regatones<br />
+    Repite el paso en las 4 esquinas.</p>
     <figure>
     <img src="assets/manual/image-070.png" style="width:3.3in"
     alt="Manual de usuario, página 14, imagen 70" />
@@ -1202,6 +1522,11 @@
     <figcaption aria-hidden="true">Manual de usuario, página 15, imagen
     71</figcaption>
     </figure>
+    <p>Puerta + Base servomotor + 2x tornillos M2x8 + 2x tuercas M2
+    +<br />
+    tornillo y pija servomotor (estos últimos se ubican junto con
+    el<br />
+    servomotor)</p>
     <figure>
     <img src="assets/manual/image-072.png" style="width:3.3in"
     alt="Manual de usuario, página 15, imagen 72" />
@@ -1215,11 +1540,20 @@
     <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
     73</figcaption>
     </figure>
+    <p>2x tornillos M3x10 + 2x tuercas M3</p>
     <figure>
     <img src="assets/manual/image-074.png" style="width:3.3in"
     alt="Manual de usuario, página 16, imagen 74" />
     <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
     74</figcaption>
+    </figure>
+    <p>Ensamble 1.1</p>
+    <p>1.2 - Pared (C) + Techo (J)</p>
+    <figure>
+    <img src="assets/manual/image-078.png" style="width:1.1in"
+    alt="Manual de usuario, página 16, imagen 78" />
+    <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
+    78</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-075.png" style="width:1.1in"
@@ -1240,23 +1574,17 @@
     77</figcaption>
     </figure>
     <figure>
-    <img src="assets/manual/image-078.png" style="width:1.1in"
-    alt="Manual de usuario, página 16, imagen 78" />
-    <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
-    78</figcaption>
-    </figure>
-    <figure>
     <img src="assets/manual/image-079.png" style="width:1.1in"
     alt="Manual de usuario, página 16, imagen 79" />
     <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
     79</figcaption>
     </figure>
-    <figure>
-    <img src="assets/manual/image-080.png" style="width:1.1in"
-    alt="Manual de usuario, página 16, imagen 80" />
-    <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
-    80</figcaption>
-    </figure>
+    <p>Impresión<br />
+    anclaje J</p>
+    <p>M3x8 (4 pzs)</p>
+    <p>MDF - J</p>
+    <p>MDF - C</p>
+    <p>Acrílico inferior</p>
     <figure>
     <img src="assets/manual/image-081.png" style="width:0.65in"
     alt="Manual de usuario, página 16, imagen 81" />
@@ -1264,10 +1592,10 @@
     81</figcaption>
     </figure>
     <figure>
-    <img src="assets/manual/image-082.png" style="width:1.1in"
-    alt="Manual de usuario, página 16, imagen 82" />
+    <img src="assets/manual/image-080.png" style="width:1.1in"
+    alt="Manual de usuario, página 16, imagen 80" />
     <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
-    82</figcaption>
+    80</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-083.png" style="width:0.65in"
@@ -1281,6 +1609,19 @@
     <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
     84</figcaption>
     </figure>
+    <figure>
+    <img src="assets/manual/image-082.png" style="width:1.1in"
+    alt="Manual de usuario, página 16, imagen 82" />
+    <figcaption aria-hidden="true">Manual de usuario, página 16, imagen
+    82</figcaption>
+    </figure>
+    <p>Dupont fijo 3<br />
+    vías</p>
+    <p>M2.5x8 (2 pzs)</p>
+    <p>M3x6 (2 pzs)</p>
+    <p>M3 (6 pzs)</p>
+    <p>M2.5 (2<br />
+    pzs)</p>
     <h4 id="página-17-del-manual">Página 17 del manual</h4>
     <figure>
     <img src="assets/manual/image-085.png" style="width:1.1in"
@@ -1288,6 +1629,10 @@
     <figcaption aria-hidden="true">Manual de usuario, página 17, imagen
     85</figcaption>
     </figure>
+    <p>Neopixel</p>
+    <p>Precaución: Cuida la polaridad de los Neopixel, una mala conexión
+    puede quemar los<br />
+    Neopixel.</p>
     <figure>
     <img src="assets/manual/image-086.png" style="width:3.3in"
     alt="Manual de usuario, página 17, imagen 86" />
@@ -1300,6 +1645,8 @@
     <figcaption aria-hidden="true">Manual de usuario, página 17, imagen
     87</figcaption>
     </figure>
+    <p>MDF-C + Acrílico Inferior + 2x tornillos M3x8 + 2x<br />
+    tuercas M3</p>
     <h4 id="página-18-del-manual">Página 18 del manual</h4>
     <figure>
     <img src="assets/manual/image-088.png" style="width:3.3in"
@@ -1307,12 +1654,16 @@
     <figcaption aria-hidden="true">Manual de usuario, página 18, imagen
     88</figcaption>
     </figure>
+    <p>Impresión anclaje J + 2x tornillos M3x8 + 2x tuercas<br />
+    M3</p>
     <figure>
     <img src="assets/manual/image-089.png" style="width:2in"
     alt="Manual de usuario, página 18, imagen 89" />
     <figcaption aria-hidden="true">Manual de usuario, página 18, imagen
     89</figcaption>
     </figure>
+    <p>MDF-J + Neopixel + 2x tornillos M2.5 +<br />
+    2x tuercas M2.5</p>
     <figure>
     <img src="assets/manual/image-090.png" style="width:3.3in"
     alt="Manual de usuario, página 18, imagen 90" />
@@ -1326,6 +1677,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 19, imagen
     91</figcaption>
     </figure>
+    <p>2x tornillos M3x6 + 2x tuercas M3</p>
     <figure>
     <img src="assets/manual/image-092.png" style="width:3.3in"
     alt="Manual de usuario, página 19, imagen 92" />
@@ -1338,7 +1690,18 @@
     <figcaption aria-hidden="true">Manual de usuario, página 19, imagen
     93</figcaption>
     </figure>
+    <p>+ Dupont fijo 3 vías<br />
+    Ensamble 1.2</p>
+    <p>Conecta los cables por los espacios designados para agilizar el
+    proceso</p>
+    <p>1.3 - Paredes (H) + Pared (I) + Base (G) + Ensamble 1.2</p>
     <h4 id="página-20-del-manual">Página 20 del manual</h4>
+    <figure>
+    <img src="assets/manual/image-096.png" style="width:1.1in"
+    alt="Manual de usuario, página 20, imagen 96" />
+    <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
+    96</figcaption>
+    </figure>
     <figure>
     <img src="assets/manual/image-094.png" style="width:3.3in"
     alt="Manual de usuario, página 20, imagen 94" />
@@ -1352,12 +1715,6 @@
     95</figcaption>
     </figure>
     <figure>
-    <img src="assets/manual/image-096.png" style="width:1.1in"
-    alt="Manual de usuario, página 20, imagen 96" />
-    <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
-    96</figcaption>
-    </figure>
-    <figure>
     <img src="assets/manual/image-097.png" style="width:1.1in"
     alt="Manual de usuario, página 20, imagen 97" />
     <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
@@ -1369,6 +1726,13 @@
     <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
     98</figcaption>
     </figure>
+    <p>MDF - Llave (4<br />
+    pzs)</p>
+    <p>MDF - G</p>
+    <p>MDF - I</p>
+    <p>MDF - H<br />
+    (2 pzs)</p>
+    <p>Ensamble 1.2</p>
     <figure>
     <img src="assets/manual/image-099.png" style="width:1.1in"
     alt="Manual de usuario, página 20, imagen 99" />
@@ -1393,18 +1757,25 @@
     <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
     102</figcaption>
     </figure>
+    <p>M2x8 (4 pzs)</p>
+    <p>M2 (4 pzs)</p>
+    <p>Cable Qwiic a<br />
+    Dupont</p>
+    <p>Pantalla OLED</p>
     <figure>
     <img src="assets/manual/image-103.png" style="width:3.3in"
     alt="Manual de usuario, página 20, imagen 103" />
     <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
     103</figcaption>
     </figure>
+    <p>2x MDF-H + MDF-G</p>
     <figure>
     <img src="assets/manual/image-104.png" style="width:3.3in"
     alt="Manual de usuario, página 20, imagen 104" />
     <figcaption aria-hidden="true">Manual de usuario, página 20, imagen
     104</figcaption>
     </figure>
+    <p>+ MDF-I</p>
     <h4 id="página-21-del-manual">Página 21 del manual</h4>
     <figure>
     <img src="assets/manual/image-105.png" style="width:3.3in"
@@ -1412,6 +1783,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 21, imagen
     105</figcaption>
     </figure>
+    <p>Pantalla OLED + 4x tornillos M2x8 + 4x tuercas M2</p>
     <figure>
     <img src="assets/manual/image-106.png" style="width:3.3in"
     alt="Manual de usuario, página 21, imagen 106" />
@@ -1425,6 +1797,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 22, imagen
     107</figcaption>
     </figure>
+    <p>+ Cable Qwiic a dupont</p>
     <figure>
     <img src="assets/manual/image-108.png" style="width:3.3in"
     alt="Manual de usuario, página 22, imagen 108" />
@@ -1433,22 +1806,31 @@
     </figure>
     <h4 id="página-23-del-manual">Página 23 del manual</h4>
     <figure>
-    <img src="assets/manual/image-109.png" style="width:2in"
-    alt="Manual de usuario, página 23, imagen 109" />
-    <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
-    109</figcaption>
-    </figure>
-    <figure>
     <img src="assets/manual/image-110.png" style="width:2in"
     alt="Manual de usuario, página 23, imagen 110" />
     <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
     110</figcaption>
     </figure>
     <figure>
+    <img src="assets/manual/image-109.png" style="width:2in"
+    alt="Manual de usuario, página 23, imagen 109" />
+    <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
+    109</figcaption>
+    </figure>
+    <p>+ 4x MDF-Llave</p>
+    <figure>
     <img src="assets/manual/image-111.png" style="width:3.3in"
     alt="Manual de usuario, página 23, imagen 111" />
     <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
     111</figcaption>
+    </figure>
+    <p>Ensamble 1.3</p>
+    <p>1.4 - Pared (D)</p>
+    <figure>
+    <img src="assets/manual/image-116.png" style="width:0.65in"
+    alt="Manual de usuario, página 23, imagen 116" />
+    <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
+    116</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-112.png" style="width:1.1in"
@@ -1474,12 +1856,13 @@
     <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
     115</figcaption>
     </figure>
-    <figure>
-    <img src="assets/manual/image-116.png" style="width:0.65in"
-    alt="Manual de usuario, página 23, imagen 116" />
-    <figcaption aria-hidden="true">Manual de usuario, página 23, imagen
-    116</figcaption>
-    </figure>
+    <p>Lector RFID</p>
+    <p>Encoder</p>
+    <p>Buzzer</p>
+    <p>MDF - D</p>
+    <p>Sensor<br />
+    de<br />
+    flama</p>
     <h4 id="página-24-del-manual">Página 24 del manual</h4>
     <figure>
     <img src="assets/manual/image-117.png" style="width:1.1in"
@@ -1511,6 +1894,15 @@
     <figcaption aria-hidden="true">Manual de usuario, página 24, imagen
     121</figcaption>
     </figure>
+    <p>Dupont fijo 2<br />
+    vías</p>
+    <p>Dupont fijo 3<br />
+    vías</p>
+    <p>M2.5x8 (9 pzs)</p>
+    <p>Dupont H-H (7<br />
+    pzs)</p>
+    <p>M2.5 (18<br />
+    pzs)</p>
     <figure>
     <img src="assets/manual/image-122.png" style="width:3.3in"
     alt="Manual de usuario, página 24, imagen 122" />
@@ -1523,13 +1915,20 @@
     <figcaption aria-hidden="true">Manual de usuario, página 24, imagen
     123</figcaption>
     </figure>
+    <p>9 tornillos M2.5x8 + 18 tuercas M2.5 + Encoder + Lector RFID
+    +<br />
+    Buzzer + Sensor de flama</p>
     <h4 id="página-25-del-manual">Página 25 del manual</h4>
+    <p>Orden de ensamble. Tornillo, módulo, tuerca (funciona como
+    separador y mantiene en su<br />
+    lugar al módulo), MDF y tuerca.</p>
     <figure>
     <img src="assets/manual/image-124.png" style="width:3.3in"
     alt="Manual de usuario, página 25, imagen 124" />
     <figcaption aria-hidden="true">Manual de usuario, página 25, imagen
     124</figcaption>
     </figure>
+    <p>Imagen lateral MDF-D con módulos ensamblados</p>
     <h4 id="página-26-del-manual">Página 26 del manual</h4>
     <figure>
     <img src="assets/manual/image-125.png" style="width:3.3in"
@@ -1537,6 +1936,13 @@
     <figcaption aria-hidden="true">Manual de usuario, página 26, imagen
     125</figcaption>
     </figure>
+    <p>Coloca los cables correspondientes a los módulos + 3x Dupont fijo
+    3<br />
+    vías + Dupont fijo 2 vías + 7x cables dupont H-H</p>
+    <p>Encoder: Dupont fijo 3 vías + Dupont fijo 2 vías<br />
+    Buzzer: Dupont fijo 3 vías<br />
+    Flama: Dupont fijo 3 vías<br />
+    RFID: 7 cables dupont H-H</p>
     <h4 id="página-27-del-manual">Página 27 del manual</h4>
     <figure>
     <img src="assets/manual/image-126.png" style="width:3.3in"
@@ -1544,6 +1950,9 @@
     <figcaption aria-hidden="true">Manual de usuario, página 27, imagen
     126</figcaption>
     </figure>
+    <p>Ensamble MDF - D con módulos y cables, organizados.<br />
+    Ensamble 1.4</p>
+    <p>1.5 - Pared (D)</p>
     <figure>
     <img src="assets/manual/image-127.png" style="width:1.1in"
     alt="Manual de usuario, página 27, imagen 127" />
@@ -1574,6 +1983,13 @@
     <figcaption aria-hidden="true">Manual de usuario, página 27, imagen
     131</figcaption>
     </figure>
+    <p>M3x8 (2 pzs)</p>
+    <p>PIR</p>
+    <p>MDF - E</p>
+    <p>Botón<br />
+    Capacitivo</p>
+    <p>Soporte<br />
+    PIR</p>
     <figure>
     <img src="assets/manual/image-132.png" style="width:0.65in"
     alt="Manual de usuario, página 27, imagen 132" />
@@ -1604,6 +2020,13 @@
     <figcaption aria-hidden="true">Manual de usuario, página 27, imagen
     136</figcaption>
     </figure>
+    <p>Dupont fijo 3<br />
+    vías</p>
+    <p>M2x8 (4 pzs)</p>
+    <p>M3 (2 pzs)</p>
+    <p>Dupont H-H (3<br />
+    pzs)</p>
+    <p>M2 (8 pzs)</p>
     <h4 id="página-28-del-manual">Página 28 del manual</h4>
     <figure>
     <img src="assets/manual/image-137.png" style="width:3.3in"
@@ -1611,12 +2034,14 @@
     <figcaption aria-hidden="true">Manual de usuario, página 28, imagen
     137</figcaption>
     </figure>
+    <p>MDF-E</p>
     <figure>
     <img src="assets/manual/image-138.png" style="width:3.3in"
     alt="Manual de usuario, página 28, imagen 138" />
     <figcaption aria-hidden="true">Manual de usuario, página 28, imagen
     138</figcaption>
     </figure>
+    <p>2x tornillos M3x8 + 2x tuercas M3 + Soporte PIR + PIR</p>
     <h4 id="página-29-del-manual">Página 29 del manual</h4>
     <figure>
     <img src="assets/manual/image-139.png" style="width:3.3in"
@@ -1624,13 +2049,21 @@
     <figcaption aria-hidden="true">Manual de usuario, página 29, imagen
     139</figcaption>
     </figure>
+    <p>4x tornillos M2x8 + 8x tuercas M2 + Botón capacitivo</p>
+    <p>Recuerda el orden correcto. Tornillo, módulo, tuerca, MDF,
+    tuerca.</p>
     <figure>
     <img src="assets/manual/image-140.png" style="width:3.3in"
     alt="Manual de usuario, página 29, imagen 140" />
     <figcaption aria-hidden="true">Manual de usuario, página 29, imagen
     140</figcaption>
     </figure>
+    <p>3x Dupont H-H + Dupont fijo 3 vías<br />
+    Ensamble 1.5</p>
     <h4 id="página-30-del-manual">Página 30 del manual</h4>
+    <p>PIR: 3x Dupont H-H<br />
+    Botón Capacitivo: Dupont Fijo 3 vías</p>
+    <p>1.6 - Techo (F)</p>
     <figure>
     <img src="assets/manual/image-141.png" style="width:2in"
     alt="Manual de usuario, página 30, imagen 141" />
@@ -1642,12 +2075,6 @@
     alt="Manual de usuario, página 30, imagen 142" />
     <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
     142</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-143.png" style="width:0.65in"
-    alt="Manual de usuario, página 30, imagen 143" />
-    <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
-    143</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-144.png" style="width:1.1in"
@@ -1662,11 +2089,19 @@
     145</figcaption>
     </figure>
     <figure>
-    <img src="assets/manual/image-146.png" style="width:0.65in"
-    alt="Manual de usuario, página 30, imagen 146" />
+    <img src="assets/manual/image-143.png" style="width:0.65in"
+    alt="Manual de usuario, página 30, imagen 143" />
     <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
-    146</figcaption>
+    143</figcaption>
     </figure>
+    <p>Sensor de<br />
+    lluvia (2)</p>
+    <p>Sensor de<br />
+    lluvia (1)</p>
+    <p>Fotorres<br />
+    istor</p>
+    <p>Puente H</p>
+    <p>MDF - F</p>
     <figure>
     <img src="assets/manual/image-147.png" style="width:1.1in"
     alt="Manual de usuario, página 30, imagen 147" />
@@ -1680,17 +2115,28 @@
     148</figcaption>
     </figure>
     <figure>
+    <img src="assets/manual/image-150.png" style="width:1.1in"
+    alt="Manual de usuario, página 30, imagen 150" />
+    <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
+    150</figcaption>
+    </figure>
+    <figure>
     <img src="assets/manual/image-149.png" style="width:0.65in"
     alt="Manual de usuario, página 30, imagen 149" />
     <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
     149</figcaption>
     </figure>
     <figure>
-    <img src="assets/manual/image-150.png" style="width:1.1in"
-    alt="Manual de usuario, página 30, imagen 150" />
+    <img src="assets/manual/image-146.png" style="width:0.65in"
+    alt="Manual de usuario, página 30, imagen 146" />
     <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
-    150</figcaption>
+    146</figcaption>
     </figure>
+    <p>M3x10</p>
+    <p>M3x8 (4 pzs)</p>
+    <p>M2.5x8 (3 pzs)</p>
+    <p>M3 (6 pzs)</p>
+    <p>Sensor IR</p>
     <figure>
     <img src="assets/manual/image-151.png" style="width:1.1in"
     alt="Manual de usuario, página 30, imagen 151" />
@@ -1721,12 +2167,22 @@
     <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
     155</figcaption>
     </figure>
+    <p>Dupont fijo 3<br />
+    vías (2 pzs)</p>
+    <p>M2x8 (2 pzs)</p>
+    <p>Dupont H-H (5<br />
+    pzs)</p>
+    <p>M2.5 (6 pzs)</p>
+    <p>M2 (4 pzs)</p>
+    <p>2 de los 5 cables Dupont H-H vienen embolsados con el sensor de
+    lluvia.</p>
     <figure>
     <img src="assets/manual/image-156.png" style="width:3.3in"
     alt="Manual de usuario, página 30, imagen 156" />
     <figcaption aria-hidden="true">Manual de usuario, página 30, imagen
     156</figcaption>
     </figure>
+    <p>MDF-F</p>
     <h4 id="página-31-del-manual">Página 31 del manual</h4>
     <figure>
     <img src="assets/manual/image-157.png" style="width:3.3in"
@@ -1734,12 +2190,14 @@
     <figcaption aria-hidden="true">Manual de usuario, página 31, imagen
     157</figcaption>
     </figure>
+    <p>Sensor de lluvia (1) + 4x tornillos M3x8 + 4x tuerca M3</p>
     <figure>
     <img src="assets/manual/image-158.png" style="width:3.3in"
     alt="Manual de usuario, página 31, imagen 158" />
     <figcaption aria-hidden="true">Manual de usuario, página 31, imagen
     158</figcaption>
     </figure>
+    <p>Sensor IR + 2x tornillos M2x8 + 4x tuercas M2</p>
     <h4 id="página-32-del-manual">Página 32 del manual</h4>
     <figure>
     <img src="assets/manual/image-159.png" style="width:3.3in"
@@ -1747,12 +2205,14 @@
     <figcaption aria-hidden="true">Manual de usuario, página 32, imagen
     159</figcaption>
     </figure>
+    <p>Fotorresistor + 2x tornillos M2.5x8 + 4x tuercas M2.5</p>
     <figure>
     <img src="assets/manual/image-160.png" style="width:3.3in"
     alt="Manual de usuario, página 32, imagen 160" />
     <figcaption aria-hidden="true">Manual de usuario, página 32, imagen
     160</figcaption>
     </figure>
+    <p>Sensor de lluvia (2) + tornillo M3x10 + 2x tuercas M3</p>
     <h4 id="página-33-del-manual">Página 33 del manual</h4>
     <figure>
     <img src="assets/manual/image-161.png" style="width:3.3in"
@@ -1760,18 +2220,22 @@
     <figcaption aria-hidden="true">Manual de usuario, página 33, imagen
     161</figcaption>
     </figure>
+    <p>Puente H + tornillo M2.5x8 + 2x tuercas M2.5</p>
     <figure>
     <img src="assets/manual/image-162.png" style="width:3.3in"
     alt="Manual de usuario, página 33, imagen 162" />
     <figcaption aria-hidden="true">Manual de usuario, página 33, imagen
     162</figcaption>
     </figure>
+    <p>+ 2x Dupont H-H<br />
+    Conecta las dos partes del sensor de lluvia</p>
     <figure>
     <img src="assets/manual/image-163.png" style="width:3.3in"
     alt="Manual de usuario, página 33, imagen 163" />
     <figcaption aria-hidden="true">Manual de usuario, página 33, imagen
     163</figcaption>
     </figure>
+    <p>+ Cable Dupont H-H</p>
     <h4 id="página-34-del-manual">Página 34 del manual</h4>
     <figure>
     <img src="assets/manual/image-164.png" style="width:3.3in"
@@ -1779,12 +2243,15 @@
     <figcaption aria-hidden="true">Manual de usuario, página 34, imagen
     164</figcaption>
     </figure>
+    <p>2x Cables dupont fijo de 3 vías (Conectar Sensor IR y
+    Fotorresitor)</p>
     <figure>
     <img src="assets/manual/image-165.png" style="width:3.3in"
     alt="Manual de usuario, página 34, imagen 165" />
     <figcaption aria-hidden="true">Manual de usuario, página 34, imagen
     165</figcaption>
     </figure>
+    <p>Ensamble 1.6</p>
     <h4 id="página-35-del-manual">Página 35 del manual</h4>
     <figure>
     <img src="assets/manual/image-166.png" style="width:3.3in"
@@ -1792,6 +2259,8 @@
     <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
     166</figcaption>
     </figure>
+    <p>Ensamble 1.6</p>
+    <p>1.7 - Pared (Q)</p>
     <figure>
     <img src="assets/manual/image-167.png" style="width:1.1in"
     alt="Manual de usuario, página 35, imagen 167" />
@@ -1822,23 +2291,23 @@
     <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
     171</figcaption>
     </figure>
+    <p>PCA9685</p>
+    <p>Hub I2C<br />
+    QW/ST</p>
+    <p>Pared Q</p>
+    <p>DualONE</p>
+    <p>Sensor shield</p>
     <figure>
-    <img src="assets/manual/image-172.png" style="width:1.1in"
-    alt="Manual de usuario, página 35, imagen 172" />
+    <img src="assets/manual/image-174.png" style="width:1.1in"
+    alt="Manual de usuario, página 35, imagen 174" />
     <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
-    172</figcaption>
+    174</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-173.png" style="width:1.1in"
     alt="Manual de usuario, página 35, imagen 173" />
     <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
     173</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-174.png" style="width:1.1in"
-    alt="Manual de usuario, página 35, imagen 174" />
-    <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
-    174</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-175.png" style="width:0.65in"
@@ -1852,6 +2321,18 @@
     <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
     176</figcaption>
     </figure>
+    <figure>
+    <img src="assets/manual/image-172.png" style="width:1.1in"
+    alt="Manual de usuario, página 35, imagen 172" />
+    <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
+    172</figcaption>
+    </figure>
+    <p>M3x10 (2 pzs)</p>
+    <p>Separador de<br />
+    latón (4 pzs)</p>
+    <p>M3x6 (4 pzs)</p>
+    <p>M2.5x8 (4 pzs)</p>
+    <p>M3 (8 pzs)</p>
     <figure>
     <img src="assets/manual/image-177.png" style="width:0.65in"
     alt="Manual de usuario, página 35, imagen 177" />
@@ -1876,6 +2357,13 @@
     <figcaption aria-hidden="true">Manual de usuario, página 35, imagen
     180</figcaption>
     </figure>
+    <p>Cable Qwiic -<br />
+    Qwiic</p>
+    <p>Cable Dupont<br />
+    M-H (2 pzs)</p>
+    <p>Cable Qwicc -<br />
+    Dupont</p>
+    <p>M2.5 (8 pzs)</p>
     <h4 id="página-36-del-manual">Página 36 del manual</h4>
     <figure>
     <img src="assets/manual/image-181.png" style="width:3.3in"
@@ -1883,18 +2371,22 @@
     <figcaption aria-hidden="true">Manual de usuario, página 36, imagen
     181</figcaption>
     </figure>
+    <p>MDF-Q</p>
     <figure>
     <img src="assets/manual/image-182.png" style="width:3.3in"
     alt="Manual de usuario, página 36, imagen 182" />
     <figcaption aria-hidden="true">Manual de usuario, página 36, imagen
     182</figcaption>
     </figure>
+    <p>Dual ONE + 4x Separadores de latón + 3x tornillos M3x6 + 4x<br />
+    tuercas M3</p>
     <figure>
     <img src="assets/manual/image-183.png" style="width:3.3in"
     alt="Manual de usuario, página 36, imagen 183" />
     <figcaption aria-hidden="true">Manual de usuario, página 36, imagen
     183</figcaption>
     </figure>
+    <p>Hub I2C QW/ST + 2x tornillos M3x10 + 4x tuercas M3</p>
     <h4 id="página-37-del-manual">Página 37 del manual</h4>
     <figure>
     <img src="assets/manual/image-184.png" style="width:3.3in"
@@ -1902,19 +2394,27 @@
     <figcaption aria-hidden="true">Manual de usuario, página 37, imagen
     184</figcaption>
     </figure>
+    <p>PCA9685 + 4x tornillos M2.5x8 + 8x tuercas M2.5</p>
     <figure>
     <img src="assets/manual/image-185.png" style="width:3.3in"
     alt="Manual de usuario, página 37, imagen 185" />
     <figcaption aria-hidden="true">Manual de usuario, página 37, imagen
     185</figcaption>
     </figure>
+    <p>+ Cable Qwiic - Qwiic</p>
+    <p>Precaución: Conecta el cable Qwiic - Qwiic de la tarjeta de
+    desarrollo DualONE al Hub I2C<br />
+    previo a colocar el Sensor shield.</p>
     <figure>
     <img src="assets/manual/image-186.png" style="width:3.3in"
     alt="Manual de usuario, página 37, imagen 186" />
     <figcaption aria-hidden="true">Manual de usuario, página 37, imagen
     186</figcaption>
     </figure>
+    <p>+ Sensor shield<br />
+    Ensamble 1.7</p>
     <h4 id="página-38-del-manual">Página 38 del manual</h4>
+    <p>1.8 - Ensamble piso inferior</p>
     <figure>
     <img src="assets/manual/image-187.png" style="width:3.3in"
     alt="Manual de usuario, página 38, imagen 187" />
@@ -1951,18 +2451,27 @@
     <figcaption aria-hidden="true">Manual de usuario, página 38, imagen
     192</figcaption>
     </figure>
+    <p>Ensamble 1.1</p>
+    <p>Ensamble 1.7</p>
+    <p>Ensamble 1.3</p>
+    <p>Ensamble 1.6</p>
+    <p>Ensamble 1.5</p>
+    <p>Ensamble 1.4</p>
+    <p>Haremos uso de las secciones previamente ensambladas</p>
     <figure>
     <img src="assets/manual/image-193.png" style="width:3.3in"
     alt="Manual de usuario, página 38, imagen 193" />
     <figcaption aria-hidden="true">Manual de usuario, página 38, imagen
     193</figcaption>
     </figure>
+    <p>Ensamble 1.7</p>
     <figure>
     <img src="assets/manual/image-194.png" style="width:3.3in"
     alt="Manual de usuario, página 38, imagen 194" />
     <figcaption aria-hidden="true">Manual de usuario, página 38, imagen
     194</figcaption>
     </figure>
+    <p>Ensamble 1.7 + Ensamble 4</p>
     <h4 id="página-39-del-manual">Página 39 del manual</h4>
     <figure>
     <img src="assets/manual/image-195.png" style="width:3.3in"
@@ -1970,18 +2479,23 @@
     <figcaption aria-hidden="true">Manual de usuario, página 39, imagen
     195</figcaption>
     </figure>
+    <p>+ Ensamble 1.5</p>
     <figure>
     <img src="assets/manual/image-196.png" style="width:3.3in"
     alt="Manual de usuario, página 39, imagen 196" />
     <figcaption aria-hidden="true">Manual de usuario, página 39, imagen
     196</figcaption>
     </figure>
+    <p>+ Ensamble 1.3</p>
     <figure>
     <img src="assets/manual/image-197.png" style="width:3.3in"
     alt="Manual de usuario, página 39, imagen 197" />
     <figcaption aria-hidden="true">Manual de usuario, página 39, imagen
     197</figcaption>
     </figure>
+    <p>+ Ensamble 1.1</p>
+    <p>Este paso requiere de fuerza en el ensamble, debido a que el
+    Ensamble 1.1 entra a presión</p>
     <h4 id="página-40-del-manual">Página 40 del manual</h4>
     <figure>
     <img src="assets/manual/image-198.png" style="width:3.3in"
@@ -1989,6 +2503,11 @@
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     198</figcaption>
     </figure>
+    <p>+ Ensamble 1.6<br />
+    Resultado: Ensamble 1.8</p>
+    <p>De ser necesario, al realizar las conexiones, podrás retirar el
+    Ensamble 1.6</p>
+    <p>1.9 - Ensamble piso superior</p>
     <figure>
     <img src="assets/manual/image-199.png" style="width:1.1in"
     alt="Manual de usuario, página 40, imagen 199" />
@@ -2019,6 +2538,17 @@
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     203</figcaption>
     </figure>
+    <p>MDF - O</p>
+    <p>MDF - P</p>
+    <p>MDF - N</p>
+    <p>MDF - L</p>
+    <p>MDF - M</p>
+    <figure>
+    <img src="assets/manual/image-208.png" style="width:0.65in"
+    alt="Manual de usuario, página 40, imagen 208" />
+    <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
+    208</figcaption>
+    </figure>
     <figure>
     <img src="assets/manual/image-204.png" style="width:1.1in"
     alt="Manual de usuario, página 40, imagen 204" />
@@ -2043,23 +2573,30 @@
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     207</figcaption>
     </figure>
+    <p>Soporte Motor<br />
+    DC</p>
+    <p>Acrílico<br />
+    Superior</p>
+    <p>Motor DC</p>
+    <p>Neopixel</p>
+    <p>Hélice</p>
     <figure>
-    <img src="assets/manual/image-208.png" style="width:0.65in"
-    alt="Manual de usuario, página 40, imagen 208" />
+    <img src="assets/manual/image-213.png" style="width:1.1in"
+    alt="Manual de usuario, página 40, imagen 213" />
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
-    208</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-209.png" style="width:0.65in"
-    alt="Manual de usuario, página 40, imagen 209" />
-    <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
-    209</figcaption>
+    213</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-210.png" style="width:1.1in"
     alt="Manual de usuario, página 40, imagen 210" />
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     210</figcaption>
+    </figure>
+    <figure>
+    <img src="assets/manual/image-209.png" style="width:0.65in"
+    alt="Manual de usuario, página 40, imagen 209" />
+    <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
+    209</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-211.png" style="width:1.1in"
@@ -2073,23 +2610,19 @@
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     212</figcaption>
     </figure>
-    <figure>
-    <img src="assets/manual/image-213.png" style="width:1.1in"
-    alt="Manual de usuario, página 40, imagen 213" />
-    <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
-    213</figcaption>
-    </figure>
+    <p>M3x8 (4 pzs)</p>
+    <p>M2.5x8 (5 pzs)</p>
+    <p>M3 (4 pzs)</p>
+    <p>M2.5 (7 pzs)</p>
+    <p>Sensor<br />
+    Temperatur<br />
+    a y<br />
+    Humedad</p>
     <figure>
     <img src="assets/manual/image-214.png" style="width:1.1in"
     alt="Manual de usuario, página 40, imagen 214" />
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     214</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/manual/image-215.png" style="width:1.1in"
-    alt="Manual de usuario, página 40, imagen 215" />
-    <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
-    215</figcaption>
     </figure>
     <figure>
     <img src="assets/manual/image-216.png" style="width:1.1in"
@@ -2103,19 +2636,36 @@
     <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
     217</figcaption>
     </figure>
+    <figure>
+    <img src="assets/manual/image-215.png" style="width:1.1in"
+    alt="Manual de usuario, página 40, imagen 215" />
+    <figcaption aria-hidden="true">Manual de usuario, página 40, imagen
+    215</figcaption>
+    </figure>
+    <p>Dupont fijo 2<br />
+    vías</p>
+    <p>Dupont fijo 3<br />
+    vías</p>
+    <p>Dupont H-H (3)</p>
+    <p>Cable Qwiic -<br />
+    Qwiic</p>
     <h4 id="página-41-del-manual">Página 41 del manual</h4>
+    <p>Modelo de la Hélice puede cambiar.</p>
     <figure>
     <img src="assets/manual/image-218.png" style="width:3.3in"
     alt="Manual de usuario, página 41, imagen 218" />
     <figcaption aria-hidden="true">Manual de usuario, página 41, imagen
     218</figcaption>
     </figure>
+    <p>MDF-O + Acrílico Superior + 2x tornillos M3x8 + 2x tuercas M3</p>
     <figure>
     <img src="assets/manual/image-219.png" style="width:3.3in"
     alt="Manual de usuario, página 41, imagen 219" />
     <figcaption aria-hidden="true">Manual de usuario, página 41, imagen
     219</figcaption>
     </figure>
+    <p>MDF-M + Sensor Temperatura y Humedad + tornillo<br />
+    M2.5x8 + tuerca M2.5</p>
     <h4 id="página-42-del-manual">Página 42 del manual</h4>
     <figure>
     <img src="assets/manual/image-220.png" style="width:2in"
@@ -2123,12 +2673,21 @@
     <figcaption aria-hidden="true">Manual de usuario, página 42, imagen
     220</figcaption>
     </figure>
+    <p>+ Cable Qwiic-Dupont</p>
     <figure>
     <img src="assets/manual/image-221.png" style="width:3.3in"
     alt="Manual de usuario, página 42, imagen 221" />
     <figcaption aria-hidden="true">Manual de usuario, página 42, imagen
     221</figcaption>
     </figure>
+    <p>MDF-P + 2x Neopixel + 4x tornillos M2.5 + 6x tuercas M2.5</p>
+    <p>Precaución: El Neopixel que apunta al exterior (donde está
+    marcada la letra P) requiere 4<br />
+    tuercas. Se recomienda ajustar los tornillos con cautela, en
+    especial la tornillería del<br />
+    Neopixel interior (el que se encuentra apuntando en sentido
+    contrario a la cara con la letra<br />
+    P) para evitar que el Neopixel se encuentre torcido.</p>
     <h4 id="página-43-del-manual">Página 43 del manual</h4>
     <figure>
     <img src="assets/manual/image-222.png" style="width:3.3in"
@@ -2136,18 +2695,21 @@
     <figcaption aria-hidden="true">Manual de usuario, página 43, imagen
     222</figcaption>
     </figure>
+    <p>Ensamble P</p>
     <figure>
     <img src="assets/manual/image-223.png" style="width:3.3in"
     alt="Manual de usuario, página 43, imagen 223" />
     <figcaption aria-hidden="true">Manual de usuario, página 43, imagen
     223</figcaption>
     </figure>
+    <p>+ Cable dupont fijo 3 vías</p>
     <figure>
     <img src="assets/manual/image-224.png" style="width:3.3in"
     alt="Manual de usuario, página 43, imagen 224" />
     <figcaption aria-hidden="true">Manual de usuario, página 43, imagen
     224</figcaption>
     </figure>
+    <p>+ Cable dupont H-H</p>
     <h4 id="página-44-del-manual">Página 44 del manual</h4>
     <figure>
     <img src="assets/manual/image-225.png" style="width:3.3in"
@@ -2155,12 +2717,21 @@
     <figcaption aria-hidden="true">Manual de usuario, página 44, imagen
     225</figcaption>
     </figure>
+    <p>MDF-N + 2x tornillos M3x8 + 2x tuercas M3 + Motor DC + Hélice
+    +<br />
+    Soporte Motor DC</p>
     <figure>
     <img src="assets/manual/image-226.png" style="width:3.3in"
     alt="Manual de usuario, página 44, imagen 226" />
     <figcaption aria-hidden="true">Manual de usuario, página 44, imagen
     226</figcaption>
     </figure>
+    <p>Referencia montaje motor</p>
+    <p>Precaución: Verifique la correcta instalación de la pared N, la
+    cara con la letra N es la cara<br />
+    donde se coloca el motor. Asegúrate de colocar las conexiones del
+    motor DC de tal forma<br />
+    que no se dañen con el MDF.</p>
     <h4 id="página-45-del-manual">Página 45 del manual</h4>
     <figure>
     <img src="assets/manual/image-227.png" style="width:3.3in"
@@ -2168,18 +2739,21 @@
     <figcaption aria-hidden="true">Manual de usuario, página 45, imagen
     227</figcaption>
     </figure>
+    <p>Ensamble N</p>
     <figure>
     <img src="assets/manual/image-228.png" style="width:3.3in"
     alt="Manual de usuario, página 45, imagen 228" />
     <figcaption aria-hidden="true">Manual de usuario, página 45, imagen
     228</figcaption>
     </figure>
+    <p>Ensamble paredes piso superior</p>
     <figure>
     <img src="assets/manual/image-229.png" style="width:3.3in"
     alt="Manual de usuario, página 45, imagen 229" />
     <figcaption aria-hidden="true">Manual de usuario, página 45, imagen
     229</figcaption>
     </figure>
+    <p>Paredes ensambladas</p>
     <h4 id="página-46-del-manual">Página 46 del manual</h4>
     <figure>
     <img src="assets/manual/image-230.png" style="width:3.3in"
@@ -2187,20 +2761,38 @@
     <figcaption aria-hidden="true">Manual de usuario, página 46, imagen
     230</figcaption>
     </figure>
+    <p>Ensamble techo piso superior</p>
     <figure>
     <img src="assets/manual/image-231.png" style="width:3.3in"
     alt="Manual de usuario, página 46, imagen 231" />
     <figcaption aria-hidden="true">Manual de usuario, página 46, imagen
     231</figcaption>
     </figure>
-    <h3 id="cableado-y-diagramas">Cableado y diagramas</h3>
+    <p>Ensamble 1.9</p>
+    <p>2.- Conexiones + Ensamble Final</p>
+    <p>Objetivo:</p>
+    <p>Realizar la integración electrónica completa del kit, conectando
+    los módulos previamente<br />
+    ensamblados a la Shield, Hub I2C, PCA9685, Puente H y UNIT DualMCU
+    ONE, considerando<br />
+    conexiones de comunicación, alimentación, así como su polaridad.</p>
+    <p>Resultado esperado:</p>
+    <h3 id="conexiones-y-ensamble-final">Conexiones y ensamble
+    final</h3>
     <h4 id="página-47-del-manual">Página 47 del manual</h4>
+    <p>Al finalizar esta sección el usuario deberá tener los sensores
+    conectados al Shield, actuadores<br />
+    conectados a PCA9685 y Puente H según corresponda, Bus I2C
+    correctamente enlazado,<br />
+    alimentación sin cortocircuitos.</p>
     <figure>
     <img src="assets/manual/image-232.png" style="width:3.3in"
     alt="Manual de usuario, página 47, imagen 232" />
     <figcaption aria-hidden="true">Manual de usuario, página 47, imagen
     232</figcaption>
     </figure>
+    <p>Ilustración del ensamble al terminar las conexiones</p>
+    <p>2.1 - Conexiones paso a paso</p>
     <h4 id="página-48-del-manual">Página 48 del manual</h4>
     <figure>
     <img src="assets/manual/image-233.png" style="width:3.3in"
@@ -2214,6 +2806,9 @@
     <figcaption aria-hidden="true">Manual de usuario, página 48, imagen
     234</figcaption>
     </figure>
+    <p>Encoder - Shield</p>
+    <p>Precaución: Una mala conexión puede provocar daños en los
+    módulos.</p>
     <h4 id="página-49-del-manual">Página 49 del manual</h4>
     <figure>
     <img src="assets/manual/image-235.png" style="width:3.3in"
@@ -2227,6 +2822,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 49, imagen
     236</figcaption>
     </figure>
+    <p>Buzzer - Shield</p>
     <h4 id="página-50-del-manual">Página 50 del manual</h4>
     <figure>
     <img src="assets/manual/image-237.png" style="width:3.3in"
@@ -2240,6 +2836,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 50, imagen
     238</figcaption>
     </figure>
+    <p>RFID - Shield</p>
     <h4 id="página-51-del-manual">Página 51 del manual</h4>
     <figure>
     <img src="assets/manual/image-239.png" style="width:3.3in"
@@ -2253,6 +2850,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 51, imagen
     240</figcaption>
     </figure>
+    <p>Sensor de llama - Shield</p>
     <h4 id="página-52-del-manual">Página 52 del manual</h4>
     <figure>
     <img src="assets/manual/image-241.png" style="width:3.3in"
@@ -2266,6 +2864,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 52, imagen
     242</figcaption>
     </figure>
+    <p>PIR - Shield</p>
     <h4 id="página-53-del-manual">Página 53 del manual</h4>
     <figure>
     <img src="assets/manual/image-243.png" style="width:3.3in"
@@ -2279,6 +2878,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 53, imagen
     244</figcaption>
     </figure>
+    <p>Botón capacitivo - Shield</p>
     <figure>
     <img src="assets/manual/image-245.png" style="width:3.3in"
     alt="Manual de usuario, página 53, imagen 245" />
@@ -2292,6 +2892,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 54, imagen
     246</figcaption>
     </figure>
+    <p>Servomotor - PCA9685</p>
     <figure>
     <img src="assets/manual/image-247.png" style="width:3.3in"
     alt="Manual de usuario, página 54, imagen 247" />
@@ -2310,6 +2911,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 54, imagen
     249</figcaption>
     </figure>
+    <p>PCA9685 - Shield - Hub I2C</p>
     <h4 id="página-55-del-manual">Página 55 del manual</h4>
     <figure>
     <img src="assets/manual/image-250.png" style="width:3.3in"
@@ -2323,12 +2925,17 @@
     <figcaption aria-hidden="true">Manual de usuario, página 55, imagen
     251</figcaption>
     </figure>
+    <p>Pantalla OLED - Hub I2C</p>
     <figure>
     <img src="assets/manual/image-252.png" style="width:3.3in"
     alt="Manual de usuario, página 55, imagen 252" />
     <figcaption aria-hidden="true">Manual de usuario, página 55, imagen
     252</figcaption>
     </figure>
+    <p>Pantalla OLED - Hub I2C</p>
+    <p>El Hub I2C no tiene una posición designada, puedes conectar los
+    cables en cualquiera de<br />
+    las posiciones.</p>
     <h4 id="página-56-del-manual">Página 56 del manual</h4>
     <figure>
     <img src="assets/manual/image-253.png" style="width:3.3in"
@@ -2336,12 +2943,15 @@
     <figcaption aria-hidden="true">Manual de usuario, página 56, imagen
     253</figcaption>
     </figure>
+    <p>Ensamble 1.8</p>
+    <p>Coloca el Ensamble 1.6 para continuar.</p>
     <figure>
     <img src="assets/manual/image-254.png" style="width:3.3in"
     alt="Manual de usuario, página 56, imagen 254" />
     <figcaption aria-hidden="true">Manual de usuario, página 56, imagen
     254</figcaption>
     </figure>
+    <p>Ensamble 1.8 + 4x MDF-Llaves</p>
     <figure>
     <img src="assets/manual/image-255.png" style="width:3.3in"
     alt="Manual de usuario, página 56, imagen 255" />
@@ -2355,6 +2965,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 57, imagen
     256</figcaption>
     </figure>
+    <p>Sensor de lluvia - Shield</p>
     <figure>
     <img src="assets/manual/image-257.png" style="width:3.3in"
     alt="Manual de usuario, página 57, imagen 257" />
@@ -2367,6 +2978,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 57, imagen
     258</figcaption>
     </figure>
+    <p>Infrarrojo - Shield</p>
     <h4 id="página-58-del-manual">Página 58 del manual</h4>
     <figure>
     <img src="assets/manual/image-259.png" style="width:3.3in"
@@ -2380,6 +2992,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 58, imagen
     260</figcaption>
     </figure>
+    <p>Fotorresistor - Shield</p>
     <h4 id="página-59-del-manual">Página 59 del manual</h4>
     <figure>
     <img src="assets/manual/image-261.png" style="width:3.3in"
@@ -2387,12 +3000,14 @@
     <figcaption aria-hidden="true">Manual de usuario, página 59, imagen
     261</figcaption>
     </figure>
+    <p>Sensor Temperatura y Humedad - Hub I2C</p>
     <figure>
     <img src="assets/manual/image-262.png" style="width:3.3in"
     alt="Manual de usuario, página 59, imagen 262" />
     <figcaption aria-hidden="true">Manual de usuario, página 59, imagen
     262</figcaption>
     </figure>
+    <p>Sensor Temperatura y Humedad - Hub I2C</p>
     <h4 id="página-60-del-manual">Página 60 del manual</h4>
     <figure>
     <img src="assets/manual/image-263.png" style="width:3.3in"
@@ -2400,12 +3015,15 @@
     <figcaption aria-hidden="true">Manual de usuario, página 60, imagen
     263</figcaption>
     </figure>
+    <p>Sensor Temperatura y Humedad - Hub I2C</p>
     <figure>
     <img src="assets/manual/image-264.png" style="width:3.3in"
     alt="Manual de usuario, página 60, imagen 264" />
     <figcaption aria-hidden="true">Manual de usuario, página 60, imagen
     264</figcaption>
     </figure>
+    <p>Ensamble 1.9</p>
+    <p>Coloca el Ensamble 1.9 para continuar</p>
     <h4 id="página-61-del-manual">Página 61 del manual</h4>
     <figure>
     <img src="assets/manual/image-265.png" style="width:3.3in"
@@ -2413,6 +3031,8 @@
     <figcaption aria-hidden="true">Manual de usuario, página 61, imagen
     265</figcaption>
     </figure>
+    <p>Neopixel (dentro del piso superior) - Neopixel (sobre la
+    puerta)</p>
     <figure>
     <img src="assets/manual/image-266.png" style="width:3.3in"
     alt="Manual de usuario, página 61, imagen 266" />
@@ -2426,6 +3046,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 62, imagen
     267</figcaption>
     </figure>
+    <p>Neopixel (fuera del piso superior) - Shield</p>
     <figure>
     <img src="assets/manual/image-268.png" style="width:3.3in"
     alt="Manual de usuario, página 62, imagen 268" />
@@ -2439,12 +3060,15 @@
     <figcaption aria-hidden="true">Manual de usuario, página 63, imagen
     269</figcaption>
     </figure>
+    <p>Motor DC - Puente H</p>
     <figure>
     <img src="assets/manual/image-270.png" style="width:3.3in"
     alt="Manual de usuario, página 63, imagen 270" />
     <figcaption aria-hidden="true">Manual de usuario, página 63, imagen
     270</figcaption>
     </figure>
+    <p>(Puente H - PCA9685) + 2x cable dupont fijo 2 vías</p>
+    <p>2.2 - Ensamble Final</p>
     <h4 id="página-64-del-manual">Página 64 del manual</h4>
     <figure>
     <img src="assets/manual/image-271.png" style="width:3.3in"
@@ -2452,12 +3076,14 @@
     <figcaption aria-hidden="true">Manual de usuario, página 64, imagen
     271</figcaption>
     </figure>
+    <p>+ 4x MDF - Llaves</p>
     <figure>
     <img src="assets/manual/image-272.png" style="width:3.3in"
     alt="Manual de usuario, página 64, imagen 272" />
     <figcaption aria-hidden="true">Manual de usuario, página 64, imagen
     272</figcaption>
     </figure>
+    <p>+ MDF-B</p>
     <h4 id="página-65-del-manual">Página 65 del manual</h4>
     <figure>
     <img src="assets/manual/image-273.png" style="width:3.3in"
@@ -2465,12 +3091,16 @@
     <figcaption aria-hidden="true">Manual de usuario, página 65, imagen
     273</figcaption>
     </figure>
+    <p>+ 2x MDF-Llaves</p>
     <figure>
     <img src="assets/manual/image-274.png" style="width:3.3in"
     alt="Manual de usuario, página 65, imagen 274" />
     <figcaption aria-hidden="true">Manual de usuario, página 65, imagen
     274</figcaption>
     </figure>
+    <p>Ensamble Final</p>
+    <p>2.3 - Diagramas</p>
+    <p>2.3.1 - Diagramas Shield Resumido</p>
     <h4 id="página-66-del-manual">Página 66 del manual</h4>
     <figure>
     <img src="assets/manual/image-275.png" style="width:5.8in"
@@ -2478,6 +3108,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 66, imagen
     275</figcaption>
     </figure>
+    <p>Diagrama Shield simplificado (1)</p>
     <h4 id="página-67-del-manual">Página 67 del manual</h4>
     <figure>
     <img src="assets/manual/image-276.png" style="width:5.8in"
@@ -2485,6 +3116,16 @@
     <figcaption aria-hidden="true">Manual de usuario, página 67, imagen
     276</figcaption>
     </figure>
+    <p>Diagrama Shield simplificado (2)</p>
+    <p>Diagrama de las conexiones simplificadas de los sensores y
+    actuadores conectados<br />
+    directamente a la Shield; este diagrama muestra la fila de pines a
+    la que se debe conectar cada<br />
+    sensor y actuador considerando alimentación y comunicación.</p>
+    <p>Precaución: Previo a energizar, corrobore la correcta conexión de
+    los componentes<br />
+    electrónicos.</p>
+    <p>2.3.2 - Diagrama DualONE, Hub I2C, PCA9685</p>
     <h4 id="página-68-del-manual">Página 68 del manual</h4>
     <figure>
     <img src="assets/manual/image-277.png" style="width:5.8in"
@@ -2492,39 +3133,68 @@
     <figcaption aria-hidden="true">Manual de usuario, página 68, imagen
     277</figcaption>
     </figure>
+    <p>Diagrama DualONE, Hub I2C y PCA9685</p>
+    <p>2.3.3 - Diagrama completo</p>
     <figure>
     <img src="assets/manual/image-278.png" style="width:5.8in"
     alt="Manual de usuario, página 68, imagen 278" />
     <figcaption aria-hidden="true">Manual de usuario, página 68, imagen
     278</figcaption>
     </figure>
+    <p>Diagrama completo (1)</p>
     <figure>
     <img src="assets/manual/image-279.png" style="width:5.8in"
     alt="Manual de usuario, página 68, imagen 279" />
     <figcaption aria-hidden="true">Manual de usuario, página 68, imagen
     279</figcaption>
     </figure>
+    <p>Diagrama completo (2)</p>
+    <h3 id="puesta-en-marcha">Puesta en marcha</h3>
     <h4 id="página-69-del-manual">Página 69 del manual</h4>
+    <p>Este diagrama muestra todas las conexiones a realizar.</p>
+    <p>3.- Puesta en marcha</p>
+    <p>Objetivo:</p>
+    <p>Activación funcional del Kit SmartHome mediante la instalación de
+    la aplicación móvil oficial,<br />
+    emparejamiento con la aplicación, correcta respuesta del kit. Esta
+    sección convierten el<br />
+    ensamble físico en un sistema inteligente operativo.</p>
+    <p>Instalacion:</p>
+    <p>Una vez descargado el archivo apk seleccionar el archivo, se
+    mostrara el siguiente mensaje</p>
     <figure>
     <img src="assets/manual/image-280.png" style="width:2in"
     alt="Manual de usuario, página 69, imagen 280" />
     <figcaption aria-hidden="true">Manual de usuario, página 69, imagen
     280</figcaption>
     </figure>
+    <p>Al seleccionar Instalar se iniciara el proceso de instalacion en
+    el dispositivo</p>
+    <p>Al no ser una aplicacion nativa de Play Store se mostrara un
+    mensaje de proteccion, se tendra<br />
+    que seleccionar “Instalar de todas formas“</p>
     <figure>
     <img src="assets/manual/image-281.png" style="width:2in"
     alt="Manual de usuario, página 69, imagen 281" />
     <figcaption aria-hidden="true">Manual de usuario, página 69, imagen
     281</figcaption>
     </figure>
+    <p>Tras la instalación se podra encontrar el icono como una
+    aplicacion mas en el sistema</p>
     <figure>
     <img src="assets/manual/image-282.png" style="width:0.65in"
     alt="Manual de usuario, página 69, imagen 282" />
     <figcaption aria-hidden="true">Manual de usuario, página 69, imagen
     282</figcaption>
     </figure>
-    <h3 id="firmware-y-aplicación">Firmware y aplicación</h3>
+    <p>Resultado esperado:</p>
     <h4 id="página-70-del-manual">Página 70 del manual</h4>
+    <p>Aplicación funcional con visualización de la información recibida
+    por los sensores y control de<br />
+    los actuadores. Ejecución de eventos.</p>
+    <p>Actualmente la aplicación solo está disponible para Android,
+    descargando el.apk desde<br />
+    nuestras fuentes oficiales.</p>
     <figure>
     <img src="assets/manual/image-283.jpg" style="width:3.3in"
     alt="Manual de usuario, página 70, imagen 283" />
@@ -2537,25 +3207,55 @@
     <figcaption aria-hidden="true">Manual de usuario, página 70, imagen
     284</figcaption>
     </figure>
+    <p>Aplicación: Sensores</p>
+    <p>Aplicación: Control actuadores</p>
+    <p>Vista de la aplicación</p>
+    <p>3.1 - Carga de firmware</p>
+    <p>El firmware viene previamente programado en la UNIT DualONE</p>
+    <p>De ser necesaria la instalación del firmware sigue estos
+    pasos.</p>
+    <p>3.1.1 - ESP32</p>
+    <p>Debes tener Arduino IDE instalado en tu computadora.</p>
     <h4 id="página-71-del-manual">Página 71 del manual</h4>
+    <ol type="1">
+    <li>Descarga el archivo arduino-littlefs-upload-X.X.X.vsix del
+    último release del repositorio de</li>
+    </ol>
+    <p>GitHub.</p>
     <figure>
     <img src="assets/manual/image-285.png" style="width:3.3in"
     alt="Manual de usuario, página 71, imagen 285" />
     <figcaption aria-hidden="true">Manual de usuario, página 71, imagen
     285</figcaption>
     </figure>
+    <p>Última versión del archivo en Febrero de 2026</p>
+    <ol start="2" type="1">
+    <li>Dirígete al directorio de arduino de tu computadora:
+    C:\Users\&lt;username&gt;\.arduinoIDE\.</li>
+    </ol>
     <figure>
     <img src="assets/manual/image-286.png" style="width:3.3in"
     alt="Manual de usuario, página 71, imagen 286" />
     <figcaption aria-hidden="true">Manual de usuario, página 71, imagen
     286</figcaption>
     </figure>
+    <p>Directorio Arduino</p>
+    <ol start="3" type="1">
+    <li>Abre la carpeta plugins y pega el archivo descargado.</li>
+    </ol>
+    <p>De no existir la carpeta, debes crear la carpeta plugins.</p>
     <figure>
     <img src="assets/manual/image-287.png" style="width:5.8in"
     alt="Manual de usuario, página 71, imagen 287" />
     <figcaption aria-hidden="true">Manual de usuario, página 71, imagen
     287</figcaption>
     </figure>
+    <p>Carpeta plugins</p>
+    <ol start="4" type="1">
+    <li>Reinicia y abre el Arduino IDE. Utiliza el atajo [Ctrl] +
+    [Shift] + [P] y verifica que exista la</li>
+    </ol>
+    <p>instrucción Upload Little FS to Pico/ESP8266/ESP32</p>
     <h4 id="página-72-del-manual">Página 72 del manual</h4>
     <figure>
     <img src="assets/manual/image-288.png" style="width:5.8in"
@@ -2563,12 +3263,30 @@
     <figcaption aria-hidden="true">Manual de usuario, página 72, imagen
     288</figcaption>
     </figure>
+    <p>Verificación de la correcta instalación del plugin</p>
+    <ol start="5" type="1">
+    <li>Descarga el repositorio del proyecto en GitHub. En la
+    ubicación:</li>
+    </ol>
+    <p>\software\ESP32\Smart_Home_App_ESP_COMV4 esta ubicado el
+    programa.ino que se<br />
+    deberá cargar a la ESP32. Abre el archivo
+    Smart_Home_App_ESP_COMV4</p>
     <figure>
     <img src="assets/manual/image-289.png" style="width:5.8in"
     alt="Manual de usuario, página 72, imagen 289" />
     <figcaption aria-hidden="true">Manual de usuario, página 72, imagen
     289</figcaption>
     </figure>
+    <p>Directorio programa ESP32</p>
+    <ol start="6" type="1">
+    <li>Sube la información a la ESP32 desde el IDE de Arduino conecta
+    la DualONE con el monitor</li>
+    </ol>
+    <p>serial cerrado y el programa a cargar abierto, se presiona [Ctrl]
+    + [Shift] + [P] y se selecciona<br />
+    ’Upload Little FS to Pico/ESP8266/ESP32‘. Aparecerá la siguiente
+    ventana.</p>
     <h4 id="página-73-del-manual">Página 73 del manual</h4>
     <figure>
     <img src="assets/manual/image-290.png" style="width:5.8in"
@@ -2576,25 +3294,69 @@
     <figcaption aria-hidden="true">Manual de usuario, página 73, imagen
     290</figcaption>
     </figure>
+    <p>Ventana: KittleFS Upload</p>
+    <p>Nota: Una vez aparezca el mensaje “Connecting………” puede ser
+    necesario presionar el<br />
+    botón de boot de la DualONE si la carga no se hace en
+    automático.</p>
+    <ol start="7" type="1">
+    <li>Espera a que se muestre el mensaje que confirme la correcta
+    descarga de información.</li>
+    </ol>
     <figure>
     <img src="assets/manual/image-291.png" style="width:5.8in"
     alt="Manual de usuario, página 73, imagen 291" />
     <figcaption aria-hidden="true">Manual de usuario, página 73, imagen
     291</figcaption>
     </figure>
+    <p>Mensaje de confirmación</p>
+    <ol start="8" type="1">
+    <li>Carga el archivo.ino a la ESP32.</li>
+    </ol>
+    <p>Nota: Te sugerimos revisar la Guía de inicio rápido, así como la
+    Wiki y datasheet del<br />
+    producto.</p>
+    <p>3.1.2 - RP2040</p>
     <h4 id="página-74-del-manual">Página 74 del manual</h4>
+    <p>Debes tener Arduino IDE instalado en tu computadora.</p>
+    <ol type="1">
+    <li>Descarga el repositorio del proyecto en GitHub. En la
+    ubicación:</li>
+    </ol>
+    <p>software\RP2040\Smart_Home_RP_V1 esta ubicado el programa.ino que
+    se deberá cargar a<br />
+    la RP2040. Smart_Home_RP_V1</p>
     <figure>
     <img src="assets/manual/image-292.png" style="width:5.8in"
     alt="Manual de usuario, página 74, imagen 292" />
     <figcaption aria-hidden="true">Manual de usuario, página 74, imagen
     292</figcaption>
     </figure>
+    <p>Directorio programa RP2040</p>
+    <ol start="2" type="1">
+    <li>Carga el archivo.ino a la RP2040</li>
+    </ol>
+    <p>Nota: Te sugerimos revisar la Guía de inicio rápido, así como la
+    Wiki y datasheet del<br />
+    producto.</p>
+    <p>3.2 - Instalación de la app</p>
+    <p>Actualmente la aplicación solo está disponible para Android,
+    descargando el.apk desde<br />
+    nuestras fuentes oficiales.</p>
+    <p>Dirígete al repositorio de GitHub, descarga el archivo.apk de la
+    dirección:<br />
+    \unit_kit_smarthome\software\App</p>
+    <p>Descarga el archivo.apk en tu dispositivo Android, aparecerá una
+    ventana emergente<br />
+    preguntando por la instalación.</p>
     <figure>
     <img src="assets/manual/image-293.png" style="width:3.3in"
     alt="Manual de usuario, página 74, imagen 293" />
     <figcaption aria-hidden="true">Manual de usuario, página 74, imagen
     293</figcaption>
     </figure>
+    <p>Ventana emergente: Validar instalación de app</p>
+    <p>Presiona el botón “Instalar”</p>
     <h4 id="página-75-del-manual">Página 75 del manual</h4>
     <figure>
     <img src="assets/manual/image-294.png" style="width:3.3in"
@@ -2602,12 +3364,19 @@
     <figcaption aria-hidden="true">Manual de usuario, página 75, imagen
     294</figcaption>
     </figure>
+    <p>Ventana emergente: Instalación de app</p>
+    <p>Google Play Proyect analizará la seguridad de la app. Presiona
+    “Analizar app”</p>
     <figure>
     <img src="assets/manual/image-295.png" style="width:3.3in"
     alt="Manual de usuario, página 75, imagen 295" />
     <figcaption aria-hidden="true">Manual de usuario, página 75, imagen
     295</figcaption>
     </figure>
+    <p>Ventana emergente: Revisión App (Google Play<br />
+    Protect)</p>
+    <p>Terminado el análisis, Google Play Protect avisará que la app es
+    segura. Presiona “Instalar”</p>
     <h4 id="página-76-del-manual">Página 76 del manual</h4>
     <figure>
     <img src="assets/manual/image-296.png" style="width:3.3in"
@@ -2615,18 +3384,27 @@
     <figcaption aria-hidden="true">Manual de usuario, página 76, imagen
     296</figcaption>
     </figure>
+    <p>Ventana emergente: Validación de seguridad<br />
+    de la App (Google Play Protect)</p>
+    <p>Regresaremos a la ventana emergente de instalación. Espera un
+    momento en lo que finaliza la<br />
+    instalación.</p>
     <figure>
     <img src="assets/manual/image-297.png" style="width:3.3in"
     alt="Manual de usuario, página 76, imagen 297" />
     <figcaption aria-hidden="true">Manual de usuario, página 76, imagen
     297</figcaption>
     </figure>
+    <p>Ventana emergente: Continuación de instalación</p>
+    <p>Terminada la aplicación aparecerá la siguiente ventana.</p>
     <figure>
     <img src="assets/manual/image-298.png" style="width:3.3in"
     alt="Manual de usuario, página 76, imagen 298" />
     <figcaption aria-hidden="true">Manual de usuario, página 76, imagen
     298</figcaption>
     </figure>
+    <p>Ventana emergente: Finalización de instalación</p>
+    <p>Podrás visualizar la aplicación en tu dispositivo Android.</p>
     <h4 id="página-77-del-manual">Página 77 del manual</h4>
     <figure>
     <img src="assets/manual/image-299.png" style="width:3.3in"
@@ -2634,6 +3412,9 @@
     <figcaption aria-hidden="true">Manual de usuario, página 77, imagen
     299</figcaption>
     </figure>
+    <p>Aplicación SmartHome instalada</p>
+    <p>Al abrir la app, podrás dar clic al ícono de Ayuda para revisar
+    las funciones de la aplicación.</p>
     <h4 id="página-78-del-manual">Página 78 del manual</h4>
     <figure>
     <img src="assets/manual/image-300.png" style="width:3.3in"
@@ -2641,14 +3422,60 @@
     <figcaption aria-hidden="true">Manual de usuario, página 78, imagen
     300</figcaption>
     </figure>
+    <p>Botón ayuda</p>
+    <p>3.3 - Primera conexión</p>
+    <p>3.4 - Uso de la app, lectura de sensores, actuadores</p>
+    <p>3.5 - Modo Offline</p>
+    <p>4.- Recursos y documentación Oficial</p>
+    <p>Recurso</p>
+    <p>Descripción</p>
+    <p>URL</p>
+    <p>Wiki Platform</p>
+    <p>Wiki oficial</p>
+    <p>Documentación<br />
+    técnica completa</p>
+    <p>UNIT-Electronics-M<br />
+    X/unit_kit_smarthome</p>
+    <p>GitHub</p>
+    <p>Código fuente /<br />
+    firmware</p>
     <h3 id="recursos-y-dimensiones">Recursos y dimensiones</h3>
     <h4 id="página-79-del-manual">Página 79 del manual</h4>
+    <p>UNIT-Electronics-M<br />
+    unit_kit_smarthome /sof X/unit_kit_smarthome<br />
+    tware/App</p>
+    <p>Aplicación Móvil</p>
+    <p>Descarga oficial</p>
+    <p>IDE Arduino</p>
+    <p>Software programación https://docs.arduino.cc<br />
+    /software/ide/</p>
+    <p>Thonny, Python IDE<br />
+    for beginners<br />
+    https://code.visualstudi<br />
+    o.com/</p>
+    <p>Thonny</p>
+    <p>MicroPython</p>
     <figure>
     <img src="assets/manual/image-301.png" style="width:0.65in"
     alt="Manual de usuario, página 79, imagen 301" />
     <figcaption aria-hidden="true">Manual de usuario, página 79, imagen
     301</figcaption>
     </figure>
+    <p>Visual Studio Code</p>
+    <p>Entorno avanzado</p>
+    <p>https://code.visualstudi<br />
+    o.com/</p>
+    <p>5.- Información Mecánica y Dimensional</p>
+    <p>5.1 - Dimensiones ensamble:</p>
+    <p>18 x 15 x 19 [cm]</p>
+    <p>5.2 - Dimensiones del empaquetado:</p>
+    <p>27 x 17 x 15 [cm]</p>
+    <p>5.3 -Peso total:</p>
+    <p>5.4 - Materiales de construcción:</p>
+    <p>MDF, acrílico y PLA.</p>
+    <p>5.5 - Tipo de tornillería:</p>
+    <p>Tornillos milimétricos cabeza de queso ranurado</p>
+    <p>5.6 -Diagrama dimensional acotado:</p>
     <h4 id="página-80-del-manual">Página 80 del manual</h4>
     <figure>
     <img src="assets/manual/image-303.png" style="width:5.8in"
@@ -2656,6 +3483,7 @@
     <figcaption aria-hidden="true">Manual de usuario, página 80, imagen
     303</figcaption>
     </figure>
+    <p>Diagrama dimensional UNIT Smart Home</p>
   </article>
 </body>
 </html>
