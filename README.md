@@ -1,24 +1,13 @@
 
 # UNIT Smart Home
 
-<!-- Exception:
 
-The PULSAR development board line does not use the DevLab: prefix.
-
-Format: PULSAR [MCU/Model]
-
-Examples: PULSAR C6, PULSAR H2, PULSAR RP2350
-
-The JUN R3 board also does not use DevLab:
-
-Example: JUN R3 -->
 <div align="center">
   <img src="hardware/resources/unit_icon.png" width="450px" alt="https://uelectronics.com/">
   <p><em>uelectronics.com</em></p>
 </div>
 
 <div align="center">
-## Introduction
 
 The SmartHome Kit by UNIT Electronics is an educational platform designed to teach programming and electronics through the construction of a fully functional smart home. It features multiple sensors and actuators controlled by our proprietary development board, built around two widely adopted microcontrollers: the ESP32 and the RP2040.
  
