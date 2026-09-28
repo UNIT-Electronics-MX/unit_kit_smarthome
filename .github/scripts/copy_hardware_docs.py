@@ -89,14 +89,14 @@ def classify_resource(name, extension):
     title = Path(name).stem.replace("_", " ").replace("-", " ").title()
     description = "Hardware resource"
 
-    if lower_name == "manual-editable.docx":
+    if "product_reference" in lower_name or "product-reference" in lower_name:
         category = "Product documents"
-        title = "Manual de usuario editable"
-        description = "Manual editable en Word, generado desde los capítulos Markdown"
-    elif "product_reference" in lower_name or "product-reference" in lower_name:
-        category = "Product documents"
-        title = "Manual de usuario"
-        description = "Manual completo generado desde los capítulos Markdown"
+        title = "Product Reference"
+        description = (
+            "Publication-ready product reference"
+            if extension == ".pdf"
+            else "Editable product reference"
+        )
     elif "_sch_" in lower_name or "schematic" in lower_name:
         category = "Product documents"
         title = "Schematic"
@@ -213,27 +213,20 @@ def copy_hardware_files():
     shutil.copytree(HARDWARE_DIR, DOCS_HARDWARE_DIR)
 
     if PRODUCT_REFERENCE_BUILD_DIR.is_dir():
-        shutil.copytree(
-            PRODUCT_REFERENCE_BUILD_DIR,
-            DOCS_HARDWARE_DIR / "product-reference",
-        )
+        for generated_file in sorted(PRODUCT_REFERENCE_BUILD_DIR.iterdir()):
+            if generated_file.suffix.lower() in {".pdf", ".docx"}:
+                shutil.copy2(generated_file, DOCS_HARDWARE_DIR / generated_file.name)
 
 
 def scan_published_files():
     """Return deterministic metadata for every published hardware file."""
     files = []
     for root, dirs, names in os.walk(DOCS_HARDWARE_DIR):
-        dirs[:] = sorted(d for d in dirs if d != "product-reference")
+        dirs.sort()
         for name in sorted(names):
             if name.lower() == "schematics_icon.jpg":
                 continue
             files.append(describe_file(Path(root) / name))
-
-    reference_dir = DOCS_HARDWARE_DIR / "product-reference"
-    if reference_dir.is_dir():
-        for pattern in ("*product_reference*.html", "*product_reference*.pdf",
-                        "manual-editable.docx"):
-            files.extend(describe_file(path) for path in sorted(reference_dir.glob(pattern)))
     return sorted(
         files,
         key=lambda item: (

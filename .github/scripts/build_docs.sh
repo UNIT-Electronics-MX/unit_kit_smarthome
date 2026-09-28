@@ -27,7 +27,7 @@ if [[ "${#product_reference_pdfs[@]}" -eq 0 ]]; then
 fi
 
 for source_pdf in "${product_reference_pdfs[@]}"; do
-    published_pdf="docs/hardware/product-reference/$(basename "$source_pdf")"
+    published_pdf="docs/hardware/$(basename "$source_pdf")"
     if [[ ! -s "$published_pdf" ]]; then
         echo "Error: generated product reference was not published: $published_pdf" >&2
         exit 1
