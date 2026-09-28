@@ -39,4 +39,7 @@ are not published.
 GitHub Actions publishes the PDF and DOCX under `docs/hardware/`. Do not edit
 generated documents or `docs/` manually.
 
-The Markdown chapters are the source of truth for the manual.
+The Markdown chapters are the source of truth for the manual. The HTML/PDF
+cover and contents page come from `templates/product-reference.html`, following
+the PULSAR RP2350A Product Reference layout. `chapters/00-portada.md` provides
+the equivalent opening content for the editable Markdown and DOCX outputs.

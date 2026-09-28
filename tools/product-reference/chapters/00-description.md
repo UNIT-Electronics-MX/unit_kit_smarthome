@@ -1,14 +1,18 @@
 ## Descripción
 
-### Introducción
-
 El Kit SmartHome de UNIT Electronics es una plataforma didáctica diseñada para el aprendizaje  
 práctica de electrónica y programación mediante la construcción de una casa inteligente  
 funcional.
 
+![Kit SmartHome ensamblado](assets/manual/image-002.png){width=3.0in}
+
+### Aplicaciones
+
 El usuario ensamblará piezas mecánicas, integrará electrónica modular, hará uso del control  
 PWM, el protocolo de comunicación I2C y realizará lectura de sensores tanto digitales como  
 analógicos, todo con apoyo de una aplicación móvil.
+
+### Características del hardware
 
 El kit integra múltiples sensores y actuadores, controlados por la tarjeta de desarrollo UNIT  
 DualMCU ONE, que incorpora los microcontroladores:

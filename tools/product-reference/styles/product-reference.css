@@ -23,7 +23,7 @@
   }
 
   @top-right {
-    content: "KIT SMARTHOME\A MANUAL DE USUARIO";
+    content: "KIT SMARTHOME\A REFERENCIA V1.1.0";
     color: var(--ink);
     font: 700 8pt "Noto Sans", sans-serif;
     line-height: 1.3;
@@ -53,7 +53,7 @@
   }
 
   @bottom-right {
-    content: "Manual de usuario V1.1.0  ·  2026-02-16";
+    content: "Referencia de producto V1.1.0  ·  2026-02-16";
     color: var(--muted);
     font: 500 7.5pt "Noto Sans", sans-serif;
     border-top: .5pt solid var(--line);
@@ -281,8 +281,7 @@ body {
 }
 
 #TOC > ul {
-  column-count: 2;
-  column-gap: 14mm;
+  column-count: 1;
   margin: 0;
   padding: 0;
 }

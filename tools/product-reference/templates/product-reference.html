@@ -10,6 +10,54 @@
   $endfor$
 </head>
 <body>
+  <section class="cover">
+    <div class="cover__brand">
+      <img src="assets/unit-logo.png" alt="UNIT Electronics">
+      <span>MANUAL DE REFERENCIA DEL PRODUCTO</span>
+    </div>
+
+    <div class="cover__identity">
+      <p class="cover__eyebrow">MIEMBRO DEL ECOSISTEMA UNIT DEVLAB</p>
+      <h1>$title$</h1>
+      <p class="cover__part">MPN: $mpn$</p>
+      <p class="cover__version">Version $version$</p>
+    </div>
+
+    <div class="cover__visual">
+      <div class="cover__halo"></div>
+      <img
+        src="assets/manual/image-002.png"
+        alt="Kit SmartHome ensamblado">
+    </div>
+
+    <div class="cover__summary">
+      <p>
+        Kit didáctico de casa inteligente con UNIT DualMCU ONE, sensores,
+        actuadores y control desde una aplicación móvil.
+      </p>
+      <div class="cover__tags">
+        <span>ESP32 + RP2040</span>
+        <span>SENSORES Y ACTUADORES</span>
+        <span>I²C · PWM</span>
+        <span>APP ANDROID</span>
+      </div>
+    </div>
+
+    <div class="cover__footer">
+      <span>UNIT Electronics® DevLab Ecosystem</span>
+      <span>Fecha del documento $date$</span>
+    </div>
+  </section>
+
+  $if(toc)$
+  <section class="contents-page">
+    <p class="section-kicker">MAPA DEL DOCUMENTO</p>
+    <h1>Contenido</h1>
+    <div class="contents-page__rule"></div>
+    $toc$
+  </section>
+  $endif$
+
   <article class="product-reference-content">
     $body$
   </article>

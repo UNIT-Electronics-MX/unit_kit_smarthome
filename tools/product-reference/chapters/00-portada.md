@@ -1,9 +1,9 @@
 ::: {.cover}
-Manual de usuario - Kit SmartHome
+# KIT SMARTHOME
 
-# Manual de usuario
+**Manual de referencia del producto**
 
-![UNIT Electronics](assets/manual/image-000-alpha.png){width=4.0in}
+![UNIT Electronics](assets/unit-logo.png){width=2.0in}
 
 ![Kit SmartHome](assets/manual/image-002.png){width=4.2in}
 
