@@ -1,20 +1,50 @@
-# Manual de usuario - Kit SmartHome
+# Product Reference build
 
-## Dónde editar
+The UNIT PULSAR RP2350 Product Reference source is maintained in Markdown under
+`chapters/`. Document metadata and chapter order are defined in `book.yml`.
+Version 0.1.0 is based on the V1.3 schematic, official RP2350 component
+datasheet, and technical wiki.
 
-- [`chapters/00-portada.md`](chapters/00-portada.md) contiene la portada.
-- [`chapters/10-manual-migrado.md`](chapters/10-manual-migrado.md) contiene las secciones, tablas e imágenes del manual completo. Edite esos archivos Markdown para cambiar también el PDF publicado.
-- Para agregar un apartado, cree otro `.md` en `chapters/` y añada su ruta a la lista `chapters:` de [`book.yml`](book.yml). El orden de esa lista determina el orden en HTML, PDF y DOCX.
-- Los antiguos `chapters/00-description.md` a `09-appendix.md` están conservados como borradores. No se publican hasta añadir su ruta a `book.yml`.
-- [`styles/product-reference.css`](styles/product-reference.css) y [`templates/product-reference.html`](templates/product-reference.html) controlan el diseño del HTML y PDF A4. [`reference-a4.docx`](reference-a4.docx) controla el estilo del DOCX.
-- Las figuras están en `assets/manual/`; en Markdown use rutas como `assets/manual/image-002.png`.
+## Local validation build
 
-## Compilar
+Requirements:
 
-Desde la raíz del repositorio:
+- Pandoc
+- Python 3 with Pillow
+- WeasyPrint
+
+Run from the repository root and direct validation output outside the
+repository:
 
 ```bash
-./tools/product-reference/build.sh
+./tools/product-reference/build.sh /tmp/pulsar-product-reference
 ```
 
-Se necesitan Python 3, Pandoc, Google Chrome o Chromium, y `pdfinfo` de poppler-utils. El resultado en `build/product-reference/` contiene HTML, PDF y DOCX **generados de los capítulos listados en `book.yml`**, más sus imágenes locales. La publicación copia el resultado a `docs/hardware/product-reference/`.
+The build produces:
+
+```text
+unit_product_reference_v_0_1_0_pulsar_rp2350a.md
+unit_product_reference_v_0_1_0_pulsar_rp2350a.docx
+unit_product_reference_v_0_1_0_pulsar_rp2350a.html
+unit_product_reference_v_0_1_0_pulsar_rp2350a.pdf
+```
+
+The build prepares temporary PNG/JPEG copies with a maximum dimension of
+2400 pixels for DOCX, HTML, and PDF output. This prevents oversized hardware
+exports from exceeding Pillow's image-loading limit in WeasyPrint. Original
+files in `hardware/resources/` remain unchanged. The preprocessing step accepts
+source images up to 200 million pixels and reports the asset path if an image
+cannot be read. WeasyPrint rendering errors fail the build so incomplete PDFs
+are not published.
+
+GitHub Actions publishes the PDF and DOCX under `docs/hardware/`. Do not edit
+generated documents or `docs/` manually.
+
+The Markdown chapters are the source of truth. Board values and mappings must
+come from technical references. Do not infer complete board limits from an
+individual component rating. The technical wiki documents intended subsystem
+operation and firmware workflows. Values absent from these sources are stated
+as unspecified rather than inferred from individual component ratings.
+
+Known source inconsistencies and unspecified board-level values are listed in
+Chapter 9.
