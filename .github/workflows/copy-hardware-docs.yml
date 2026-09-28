@@ -44,7 +44,7 @@ jobs:
     - name: Install PDF conversion tools
       run: |
         sudo apt-get update
-        sudo apt-get install --yes poppler-utils
+        sudo apt-get install --yes poppler-utils pandoc
 
     - name: Build user manual from PDF
       run: |

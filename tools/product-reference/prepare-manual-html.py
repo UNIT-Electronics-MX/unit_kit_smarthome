@@ -64,6 +64,7 @@ def main() -> None:
   .toolbar {{ position: sticky; top: 0; z-index: 2; display: flex; align-items: center;
     justify-content: space-between; gap: 12px; padding: 12px 20px; background: white;
     box-shadow: 0 1px 6px #0002; }}
+  .toolbar nav {{ display: flex; gap: 16px; flex-wrap: wrap; }}
   .toolbar a {{ color: #a93f0b; }}
   main {{ padding: 20px 16px; }}
   .page {{ position: relative; width: min(100%, {PAGE_WIDTH}px); margin: 0 auto 22px;
@@ -79,7 +80,7 @@ def main() -> None:
 </style>
 </head>
 <body>
-<header class="toolbar"><strong>{title}</strong><a href="{PDF_NAME}">Descargar PDF</a></header>
+<header class="toolbar"><strong>{title}</strong><nav><a href="manual-editable.html">Versión editable</a> <a href="{PDF_NAME}">Descargar PDF</a></nav></header>
 <main aria-label="Manual de usuario completo">
 {chr(10).join(pages)}
 </main>

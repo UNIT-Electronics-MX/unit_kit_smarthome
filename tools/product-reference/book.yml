@@ -1,6 +1,25 @@
 ---
-title: "Kit SmartHome"
-subtitle: "Manual de usuario"
+title: "Manual de usuario - Kit SmartHome"
+subtitle: "Kit SmartHome"
+author: "UNIT Electronics"
+lang: es-MX
 version: "1.1.0"
 date: "2026-02-16"
+toc-title: "Contenido"
+
+# Los archivos listados se publican en este orden. Para agregar un apartado,
+# cree un archivo Markdown en chapters/ y añada su ruta a esta lista.
+chapters:
+  - tools/product-reference/chapters/10-manual-migrado.md
+# Borradores conservados de la plantilla anterior; habilite sólo los que edite.
+#  - tools/product-reference/chapters/00-description.md
+#  - tools/product-reference/chapters/01-board.md
+#  - tools/product-reference/chapters/02-ratings.md
+#  - tools/product-reference/chapters/03-functional-overview.md
+#  - tools/product-reference/chapters/04-connectors-pinouts.md
+#  - tools/product-reference/chapters/05-board-operation.md
+#  - tools/product-reference/chapters/06-mechanical.md
+#  - tools/product-reference/chapters/07-company.md
+#  - tools/product-reference/chapters/08-references.md
+#  - tools/product-reference/chapters/09-appendix.md
 ---

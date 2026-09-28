@@ -89,7 +89,15 @@ def classify_resource(name, extension):
     title = Path(name).stem.replace("_", " ").replace("-", " ").title()
     description = "Hardware resource"
 
-    if "product_reference" in lower_name or "product-reference" in lower_name:
+    if lower_name in {"manual-editable.html", "manual-editable.docx"}:
+        category = "Product documents"
+        title = "Manual de usuario editable"
+        description = (
+            "Manual completo en HTML, generado desde los capítulos Markdown"
+            if extension == ".html"
+            else "Manual editable en Word, generado desde los capítulos Markdown"
+        )
+    elif "product_reference" in lower_name or "product-reference" in lower_name:
         category = "Product documents"
         title = "Manual de usuario"
         description = (
@@ -231,7 +239,8 @@ def scan_published_files():
 
     reference_dir = DOCS_HARDWARE_DIR / "product-reference"
     if reference_dir.is_dir():
-        for pattern in ("*product_reference*.html", "*product_reference*.pdf"):
+        for pattern in ("*product_reference*.html", "*product_reference*.pdf",
+                        "manual-editable.html", "manual-editable.docx"):
             files.extend(describe_file(path) for path in sorted(reference_dir.glob(pattern)))
     return sorted(
         files,
