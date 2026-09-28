@@ -1,8 +1,11 @@
 # Kit SmartHome Product Reference
 
 The source is the 80-page `I2D-Manual de usuario - Kit SmartHome-280926-171843.pdf`
-under `assets/`. The condensed Spanish reference is maintained in `chapters/`;
-`book.yml` controls its title, version, and chapter order.
+under `assets/`. The Spanish reference text is maintained in `chapters/`; `book.yml` controls
+its title, version, and chapter order. `build-figure-atlas.py` appends all 302
+visible manual images to the reference in source page order, so the HTML, DOCX,
+and PDF contain the complete visual material. Two PDF transparency masks remain
+in assets without appearing as standalone illustrations.
 
 ## Build
 
@@ -25,8 +28,9 @@ adds links to the hardware resources page.
 with `pdfimages -all`, including two transparency masks. `manifest.tsv` maps
 each filename to its PDF page and image number. When replacing the source PDF,
 regenerate both images and manifest in the same order; then check the selected
-figure references in the chapters and cover. The gallery is generated at build
-time from this manifest.
+figure references in the chapters and cover. Both the gallery and the
+reference atlas are generated at build time from this manifest. Keep the
+manifest and extracted files together when updating the manual.
 
 The manual states an assembled size of 18 × 15 × 19 cm, while the repository
 README states 16 × 15 × 19 cm. The reference reports this discrepancy instead

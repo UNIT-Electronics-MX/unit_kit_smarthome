@@ -73,6 +73,9 @@ if [[ "${#CHAPTERS[@]}" -eq 0 ]]; then
   exit 1
 fi
 
+TEMP_DIR="$(mktemp -d)"
+trap 'rm -rf "$TEMP_DIR"' EXIT
+
 CHAPTER_PATHS=()
 for chapter in "${CHAPTERS[@]}"; do
   if [[ ! -f "$PROJECT_DIR/$chapter" ]]; then
@@ -81,6 +84,11 @@ for chapter in "${CHAPTERS[@]}"; do
   fi
   CHAPTER_PATHS+=("$PROJECT_DIR/$chapter")
 done
+
+ATLAS_FILE="$TEMP_DIR/manual-atlas.md"
+"${IMAGE_PYTHON_COMMAND[@]}" "$ASSET_ROOT/build-figure-atlas.py" \
+  "$ASSET_ROOT/assets/manual/manifest.tsv" "$ATLAS_FILE"
+CHAPTER_PATHS+=("$ATLAS_FILE")
 
 mapfile -t ASSETS < <(
   grep -hEo '!\[[^]]*\]\([^)]*\)' "${CHAPTER_PATHS[@]}" |
@@ -96,9 +104,6 @@ for asset in "${ASSETS[@]}"; do
 done
 
 mkdir -p "$OUTPUT_DIR"
-
-TEMP_DIR="$(mktemp -d)"
-trap 'rm -rf "$TEMP_DIR"' EXIT
 
 # Pandoc looks here first for reduced copies; the source artwork stays intact.
 "${IMAGE_PYTHON_COMMAND[@]}" "$PROJECT_DIR/tools/product-reference/prepare-images.py" \
