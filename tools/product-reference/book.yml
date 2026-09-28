@@ -1,0 +1,22 @@
+---
+title: "UNIT Kit SmartHome"
+subtitle: "Product Reference"
+author: "UNIT Electronics"
+lang: es-MX
+mpn: "AR4623"
+version: "1.1.0"
+date: "2026-02-16"
+toc-title: "Contenido"
+
+chapters:
+  - tools/product-reference/chapters/00-description.md
+  - tools/product-reference/chapters/01-board.md
+  - tools/product-reference/chapters/02-ratings.md
+  - tools/product-reference/chapters/03-functional-overview.md
+  - tools/product-reference/chapters/04-connectors-pinouts.md
+  - tools/product-reference/chapters/05-board-operation.md
+  - tools/product-reference/chapters/06-mechanical.md
+  - tools/product-reference/chapters/07-company.md
+  - tools/product-reference/chapters/08-references.md
+  - tools/product-reference/chapters/09-appendix.md
+---
