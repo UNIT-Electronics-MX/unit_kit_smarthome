@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>$title$</title>
-  $for(css)$<link rel="stylesheet" href="$css$">$endfor$
+  <meta name="generator" content="Pandoc">
+  <title>$title$ — $subtitle$</title>
+  $for(css)$
+  <link rel="stylesheet" href="$css$">
+  $endfor$
 </head>
 <body>
-  <header class="toolbar"><strong>$title$</strong><nav><a href="unit_product_reference_v_1_1_0_kit_smarthome.pdf">Descargar PDF</a><a href="manual-editable.docx">Descargar DOCX</a></nav></header>
-  <main class="manual">
-    <article>$body$</article>
-  </main>
+  <article class="product-reference-content">
+    $body$
+  </article>
 </body>
 </html>

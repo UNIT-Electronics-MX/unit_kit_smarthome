@@ -2,12 +2,13 @@
 set -euo pipefail
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-BOOK_FILE="$PROJECT_DIR/tools/product-reference/book.yml"
-REFERENCE_DOC="$PROJECT_DIR/tools/product-reference/reference-a4.docx"
-HTML_TEMPLATE="$PROJECT_DIR/tools/product-reference/templates/product-reference.html"
-HTML_STYLESHEET="$PROJECT_DIR/tools/product-reference/styles/product-reference.css"
+SOURCE_DIR="$PROJECT_DIR/tools/product-reference"
+BOOK_FILE="$SOURCE_DIR/book.yml"
+REFERENCE_DOC="$SOURCE_DIR/reference-a4.docx"
+HTML_TEMPLATE="$SOURCE_DIR/templates/product-reference.html"
+HTML_STYLESHEET="$SOURCE_DIR/styles/product-reference.css"
 OUTPUT_DIR="${1:-$PROJECT_DIR/build/product-reference}"
-OUTPUT_BASENAME="unit_product_reference_v_0_1_0_pulsar_rp2350a"
+OUTPUT_BASENAME="unit_product_reference_v_1_1_0_kit_smarthome"
 
 if ! command -v pandoc >/dev/null 2>&1; then
   echo "Error: required command not found: pandoc" >&2
@@ -88,7 +89,7 @@ mapfile -t ASSETS < <(
 )
 
 for asset in "${ASSETS[@]}"; do
-  if [[ ! -f "$PROJECT_DIR/$asset" ]]; then
+  if [[ ! -f "$SOURCE_DIR/$asset" ]]; then
     echo "Error: a chapter references a missing asset: $asset" >&2
     exit 1
   fi
@@ -100,9 +101,9 @@ TEMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TEMP_DIR"' EXIT
 
 # Pandoc looks here first for reduced copies; the source artwork stays intact.
-"${IMAGE_PYTHON_COMMAND[@]}" "$PROJECT_DIR/tools/product-reference/prepare-images.py" \
-  "$PROJECT_DIR" "$TEMP_DIR" "${ASSETS[@]}"
-RESOURCE_PATH="$TEMP_DIR:$PROJECT_DIR"
+"${IMAGE_PYTHON_COMMAND[@]}" "$SOURCE_DIR/prepare-images.py" \
+  "$SOURCE_DIR" "$TEMP_DIR" "${ASSETS[@]}"
+RESOURCE_PATH="$TEMP_DIR:$SOURCE_DIR"
 
 CONTENTS_FILE="$TEMP_DIR/contents.md"
 {
