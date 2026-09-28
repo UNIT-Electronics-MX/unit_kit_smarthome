@@ -1,4 +1,4 @@
-name: Build Product Reference and Hardware Documentation
+name: Build SmartHome User Manual and Hardware Documentation
 
 on:
   push:
@@ -41,14 +41,12 @@ jobs:
       with:
         python-version: '3.12'
 
-    - name: Install document build tools
+    - name: Install PDF conversion tools
       run: |
         sudo apt-get update
-        sudo apt-get install --yes pandoc fonts-noto-core fonts-noto-mono
-        python -m pip install --upgrade pip
-        python -m pip install weasyprint Pillow
+        sudo apt-get install --yes poppler-utils
 
-    - name: Build product reference from Markdown
+    - name: Build user manual from PDF
       run: |
         chmod +x tools/product-reference/build.sh
         tools/product-reference/build.sh
@@ -58,7 +56,7 @@ jobs:
         chmod +x .github/scripts/clean_docs.sh
         .github/scripts/clean_docs.sh
 
-    - name: Publish hardware files and product reference under docs/hardware
+    - name: Publish hardware files and user manual under docs/hardware
       run: |
         chmod +x .github/scripts/build_docs.sh
         .github/scripts/build_docs.sh

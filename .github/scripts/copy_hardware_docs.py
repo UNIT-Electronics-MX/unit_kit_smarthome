@@ -91,16 +91,12 @@ def classify_resource(name, extension):
 
     if "product_reference" in lower_name or "product-reference" in lower_name:
         category = "Product documents"
-        title = "Product Reference"
+        title = "Manual de usuario"
         description = (
-            "Publication-ready product reference"
+            "Manual original en PDF"
             if extension == ".pdf"
-            else "Editable product reference"
+            else "Manual completo con el formato e imágenes originales"
         )
-    elif lower_name == "manual-figures.html":
-        category = "Product documents"
-        title = "Manual image gallery"
-        description = "All images from the SmartHome user manual"
     elif "_sch_" in lower_name or "schematic" in lower_name:
         category = "Product documents"
         title = "Schematic"
@@ -235,8 +231,7 @@ def scan_published_files():
 
     reference_dir = DOCS_HARDWARE_DIR / "product-reference"
     if reference_dir.is_dir():
-        for pattern in ("*product_reference*.html", "*product_reference*.pdf",
-                        "*product_reference*.docx", "manual-figures.html"):
+        for pattern in ("*product_reference*.html", "*product_reference*.pdf"):
             files.extend(describe_file(path) for path in sorted(reference_dir.glob(pattern)))
     return sorted(
         files,
