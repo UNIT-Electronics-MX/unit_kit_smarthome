@@ -2,7 +2,8 @@
 
 | Recurso | Ubicación |
 |---|---|
-| Manual de usuario V1.1.0, PDF original | [Descargar manual PDF](<assets/I2D-Manual de usuario - Kit SmartHome-280926-171843.pdf>) |
+| Documento fuente V1.1.0 | [PDF original](<assets/I2D-Manual de usuario - Kit SmartHome-280926-171843.pdf>) |
+| Manual migrado dentro de esta referencia | Capítulo 10, «Manual de usuario migrado» |
 | Figuras del manual extraídas localmente | [Galería de figuras](manual-figures.html) |
 | Repositorio del producto | [UNIT-Electronics-MX/unit_kit_smarthome](https://github.com/UNIT-Electronics-MX/unit_kit_smarthome) |
 | Firmware ESP32 | `software/ESP32/Smart_Home_App_ESP_COMV4/` |

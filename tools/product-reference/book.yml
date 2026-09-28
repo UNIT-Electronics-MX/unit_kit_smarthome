@@ -1,5 +1,5 @@
 ---
-title: "UNIT Kit SmartHome"
+title: "Kit SmartHome"
 subtitle: "Product Reference"
 author: "UNIT Electronics"
 lang: es-MX
@@ -19,4 +19,5 @@ chapters:
   - tools/product-reference/chapters/07-company.md
   - tools/product-reference/chapters/08-references.md
   - tools/product-reference/chapters/09-appendix.md
+  - tools/product-reference/chapters/10-manual-migrado.md
 ---

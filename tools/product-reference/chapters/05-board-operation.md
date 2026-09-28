@@ -11,7 +11,7 @@
 
 ![Ensamble final de la casa](assets/manual/image-274.png){width=4.2in}
 
-El manual de 80 páginas conserva las vistas y la posición de cada tornillo. Para pasos con orientación difícil, como el Neopixel de la pared P y el motor en la pared N, consulte su [galería de figuras](manual-figures.html).
+El capítulo 10 incluye todas las páginas del manual migradas a esta referencia, con las vistas y la posición de cada tornillo. También puede abrir cada figura desde la [galería de imágenes](manual-figures.html).
 
 ### 5.2 Firmware
 
