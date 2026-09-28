@@ -9,9 +9,13 @@ body { margin: 0; background: #e9edf0; color: #20252c; font: 16px/1.55 Arial, sa
 a { color: #a93f0b; }
 .manual { width: min(100% - 32px, 900px); margin: 20px auto; padding: 48px 64px;
   background: white; box-shadow: 0 2px 12px #0002; }
-.manual-title { border-bottom: 2px solid #ee6c22; margin-bottom: 28px; }
-.manual-title h1 { font-size: 2em; line-height: 1.2; margin: 0; }
-.manual-title p { color: #596474; }
+article .cover { min-height: 980px; display: flex; flex-direction: column;
+  align-items: center; text-align: center; padding: 8px 0 28px; }
+article .cover > p:first-child { align-self: flex-start; margin: 0 0 18px; }
+article .cover h1 { align-self: flex-start; margin: 0 0 10px; font-size: 1.8em; }
+article .cover figure { margin: 12px auto; }
+article .cover-info { align-self: stretch; margin-top: auto; text-align: left; }
+article .cover-info p { margin: 0; }
 h2 { font-size: 1.5em; margin-top: 2em; border-bottom: 1px solid #d9dee4; padding-bottom: .2em; }
 h3 { font-size: 1.2em; margin-top: 1.5em; }
 .contents { margin-bottom: 42px; }
@@ -35,5 +39,6 @@ article tr { break-inside: avoid; }
   body { background: white; }
   .toolbar { display: none; }
   .manual { width: 100%; margin: 0; padding: 0; box-shadow: none; }
-  h2, h3, figure { break-after: avoid; }
+  article .cover { height: 259mm; min-height: 0; break-after: page; }
+  article .cover h1, h2, h3, figure { break-after: avoid; }
 }

@@ -10,6 +10,7 @@ toc-title: "Contenido"
 # Los archivos listados se publican en este orden. Para agregar un apartado,
 # cree un archivo Markdown en chapters/ y añada su ruta a esta lista.
 chapters:
+  - tools/product-reference/chapters/00-portada.md
   - tools/product-reference/chapters/10-manual-migrado.md
 # Borradores conservados de la plantilla anterior; habilite sólo los que edite.
 #  - tools/product-reference/chapters/00-description.md

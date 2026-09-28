@@ -1,34 +1,8 @@
 ## Presentación, componentes e inventario
 
-<!-- Página 1 del PDF original -->
-
-Manual de usuario - Kit SmartHome
-
-Manual de usuario
-
-![Manual de usuario, página 1, imagen 0](assets/manual/image-000-alpha.png){width=3.3in}
-
-![Manual de usuario, página 1, imagen 2](assets/manual/image-002.png){width=3.3in}
-
-Área: I2D
-
-Producto: AR4623 - Kit SmartHome
-
-Versión: 1.1.0
-
-Fecha: 16/02/2026
-
-Autores: Juan Luis Ballesteros, José Carlos Serrato
-
-Tiempo estimado de lectura: 12 minutos
-
-Tiempo estimado de ensamble: 4 horas
-
-<!-- Página 2 del PDF original -->
-
 Tiempo estimado de puesta en funcionamiento: 1 hora
 
-Control de versiones
+### Control de versiones
 
 | Versión | Fecha | Nombre | Cambios realizados |
 |---|---|---|---|
@@ -36,7 +10,8 @@ Control de versiones
 | V1.0.1 | — | José Serrato | Corrección de puentes en corte láser. |
 | V1.0.0 | — | José Serrato | Creación del proyecto, primer borrador. |
 
-Introducción  
+### Introducción
+
 El Kit SmartHome de UNIT Electronics es una plataforma didáctica diseñada para el aprendizaje  
 práctica de electrónica y programación mediante la construcción de una casa inteligente  
 funcional.
