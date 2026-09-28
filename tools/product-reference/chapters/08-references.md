@@ -1,14 +1,58 @@
 ## 8. Documentación y recursos
 
-| Recurso | Ubicación |
-|---|---|
-| Documento fuente V1.1.0 | [PDF original](<assets/I2D-Manual de usuario - Kit SmartHome-280926-171843.pdf>) |
-| Manual migrado dentro de esta referencia | Capítulo 10, «Manual de usuario migrado» |
-| Figuras del manual extraídas localmente | [Galería de figuras](manual-figures.html) |
-| Repositorio del producto | [UNIT-Electronics-MX/unit_kit_smarthome](https://github.com/UNIT-Electronics-MX/unit_kit_smarthome) |
-| Firmware ESP32 | `software/ESP32/Smart_Home_App_ESP_COMV4/` |
-| Firmware RP2040 | `software/RP2040/Smart_Home_RP_V1/` |
-| Aplicación Android | `software/App/smartHomeApp.apk` |
-| Arduino IDE | [Documentación oficial](https://docs.arduino.cc/software/ide/) |
 
-Los enlaces de archivos locales se refieren a las rutas del repositorio. La galería publica todas las imágenes extraídas para su consulta desde la página web.
+Recurso
+
+Descripción
+
+URL
+
+Wiki Platform
+
+Wiki oficial
+
+Documentación  
+técnica completa
+
+UNIT-Electronics-M  
+X/unit_kit_smarthome
+
+GitHub
+
+Código fuente /  
+firmware
+
+
+<!-- Página 79 del PDF original -->
+
+UNIT-Electronics-M  
+unit_kit_smarthome /sof X/unit_kit_smarthome  
+tware/App
+
+Aplicación Móvil
+
+Descarga oficial
+
+IDE Arduino
+
+Software programación https://docs.arduino.cc  
+/software/ide/
+
+Thonny, Python IDE  
+for beginners  
+https://code.visualstudi  
+o.com/
+
+Thonny
+
+MicroPython
+
+![Manual de usuario, página 79, imagen 301](assets/manual/image-301-alpha.png){width=0.65in}
+
+Visual Studio Code
+
+Entorno avanzado
+
+https://code.visualstudi  
+o.com/
+

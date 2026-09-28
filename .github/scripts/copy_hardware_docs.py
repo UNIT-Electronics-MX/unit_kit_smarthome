@@ -213,7 +213,13 @@ def copy_hardware_files():
     shutil.copytree(HARDWARE_DIR, DOCS_HARDWARE_DIR)
 
     if PRODUCT_REFERENCE_BUILD_DIR.is_dir():
+        manual_dir = DOCS_HARDWARE_DIR / "product-reference"
         for generated_file in sorted(PRODUCT_REFERENCE_BUILD_DIR.iterdir()):
+            if generated_file.suffix.lower() not in {".pdf", ".docx", ".html"}:
+                continue
+            manual_dir.mkdir(exist_ok=True)
+            shutil.copy2(generated_file, manual_dir / generated_file.name)
+            # Keep the top-level download URLs from the newer site working.
             if generated_file.suffix.lower() in {".pdf", ".docx"}:
                 shutil.copy2(generated_file, DOCS_HARDWARE_DIR / generated_file.name)
 
@@ -225,6 +231,10 @@ def scan_published_files():
         dirs.sort()
         for name in sorted(names):
             if name.lower() == "schematics_icon.jpg":
+                continue
+            is_top_level_copy = root == str(DOCS_HARDWARE_DIR)
+            has_manual_copy = (DOCS_HARDWARE_DIR / "product-reference" / name).is_file()
+            if is_top_level_copy and has_manual_copy:
                 continue
             files.append(describe_file(Path(root) / name))
     return sorted(

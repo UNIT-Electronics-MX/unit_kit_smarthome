@@ -1,19 +1,254 @@
-## 4. Conexiones de referencia
+## 4. Conectores y conexiones
 
-La **Sensor Shield** concentra conexiones directas de encoder, buzzer, RFID, sensor de flama, PIR, botón capacitivo, lluvia, infrarrojo, fotorresistor y Neopixel. El **Hub I²C** conecta la pantalla OLED y el AHT10; el manual indica que estos cables pueden ocupar cualquiera de sus posiciones equivalentes. El **PCA9685** se usa con el servomotor y el **MX1508** con el motor DC.
 
-### 4.1 Shield y módulos
+Objetivo:
 
-![Diagrama resumido de conexiones a la Sensor Shield](assets/manual/image-275.png){width=6.2in}
+Realizar la integración electrónica completa del kit, conectando los módulos previamente  
+ensamblados a la Shield, Hub I2C, PCA9685, Puente H y UNIT DualMCU ONE, considerando  
+conexiones de comunicación, alimentación, así como su polaridad.
 
-![Segundo diagrama resumido de conexiones a la Sensor Shield](assets/manual/image-276.png){width=6.2in}
+Resultado esperado:
 
-### 4.2 DualMCU ONE, Hub I²C y PCA9685
 
-![Conexión de DualMCU ONE, Hub I2C y PCA9685](assets/manual/image-277.png){width=6.2in}
+<!-- Página 47 del PDF original -->
 
-### 4.3 Conexión completa
+Al finalizar esta sección el usuario deberá tener los sensores conectados al Shield, actuadores  
+conectados a PCA9685 y Puente H según corresponda, Bus I2C correctamente enlazado,  
+alimentación sin cortocircuitos.
 
-![Diagrama completo de conexiones del kit](assets/manual/image-278.png){width=6.2in}
+![Manual de usuario, página 47, imagen 232](assets/manual/image-232.png){width=3.3in}
 
-El segundo diagrama completo del manual está disponible como [figura adicional](assets/manual/image-279.png). Revise la orientación de VCC, GND y señal en cada conector antes de aplicar energía. Los diagramas son la fuente visual de asignaciones específicas; esta referencia no sustituye la comprobación física del cableado.
+Ilustración del ensamble al terminar las conexiones
+
+### 4.1 Conexiones paso a paso
+
+<!-- Página 48 del PDF original -->
+
+![Manual de usuario, página 48, imagen 233](assets/manual/image-233.png){width=3.3in}
+
+![Manual de usuario, página 48, imagen 234](assets/manual/image-234.png){width=3.3in}
+
+Encoder - Shield
+
+Precaución: Una mala conexión puede provocar daños en los módulos.
+
+<!-- Página 49 del PDF original -->
+
+![Manual de usuario, página 49, imagen 235](assets/manual/image-235.png){width=3.3in}
+
+![Manual de usuario, página 49, imagen 236](assets/manual/image-236.png){width=3.3in}
+
+Buzzer - Shield
+
+<!-- Página 50 del PDF original -->
+
+![Manual de usuario, página 50, imagen 237](assets/manual/image-237.png){width=3.3in}
+
+![Manual de usuario, página 50, imagen 238](assets/manual/image-238.png){width=3.3in}
+
+RFID - Shield
+
+<!-- Página 51 del PDF original -->
+
+![Manual de usuario, página 51, imagen 239](assets/manual/image-239.png){width=3.3in}
+
+![Manual de usuario, página 51, imagen 240](assets/manual/image-240.png){width=3.3in}
+
+Sensor de llama - Shield
+
+<!-- Página 52 del PDF original -->
+
+![Manual de usuario, página 52, imagen 241](assets/manual/image-241.png){width=3.3in}
+
+![Manual de usuario, página 52, imagen 242](assets/manual/image-242.png){width=3.3in}
+
+PIR - Shield
+
+<!-- Página 53 del PDF original -->
+
+![Manual de usuario, página 53, imagen 243](assets/manual/image-243.png){width=3.3in}
+
+![Manual de usuario, página 53, imagen 244](assets/manual/image-244.png){width=3.3in}
+
+Botón capacitivo - Shield
+
+![Manual de usuario, página 53, imagen 245](assets/manual/image-245.png){width=3.3in}
+
+<!-- Página 54 del PDF original -->
+
+![Manual de usuario, página 54, imagen 246](assets/manual/image-246.png){width=3.3in}
+
+Servomotor - PCA9685
+
+![Manual de usuario, página 54, imagen 247](assets/manual/image-247.png){width=3.3in}
+
+![Manual de usuario, página 54, imagen 248](assets/manual/image-248.png){width=3.3in}
+
+![Manual de usuario, página 54, imagen 249](assets/manual/image-249.png){width=3.3in}
+
+PCA9685 - Shield - Hub I2C
+
+<!-- Página 55 del PDF original -->
+
+![Manual de usuario, página 55, imagen 250](assets/manual/image-250.png){width=3.3in}
+
+![Manual de usuario, página 55, imagen 251](assets/manual/image-251.png){width=3.3in}
+
+Pantalla OLED - Hub I2C
+
+![Manual de usuario, página 55, imagen 252](assets/manual/image-252.png){width=3.3in}
+
+Pantalla OLED - Hub I2C
+
+El Hub I2C no tiene una posición designada, puedes conectar los cables en cualquiera de  
+las posiciones.
+
+<!-- Página 56 del PDF original -->
+
+![Manual de usuario, página 56, imagen 253](assets/manual/image-253.png){width=3.3in}
+
+Ensamble 1.8
+
+Coloca el Ensamble 1.6 para continuar.
+
+![Manual de usuario, página 56, imagen 254](assets/manual/image-254.png){width=3.3in}
+
+Ensamble 1.8 + 4x MDF-Llaves
+
+![Manual de usuario, página 56, imagen 255](assets/manual/image-255.png){width=3.3in}
+
+<!-- Página 57 del PDF original -->
+
+![Manual de usuario, página 57, imagen 256](assets/manual/image-256.png){width=3.3in}
+
+Sensor de lluvia - Shield
+
+![Manual de usuario, página 57, imagen 257](assets/manual/image-257.png){width=3.3in}
+
+![Manual de usuario, página 57, imagen 258](assets/manual/image-258.png){width=1.1in}
+
+Infrarrojo - Shield
+
+<!-- Página 58 del PDF original -->
+
+![Manual de usuario, página 58, imagen 259](assets/manual/image-259.png){width=3.3in}
+
+![Manual de usuario, página 58, imagen 260](assets/manual/image-260.png){width=2.0in}
+
+Fotorresistor - Shield
+
+<!-- Página 59 del PDF original -->
+
+![Manual de usuario, página 59, imagen 261](assets/manual/image-261.png){width=3.3in}
+
+Sensor Temperatura y Humedad - Hub I2C
+
+![Manual de usuario, página 59, imagen 262](assets/manual/image-262.png){width=3.3in}
+
+Sensor Temperatura y Humedad - Hub I2C
+
+<!-- Página 60 del PDF original -->
+
+![Manual de usuario, página 60, imagen 263](assets/manual/image-263.png){width=3.3in}
+
+Sensor Temperatura y Humedad - Hub I2C
+
+![Manual de usuario, página 60, imagen 264](assets/manual/image-264.png){width=3.3in}
+
+Ensamble 1.9
+
+Coloca el Ensamble 1.9 para continuar
+
+<!-- Página 61 del PDF original -->
+
+![Manual de usuario, página 61, imagen 265](assets/manual/image-265.png){width=3.3in}
+
+Neopixel (dentro del piso superior) - Neopixel (sobre la puerta)
+
+![Manual de usuario, página 61, imagen 266](assets/manual/image-266.png){width=3.3in}
+
+<!-- Página 62 del PDF original -->
+
+![Manual de usuario, página 62, imagen 267](assets/manual/image-267.png){width=3.3in}
+
+Neopixel (fuera del piso superior) - Shield
+
+![Manual de usuario, página 62, imagen 268](assets/manual/image-268.png){width=3.3in}
+
+<!-- Página 63 del PDF original -->
+
+![Manual de usuario, página 63, imagen 269](assets/manual/image-269.png){width=3.3in}
+
+Motor DC - Puente H
+
+![Manual de usuario, página 63, imagen 270](assets/manual/image-270.png){width=3.3in}
+
+(Puente H - PCA9685) + 2x cable dupont fijo 2 vías
+
+### 4.2 Ensamble final
+
+<!-- Página 64 del PDF original -->
+
+![Manual de usuario, página 64, imagen 271](assets/manual/image-271.png){width=3.3in}
+
+\+ 4x MDF - Llaves
+
+![Manual de usuario, página 64, imagen 272](assets/manual/image-272.png){width=3.3in}
+
+\+ MDF-B
+
+<!-- Página 65 del PDF original -->
+
+![Manual de usuario, página 65, imagen 273](assets/manual/image-273.png){width=3.3in}
+
+\+ 2x MDF-Llaves
+
+![Manual de usuario, página 65, imagen 274](assets/manual/image-274.png){width=3.3in}
+
+Ensamble Final
+
+### 4.3 Diagramas de conexión
+
+#### 4.3.1 Diagramas resumidos de la Shield
+
+<!-- Página 66 del PDF original -->
+
+![Manual de usuario, página 66, imagen 275](assets/manual/image-275.png){width=5.8in}
+
+Diagrama Shield simplificado (1)
+
+<!-- Página 67 del PDF original -->
+
+![Manual de usuario, página 67, imagen 276](assets/manual/image-276.png){width=5.8in}
+
+Diagrama Shield simplificado (2)
+
+Diagrama de las conexiones simplificadas de los sensores y actuadores conectados  
+directamente a la Shield; este diagrama muestra la fila de pines a la que se debe conectar cada  
+sensor y actuador considerando alimentación y comunicación.
+
+Precaución: Previo a energizar, corrobore la correcta conexión de los componentes  
+electrónicos.
+
+#### 4.3.2 Diagrama DualONE, Hub I2C y PCA9685
+
+<!-- Página 68 del PDF original -->
+
+![Manual de usuario, página 68, imagen 277](assets/manual/image-277.png){width=5.8in}
+
+Diagrama DualONE, Hub I2C y PCA9685
+
+#### 4.3.3 Diagrama completo
+
+![Manual de usuario, página 68, imagen 278](assets/manual/image-278.png){width=5.8in}
+
+Diagrama completo (1)
+
+![Manual de usuario, página 68, imagen 279](assets/manual/image-279.png){width=5.8in}
+
+Diagrama completo (2)
+
+<!-- Página 69 del PDF original -->
+
+Este diagrama muestra todas las conexiones a realizar.
+

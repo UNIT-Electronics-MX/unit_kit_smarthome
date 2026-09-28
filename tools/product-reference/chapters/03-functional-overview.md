@@ -1,4 +1,4 @@
-## 3. Funciones del sistema
+## 3. Descripción funcional
 
 | Subsistema | Componentes | Función en el kit |
 |---|---|---|

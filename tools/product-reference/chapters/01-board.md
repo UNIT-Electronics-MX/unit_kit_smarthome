@@ -1,34 +1,66 @@
-## 1. Contenido del kit
+## 1. El kit
 
-La lista siguiente conserva las cantidades indicadas en el manual V1.1.0. Antes del ensamble, clasifique las piezas y compruebe que las conexiones y la tornillería correspondan a cada módulo.
+### 1.1 Lista de materiales
 
-### 1.1 Electrónica y alimentación
+| Folio | Descripción | Imagen | Cantidad |
+|---|---|---|---:|
+| KSH01 | M2x8 queso ranurada | ![KSH01: M2x8 queso ranurada](assets/manual/image-004.png){width=0.7in} | 12 |
+| KSH02 | M2.5x8 queso ranurada | ![KSH02: M2.5x8 queso ranurada](assets/manual/image-005.png){width=0.7in} | 23 |
+| KSH03 | M3x6 queso ranurada | ![KSH03: M3x6 queso ranurada](assets/manual/image-006.png){width=0.7in} | 6 |
+| KSH04 | M3x8 queso ranurada | ![KSH04: M3x8 queso ranurada](assets/manual/image-007.png){width=0.7in} | 18 |
+| KSH05 | M3x10 queso ranurada | ![KSH05: M3x10 queso ranurada](assets/manual/image-008.png){width=0.7in} | 5 |
+| KSH06 | M3x5+6 separador latón | ![KSH06: M3x5+6 separador latón](assets/manual/image-009.png){width=0.7in} | 4 |
 
-| Componente | Cantidad | Componente | Cantidad |
-|---|---:|---|---:|
-| UNIT DualMCU ONE | 1 | Sensor Shield V5.0 UNO R3 | 1 |
-| Hub I²C QW/ST | 1 | PCA9685 | 1 |
-| Puente H MX1508 | 1 | Adaptador 12 V / 2 A | 1 |
-| Servomotor SG90 | 1 | Motor DC con hélice | 1 |
-| Buzzer KY-006 | 1 | Pantalla OLED SSD1315 | 1 |
-| Sensor de flama KY-026 | 1 | Sensor de lluvia FC-37 | 1 |
-| Sensor AHT10 de temperatura y humedad | 1 | Fotorresistor KY-018 | 1 |
-| Neopixel WS2812 | 3 | Lector RFID RC522 | 1 |
-| Receptor IR HX1838 | 1 | Botón capacitivo TTP223B | 1 |
-| Encoder KY-040 | 1 | Sensor PIR HC-SR505 | 1 |
+<!-- Página 6 del PDF original -->
 
-### 1.2 Cables, estructura y tornillería
+| Folio | Descripción | Imagen | Cantidad |
+|---|---|---|---:|
+| KSH07 | M2 tuerca | ![KSH07: M2 tuerca](assets/manual/image-010.png){width=0.7in} | 16 |
+| KSH08 | M2.5 tuerca | ![KSH08: M2.5 tuerca](assets/manual/image-011.png){width=0.7in} | 41 |
+| KSH09 | M3 tuerca | ![KSH09: M3 tuerca](assets/manual/image-012.png){width=0.7in} | 33 |
+| KSH10 | UNIT DualMCU ONE | ![KSH10: UNIT DualMCU ONE](assets/manual/image-013.png){width=0.7in} | 1 |
+| KSH11 | SG90 Servomotor | ![KSH11: SG90 Servomotor](assets/manual/image-014.png){width=0.7in} | 1 |
+| KSH12 | KY-006 Buzzer | ![KSH12: KY-006 Buzzer](assets/manual/image-015.png){width=0.7in} | 1 |
+| KSH13 | KY-026 Sensor de flama | ![KSH13: KY-026 Sensor de flama](assets/manual/image-016.png){width=0.7in} | 1 |
+| KSH14 | FC-37 Sensor de lluvia | ![KSH14: FC-37 Sensor de lluvia](assets/manual/image-017.png){width=0.7in} | 1 |
+| KSH15 | AHT10 Sensor de temperatura y humedad | ![KSH15: AHT10 Sensor de temperatura y humedad](assets/manual/image-018.png){width=0.7in} | 1 |
 
-| Elemento | Cantidad | Elemento | Cantidad |
-|---|---:|---|---:|
-| Cable Qwiic a Qwiic de 10 cm | 1 | Cable Qwiic a Dupont hembra de 20 cm | 3 |
-| Cable Dupont hembra-hembra de 20 cm | 16 | Cable Dupont macho-hembra de 20 cm | 2 |
-| Dupont fijo de 2 vías | 3 | Dupont fijo de 3 vías | 8 |
-| Tira header macho de 40 pines | 1 | Pila de botón de 3 V | 1 |
-| Tornillo M2×8 | 12 | Tuerca M2 | 16 |
-| Tornillo M2.5×8 | 23 | Tuerca M2.5 | 41 |
-| Tornillo M3×6 | 6 | Tornillo M3×8 | 18 |
-| Tornillo M3×10 | 5 | Tuerca M3 | 33 |
-| Separador de latón M3×5+6 | 4 | Piezas de MDF e impresas en 3D | 1 juego cada una |
+<!-- Página 7 del PDF original -->
 
-El manual también muestra las piezas acrílicas y los tornillos propios de algunos módulos durante el montaje. La lista de inventario completa con folios KSH01–KSH39 está en el PDF original.
+| Folio | Descripción | Imagen | Cantidad |
+|---|---|---|---:|
+| KSH16 | SSD1315 Pantalla OLED | ![KSH16: SSD1315 Pantalla OLED](assets/manual/image-019.png){width=0.7in} | 1 |
+| KSH17 | KY-018 Fotorresistor | ![KSH17: KY-018 Fotorresistor](assets/manual/image-020.png){width=0.7in} | 1 |
+| KSH18 | WS2812 Neopixel | ![KSH18: WS2812 Neopixel](assets/manual/image-021.png){width=0.7in} | 3 |
+| KSH19 | RC522 Sensor RFID | ![KSH19: RC522 Sensor RFID](assets/manual/image-022.png){width=0.7in} | 1 |
+| KSH20 | HX1838 Sensor IR | ![KSH20: HX1838 Sensor IR](assets/manual/image-023.png){width=0.7in} | 1 |
+| KSH21 | TTP223B Botón Capacitivo | ![KSH21: TTP223B Botón Capacitivo](assets/manual/image-024.png){width=0.7in} | 1 |
+| KSH22 | KY-040 Encoder | ![KSH22: KY-040 Encoder](assets/manual/image-025.png){width=0.7in} | 1 |
+| KSH23 | UNIT Módulo Hub I2C QW/ST | ![KSH23: UNIT Módulo Hub I2C QW/ST](assets/manual/image-026.png){width=0.7in} | 1 |
+| KSH24 | HC-SR505 PIR | ![KSH24: HC-SR505 PIR](assets/manual/image-027.png){width=0.7in} | 1 |
+| KSH25 | Motor DC con Hélice | ![KSH25: Motor DC con Hélice](assets/manual/image-028.png){width=0.7in} | 1 |
+
+<!-- Página 8 del PDF original -->
+
+| Folio | Descripción | Imagen | Cantidad |
+|---|---|---|---:|
+| KSH26 | MX1508 Puente H | ![KSH26: MX1508 Puente H](assets/manual/image-029.png){width=0.7in} | 1 |
+| KSH27 | PCA9685 | ![KSH27: PCA9685](assets/manual/image-030.png){width=0.7in} | 1 |
+| KSH28 | Sensor Shield V5.0 UNO R3 | ![KSH28: Sensor Shield V5.0 UNO R3](assets/manual/image-031.png){width=0.7in} | 1 |
+| KSH29 | Eliminador 12V 2A Jack | ![KSH29: Eliminador 12V 2A Jack](assets/manual/image-032.png){width=0.7in} | 1 |
+| KSH30 | Cable Qwiic - Qwiic 10 cm | ![KSH30: Cable Qwiic - Qwiic 10 cm](assets/manual/image-033.png){width=0.7in} | 1 |
+| KSH31 | Cable Qwiic - Dupont Hembra 20 cm | ![KSH31: Cable Qwiic - Dupont Hembra 20 cm](assets/manual/image-034.png){width=0.7in} | 3 |
+| KSH32 | Cable Dupont H-H 20 cm | ![KSH32: Cable Dupont H-H 20 cm](assets/manual/image-035.png){width=0.7in} | 16 |
+
+<!-- Página 9 del PDF original -->
+
+| Folio | Descripción | Imagen | Cantidad |
+|---|---|---|---:|
+| KSH33 | Cable Dupont M-H 20 cm | ![KSH33: Cable Dupont M-H 20 cm](assets/manual/image-036.png){width=0.7in} | 2 |
+| KSH34 | Cable Dupont H-H Fijo 2 vías | ![KSH34: Cable Dupont H-H Fijo 2 vías](assets/manual/image-037.png){width=0.7in} | 3 |
+| KSH35 | Cable Dupont H-H Fijo 3 vías | ![KSH35: Cable Dupont H-H Fijo 3 vías](assets/manual/image-038.png){width=0.7in} | 8 |
+| KSH36 | Tira Header Macho 40 pines | ![KSH36: Tira Header Macho 40 pines](assets/manual/image-039.png){width=0.7in} | 1 |
+| KSH37 | Pila de Botón 3V | ![KSH37: Pila de Botón 3V](assets/manual/image-040.png){width=0.7in} | 1 |
+| KSH38 | Juego de impresiones | ![KSH38: Juego de impresiones](assets/manual/image-041.png){width=0.7in} | 1 juego |
+| KSH39 | Juego de cortes en MDF | ![KSH39: Juego de cortes en MDF](assets/manual/image-042.png){width=0.7in} | 1 juego |
+

@@ -112,7 +112,7 @@ CONTENTS_FILE="$TEMP_DIR/contents.md"
     '<w:p><w:r><w:br w:type="page"/></w:r></w:p>' \
     '```' \
     '' \
-    '## Contents' \
+    '## Contenido' \
     ''
 
   awk '
@@ -139,7 +139,38 @@ CONTENTS_FILE="$TEMP_DIR/contents.md"
     '```'
 } >"$CONTENTS_FILE"
 
+# The HTML/PDF output needs a visible contents page after the cover. The DOCX
+# uses the separate contents file above so the two formats share one chapter map.
+HTML_CONTENTS_FILE="$TEMP_DIR/contents-html.md"
+{
+  printf '%s\n' \
+    '::: {.contents-page}' \
+    '# Contenido' \
+    '' \
+    '::: {.contents-page__rule}' \
+    ':::' \
+    '' \
+    '::: {#TOC}' \
+    ''
+
+  awk '
+    /^## / {
+      text=$0
+      sub(/^## /, "", text)
+      print "- " text
+    }
+    /^### / {
+      text=$0
+      sub(/^### /, "", text)
+      print "  - " text
+    }
+  ' "${CHAPTER_PATHS[@]:1}"
+
+  printf '%s\n' '' ':::' ':::'
+} >"$HTML_CONTENTS_FILE"
+
 DOCUMENT_INPUTS=("$CONTENTS_FILE" "${CHAPTER_PATHS[@]}")
+HTML_INPUTS=("${CHAPTER_PATHS[0]}" "$HTML_CONTENTS_FILE" "${CHAPTER_PATHS[@]:1}")
 
 MARKDOWN_FILE="$OUTPUT_DIR/$OUTPUT_BASENAME.md"
 DOCX_FILE="$OUTPUT_DIR/$OUTPUT_BASENAME.docx"
@@ -167,14 +198,12 @@ pandoc \
   --from=markdown \
   --to=html5 \
   --standalone \
-  --toc \
-  --toc-depth=3 \
   --embed-resources \
   --metadata-file="$BOOK_FILE" \
   --template="$HTML_TEMPLATE" \
   --css="$HTML_STYLESHEET" \
   --resource-path="$RESOURCE_PATH" \
-  "${CHAPTER_PATHS[@]}" \
+  "${HTML_INPUTS[@]}" \
   --output="$HTML_FILE"
 
 if [[ "$PDF_RENDERER" == "weasyprint" ]]; then
@@ -194,6 +223,7 @@ else
     --headless \
     --no-sandbox \
     --disable-gpu \
+    --no-pdf-header-footer \
     --print-to-pdf="$PDF_FILE" \
     "file://$HTML_FILE"
 fi

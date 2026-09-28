@@ -1,4 +1,4 @@
-## 7. Fabricante
+## 7. Información del fabricante
 
 | Campo | Información |
 |---|---|
