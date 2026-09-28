@@ -66,6 +66,7 @@ pandoc --from=markdown --to=docx --standalone \
   --metadata-file="$BOOK_FILE" --reference-doc="$REFERENCE_DOC" \
   --resource-path="$SOURCE_DIR" "${CHAPTER_PATHS[@]}" \
   --output="$OUTPUT_DIR/manual-editable.docx"
+python3 "$SOURCE_DIR/normalize-docx.py" "$OUTPUT_DIR/manual-editable.docx" "$BOOK_FILE"
 
 # Remove files from the superseded reference build on repeated local builds.
 rm -f "$OUTPUT_DIR/$OUTPUT_BASENAME.docx" \
