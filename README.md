@@ -87,8 +87,8 @@ The SmartHome Kit by UNIT Electronics is an educational platform designed to tea
 |Dupont F-F Fijo 3p         |8    |<img src="tools\product-reference\assets\manual\image-038.png" width="40px"> |
 |Male Header strip  40p     |1    |<img src="tools\product-reference\assets\manual\image-039.png" width="40px"> |
 |CR2025 battery 3V          |1    |<img src="tools\product-reference\assets\manual\image-040.png" width="40px"> |
-|3D printed parts           |-    |<img src="tools\product-reference\assets\manual\image-041.png" width="40px"> |
-|MDF parts                  |-    |<img src="tools\product-reference\assets\manual\image-042.png" width="40px"> |
+|MDF & Acrylic parts        |-    |<img src="tools\product-reference\assets\manual\image-041.png" width="40px"> |
+|3D printed parts           |-    |<img src="tools\product-reference\assets\manual\image-042.png" width="40px"> |
 </div>
 
 ## 📝 License
