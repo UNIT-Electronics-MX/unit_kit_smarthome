@@ -18,7 +18,6 @@ Welcome to the project! This guide will help you set up your development environ
 ## Usage
 
 - Connect the board to your computer.
-- Build and flash the firmware as described in the [User Guide](docs/USER_GUIDE.md).
 
 ## Support
 
