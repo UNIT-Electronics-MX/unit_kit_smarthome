@@ -1097,7 +1097,109 @@ Botón de ayuda
 
 ### 5.5 Primera conexión
 
+#### Objetivo
+
+Vincular por primera vez el Kit SmartHome con la aplicación móvil a través de la red WiFi local, para pasar del modo autónomo al modo controlado por app.
+
+#### Resultado esperado
+
+La app muestra el "Estatus Conexión" activo y comienza a recibir en tiempo real la información de los sensores del kit.
+
+#### Procedimiento
+
+1. Alimenta el kit con el eliminador 12V 2A. Espera a que la pantalla OLED muestre el logo UNIT Electronics y el mensaje de inicialización de sensores.
+2. En el menú de la pantalla, usa el Encoder (girar para navegar, presionar para confirmar) o el control IR (flechas arriba/abajo y OK) hasta ubicar "Programa APP" y confírmalo.
+3. Si es la primera vez y no hay una red guardada, el kit crea su propio punto de acceso llamado UNIT-WIFI-MANAGER (sin contraseña). Conecta tu celular a esa red, abre un navegador y entra a 192.168.4.1 para acceder al portal WiFi Manager.
+4. En el portal, selecciona tu red doméstica de la lista de redes detectadas, ingresa su contraseña y guarda. El kit se reiniciará y se conectará automáticamente a tu red.
+   (Si ya existe una red guardada de un uso anterior, el kit se conecta directo y este paso no aparece).
+5. Una vez conectado a la red WiFi, la pantalla OLED mostrará el mensaje "Ingrese la siguiente IP en la aplicación" junto con la dirección IP asignada al kit. Toma nota de esta IP.
+6. Conecta tu celular a la misma red WiFi que el kit y abre la app SmartHome.
+7. En cualquiera de las pestañas de la app (Sensores o Controles), presiona el ícono "Conectar" ubicado junto a "Estatus Conexión" e ingresa la dirección IP obtenida en el paso 5.
+8. Si la conexión es exitosa, el ícono de "Estatus Conexión" cambiará de su estado desconectado a conectado, y la app comenzará a mostrar las lecturas de los sensores del kit.
+
+Nota: la dirección IP puede cambiar si el router la reasigna (DHCP). Si la app deja de recibir datos, revisa la IP mostrada en la pantalla OLED y vuelve a conectarte con ese valor actualizado.
+
+Precaución: el kit y el celular deben estar conectados a la misma red WiFi para poder comunicarse entre sí.
+
 ### 5.6 Uso de la app, lectura de sensores y actuadores
+
+#### Objetivo
+
+Visualizar la información de los sensores del kit y controlar sus actuadores desde la aplicación móvil una vez establecida la conexión.
+
+#### Resultado esperado
+
+Identificas cada elemento de la interfaz y eres capaz de leer el estado de los sensores y accionar los actuadores del kit desde la app.
+
+#### Descripción general de la interfaz
+
+En la parte superior de ambas pantallas se encuentra el logotipo de la app, el ícono de Ayuda (con una guía rápida de las funciones de la app) y el ícono de Ajustes. Debajo se ubica el selector de pestañas Sensores / Controles, y a la derecha el indicador de "Estatus Conexión" junto con el botón "Conectar" descrito en la sección 5.5.
+
+#### Pestaña "Sensores"
+
+Bloque superior, con lecturas continuas del sensor AHT10 y del fotorresistor:
+
+| Lectura | Fuente |
+|---|---|
+| Temperatura (°C) | Sensor AHT10 |
+| Humedad (%rH) | Sensor AHT10 |
+| Iluminación (%) | Fotorresistor KY-018 |
+
+Cuadrícula SENSORES, con el estado de cada sensor digital o evento (se muestran en "En espera" hasta que ocurre una lectura o evento):
+
+| Sensor en app | Qué muestra |
+|---|---|
+| Lluvia | Si el sensor FC-37 detecta agua |
+| Flama | Si el sensor KY-026 detecta fuego/calor |
+| Botón | Si el botón capacitivo TTP223B fue presionado |
+| PIR | Si el sensor HC-SR505 detectó movimiento |
+| RFID | El identificador (UID) de la última tarjeta o llavero leído por el módulo RC522 |
+| IR | El último código recibido por el sensor infrarrojo HX1838 al usar el control remoto |
+
+#### Pestaña "Controles"
+
+Tres controles deslizables con interruptor (ON/OFF), uno por cada Neopixel del kit, identificados por la zona de la casa que iluminan. El interruptor enciende o apaga el LED correspondiente y el deslizador ajusta su intensidad/color:
+
+- Patio trasero
+- Dormitorio
+- Entrada
+
+Botones de actuadores:
+
+| Actuador en app | Acción |
+|---|---|
+| Ventilador | Enciende/apaga el motor DC con hélice (a través del puente H MX1508) |
+| Puerta | Acciona el servomotor para abrir o cerrar la puerta de la casa |
+| Buzzer | Reproduce una melodía en el buzzer pasivo; el selector desplegable (Melodía 1 / Melodía 2) permite elegir cuál se reproduce antes de presionar el botón de reproducir |
+
+Nota: todos los valores se actualizan en tiempo real mientras el "Estatus Conexión" permanezca activo. Si la app deja de refrescar datos, verifica la conexión WiFi del kit y repite el procedimiento de la sección 5.5.
 
 ### 5.7 Modo sin conexión (offline)
 
+#### Objetivo
+
+Operar el Kit SmartHome de forma autónoma, sin necesidad de la app ni de una red WiFi, mediante la lógica de automatización programada directamente en la RP2040.
+
+#### Resultado esperado
+
+La casa responde automáticamente a los sensores (temperatura, flama, lluvia, RFID, luz ambiental, botón y PIR) sin intervención de la aplicación móvil.
+
+#### Procedimiento
+
+1. En el menú de la pantalla OLED, navega (con el Encoder o el control IR) hasta "Programa Offline" y confirma.
+2. La pantalla mostrará el encabezado "OFFLINE" junto con las lecturas en vivo de temperatura, humedad, botón, fotorresistor (LDR) y RFID.
+3. A partir de este momento, el kit ejecuta de forma automática las siguientes reglas:
+
+| Sensor / condición | Acción automática |
+|---|---|
+| Temperatura mayor a 35 °C, o sensor de flama activado | Enciende el motor DC (ventilador) como respuesta de enfriamiento/alerta |
+| Se acerca una credencial RFID autorizada (tarjeta o llavero) al lector | Una de las credenciales abre la puerta (servomotor); la otra la cierra |
+| La puerta está abierta y el sensor detecta lluvia | Cierra la puerta automáticamente, aunque no se presente la credencial de cierre |
+| Credencial RFID no reconocida | Muestra en pantalla un mensaje aleatorio de aviso |
+| Poca luz ambiental detectada por el fotorresistor | Enciende automáticamente los Neopixel exteriores; se apagan al recuperarse la luminosidad |
+| Botón capacitivo presionado | El buzzer reproduce un sonido tipo timbre ("Ding Dong") |
+| El PIR detecta movimiento | Enciende un Neopixel indicador de presencia; se apaga al dejar de detectar movimiento |
+
+Para salir del modo Offline, confirma nuevamente en el menú para regresar a la pantalla principal; el kit apaga los Neopixel y detiene los actuadores antes de volver al menú.
+
+Nota: en modo Offline el kit no requiere WiFi ni la app instalada; toda la lógica corre localmente en la RP2040, por lo que sigue funcionando aunque no haya red disponible.
