@@ -952,9 +952,9 @@ Vista de la aplicación
 
 ### 5.3 Carga de firmware
 
-La UNIT DualMCU ONE viene con el firmware precargado.
+El firmware de la UNIT DualMCU ONE debe instalarse desde el repositorio de GitHub del proyecto (UNIT-Electronics-MX/unit_kit_smarthome, carpeta `software`).
 
-Si necesitas volver a instalarlo, sigue estos pasos.
+Sigue estos pasos para cargarlo en cada microcontrolador.
 
 #### ESP32
 

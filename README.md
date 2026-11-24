@@ -91,6 +91,8 @@ The SmartHome Kit by UNIT Electronics is an educational platform designed to tea
 |3D printed parts           |-    |<img src="tools\product-reference\assets\manual\image-042.png" width="40px"> |
 </div>
 
+> **Note:** The firmware and connections shown in the manual are a reference configuration. You can develop your own code and modify the connections to suit your needs, always verifying the polarity and voltage levels of each module before powering on.
+
 ## 📝 License
 
 All hardware and documentation in this project are licensed under the **MIT License**.  

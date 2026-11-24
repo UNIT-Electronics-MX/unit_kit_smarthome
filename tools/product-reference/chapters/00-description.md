@@ -97,3 +97,6 @@ Cautín
 <!-- Página 5 del PDF original -->
 
 ![Manual de usuario, página 5, imagen 3](assets/manual/image-003.png){width=3.3in}
+
+
+Nota: El firmware y las conexiones que se muestran en este manual son una configuración de referencia. Puedes desarrollar tu propio código y modificar las conexiones según tus necesidades, siempre verificando la polaridad y los niveles de voltaje de cada módulo antes de energizar.

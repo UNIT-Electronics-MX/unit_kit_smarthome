@@ -1448,9 +1448,9 @@ Vista de la aplicación
 
 3.1 - Carga de firmware
 
-El firmware viene previamente programado en la UNIT DualONE
+El firmware de la UNIT DualONE debe instalarse desde el repositorio de GitHub del proyecto (UNIT-Electronics-MX/unit_kit_smarthome, carpeta software).
 
-De ser necesaria la instalación del firmware sigue estos pasos.
+Sigue estos pasos para cargarlo en cada microcontrolador.
 
 3.1.1 - ESP32
 
